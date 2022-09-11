@@ -1,7 +1,7 @@
 # Applied-Genomic-Technologies 
 
 ### Acknowledgments
-We thank BENG183 alumni: John David Lin, Samuel Beppler, Paige Dubelko, Pericles Corkos, Elisha Beebe, Mengyi Liu, Kelsey Dang, Katy Zou, Diego Quintero, Derek Jow, Victoria Tom, Joey Sun, Xingzhao Wen.
+We thank BENG183 alumni: John David Lin, Samuel Beppler, Paige Dubelko, Pericles Corkos, Elisha Beebe, Mengyi Liu, Kelsey Dang, Katy Zou, Diego Quintero, Derek Jow, Victoria Tom, Joey Sun.
 
 
 ### Chapter1 Molecular Biology
