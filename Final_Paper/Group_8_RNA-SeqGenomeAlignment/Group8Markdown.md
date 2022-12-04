@@ -19,12 +19,14 @@ Alignment of these raw reads into a reference genome is the first and essential 
 - Protein-DNA interactions mapping (ChIP-Seq)
 - Differentially expressed gene identification (RNA-Seq)
 
+
 <p align="center">
   
-<img src="genomeAlignment.png" width="455" height="400"">
+<img src="genomeAlignment.png" width="455" height="400">
 
 </p>
  
+                                                        
 <h3 align = "center">
 Examples of Genome Alignment Tools
 </h3>
