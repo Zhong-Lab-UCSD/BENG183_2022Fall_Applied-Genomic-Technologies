@@ -1,6 +1,29 @@
 # Applied-Genomic-Technologies 
 
+### Final Paper Submission 2022Fall
+
+##### To submit the final project, please follow these steps:
+
+1. To start, fork this repository.
+2. Clone the repository to your computer.
+3. Upload your files and commit changes to complete your solution.
+4. Push/sync the changes up to GitHub.
+5. Create a pull request on the original repository to turn in the assignment.
+
+##### Requirements:
+
+1. Please put the final paper of your group in the "Final_Paper" Folder in this repository. Create a folder and put your paper **.md** files together **with figures within the folder**. The name of the Folder should be "Group_Number_Topic". e.g. "Group_1_RNA-seq".
+2. The final paper is the “class handout” you would give to your future class who 
+   attend your mini-lecture. Please use the [chapters of 3D Genome Book](https://zhonglab.gitbook.io/3dgenome/chapter1-why-we-care-about-3d-genome/3d-nuclear-structure) as examples 
+   of a final paper. An outstanding final paper should read like a book chapter or a 
+   section of a book chapter for a future textbook.
+
+##### Grading:
+
+The final paper will be graded by the 3 TAs. Each TA will give a score in 1-10 to each paper. The average score will be the score of this final paper of this team. All team members will receive the same score.
+
 ### Acknowledgments
+
 We thank BENG183 alumni: John David Lin, Samuel Beppler, Paige Dubelko, Pericles Corkos, Elisha Beebe, Mengyi Liu, Kelsey Dang, Katy Zou, Diego Quintero, Derek Jow, Victoria Tom, Joey Sun.
 
 
