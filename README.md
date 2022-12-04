@@ -12,15 +12,16 @@
 
 ##### Requirements:
 
-1. Please put the final paper of your group in the "Final_Paper" Folder in this repository. Create a folder and put your paper **.md** files together **with figures within the folder**. The name of the Folder should be "Group_Number_Topic". e.g. "Group_1_RNA-seq".
-2. The final paper is the “class handout” you would give to your future class who 
+1. Please put the final paper of your group in the "Final_Paper" Folder in this repository. Create a folder and put your paper **.md** files together **with figures within the folder**. 
+2. The name of the Folder should be **"Group_Number_Topic"**. e.g. "Group_1_RNA-seq".
+3. The final paper is the “class handout” you would give to your future class who 
    attend your mini-lecture. Please use the [chapters of 3D Genome Book](https://zhonglab.gitbook.io/3dgenome/chapter1-why-we-care-about-3d-genome/3d-nuclear-structure) as examples 
    of a final paper. An outstanding final paper should read like a book chapter or a 
    section of a book chapter for a future textbook.
 
 ##### Grading:
 
-The final paper will be graded by the 3 TAs. Each TA will give a score in 1-10 to each paper. The average score will be the score of this final paper of this team. All team members will receive the same score.
+The final paper will be graded by the 3 TAs. Each TA will give a score in 1-10 to each paper. The average score will be the score of this final paper of this team. **All team members will receive the same score**.
 
 ### Acknowledgments
 
