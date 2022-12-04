@@ -4,11 +4,13 @@
 
 ##### To submit the final project, please follow these steps:
 
-1. To start, fork this repository.
+1. To start, fork this repository. [Fork a repo - GitHub Docs](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
 2. Clone the repository to your computer.
 3. Upload your files and commit changes to complete your solution.
 4. Push/sync the changes up to GitHub.
-5. Create a pull request on the original repository to turn in the assignment.
+5. Create a pull request on the original repository to turn in the assignment. [Creating a pull request - GitHub Docs](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
+
+Tips: You can install Github Desktop to use GUI instead of command line.
 
 ##### Requirements:
 
