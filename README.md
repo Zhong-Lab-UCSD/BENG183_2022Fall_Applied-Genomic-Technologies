@@ -52,7 +52,7 @@ We thank BENG183 alumni: John David Lin, Samuel Beppler, Paige Dubelko, Pericles
 - [7.1 Intro to Machine Learning](https://github.com/Zhong-Lab-UCSD/BENG183_2022Fall_Applied-Genomic-Technologies/blob/main/Chapter/Introduction_to_Machine_Learning.md)
 
 ## Appendix: hands-on tutorials 
-- [1.Data files](https://github.com/Irenexzwen/BIOE183)
+- [1. Data files](https://github.com/Irenexzwen/BIOE183)
 - [2. Getting started with the Linux environment](https://github.com/Zhong-Lab-UCSD/BENG183_2022Fall_Applied-Genomic-Technologies/blob/main/Tutorials/Tutorial1_Preparation.md)
 - [3. Working with raw RNA sequencing data](https://github.com/Zhong-Lab-UCSD/BENG183_2022Fall_Applied-Genomic-Technologies/blob/main/Tutorials/Tutorial2_RawData.md)
 - [4. Mapping RNA-seq reads and quantifying gene expression](https://github.com/Zhong-Lab-UCSD/BENG183_2022Fall_Applied-Genomic-Technologies/blob/main/Tutorials/Tutorial3_Mapping_and_qualification.md)
