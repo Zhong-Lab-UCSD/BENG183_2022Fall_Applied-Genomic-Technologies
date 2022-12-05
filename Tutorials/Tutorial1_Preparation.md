@@ -1,11 +1,4 @@
-# Tutorial 1 Preparation 
-
-#### Acknowledgments
-
-Special thanks to previous TAs, Zeyang Shen and Xingzhao Wen
-
-## Overview
-
+# Tutorial 1 Preparation  
 In this tutorial, you will learn to 
   1) set up Linux environment on your laptop (for Windows users),
   2) learn Linux basics,
