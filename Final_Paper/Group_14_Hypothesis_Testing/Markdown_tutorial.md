@@ -14,6 +14,7 @@ Team 14: Nikhil Rao, Varshini Sathish, Sarah Davydov
   - [Step 3: Determine the test statistic.](#step-3-determine-the-test-statistic)
   - [Step 4: Calculate the p-value.](#step-4-calculate-the-p-value)
   - [Step 5: Make a Conclusion.](#step-5-make-a-conclusion)
+- [Summary](#summary)
 - [References](#references)
 - [Images](#images)
 
@@ -29,7 +30,7 @@ Examples of when one would use hypothesis testing:
 3. To predict the outcome of the election, Senator Zhang wants to know if the sample of voters polled is representative of the entire population.
 
 # The Importance of Hypothesis Testing
-Hypothesis testing is a vital process used to measure the validity and reliability of the outcome in an experiment. It allows one to determine whether the data from the sample is representative of the larger population by statistically proving if it is significant or not.
+Hypothesis testing is a vital process used to measure the validity and reliability of the outcome in an experiment. It allows one to determine whether the data from the sample is representative of the larger population by statistically proving if it is significant or not. Furthermore, it provides a framework during any decision by using a set of deductions to know whether we have enough evidence to reject our original claim or not. Therefore, it is an important process in any scientific experiment when finalizing any decisions about a dataset.
 
 # The 5 Steps of Hypothesis Testing
 1. Form the null hypothesis and the alternative hypothesis
@@ -145,6 +146,8 @@ Example 2: The t statistic calculated in Step 4 was 8.69. The degrees of freedom
 Now that we have the p-value, we can make a conclusion about the data. The conclusion should be in the form of either accepting the null hypothesis or rejecting the null hypothesis. When deciding whether to accept or reject H<sub>0</sub>, we use a significance cutoff (denoted $\alpha$) to compare our p-value to.  is the probability that one would obtain a t-statistic as extreme as observed by chance.
 
 <img src="level-of-significance-and-p-value.png" alt="T Distribution" width="600"/>
+<figcaption align = "left"><b>This figure shows the t-distribution expected under the null hypothesis. The shaded region shows the t statistic values that would result in rejecting the null hypothesis due to a significant p-value. Assuming a significance level of 0.05, the shaded region would contain 0.05 of the t-distribution in a one-tailed t-test, and each shaded region would contain 0.025 of the t-distribution in a two-tailed t-test.</b></figcaption>
+<br>
 
 In most cases, a significance level of 0.05 is used. If the p-value is less than or equal to the significance level of 0.05, then there is a probability of 0.05 or less that we would obtain a t-statistic as extreme as what we did, if the null hypothesis were true.
 
@@ -158,12 +161,20 @@ In this example, the p-value calculated is 2.4*10<sup>-5</sup> which is less tha
 Therefore, we can conclude that there is a significant difference in expression of the VEGF-A gene in bone cancer patients compared to the baseline RNA-seq RPKM value in healthy adults.
 
 
+# Summary
+Hypothesis testing is an important statistical tool used to measure the validity of the data in an experiment to learn more about the overall population. Thus, it is used amongst all fields of science and research. To perform a hypothesis test you must form the null and alternative hypotheses which you will use to test against the data. From the data, you will find the test statistic. From this statistic you will obtain a p-value which you will compare against the level of significance (alpha). If the p-value is less than or equal to , then your hypothesis test shows enough evidence to reject the null hypothesis, meaning your data is statistically significant. Ultimately, hypothesis testing is a robust method that allows us to make decisions about populations without guesswork.
+
+
 # References
 1. Anderson, D. R., Sweeney, D. J., & Williams, T. A. (n.d.). Hypothesis testing. Encyclopædia Britannica. Retrieved December 4, 2022, from https://www.britannica.com/science/statistics/Hypothesis-testing 
 2. U.S. National Library of Medicine. (n.d.). VEGFA vascular endothelial growth factor A [homo sapiens (human)] - gene - NCBI. National Center for Biotechnology Information. Retrieved December 4, 2022, from https://www.ncbi.nlm.nih.gov/gene/7422 
+3. Statistics How To. (2022, April 18). T test (student's t-test): Definition and examples. T Test (Student’s T-Test): Definition and Examples. Retrieved December 6, 2022, from https://www.statisticshowto.com/probability-and-statistics/t-test/ 
+4. Kumar, A. (2021, December 25). Level of significance &amp; hypothesis testing. Data Analytics. Retrieved December 6, 2022, from https://vitalflux.com/level-of-significance-hypothesis-testing/ 
+5. Blog, F. (2021, September 17). Hypothesis testing: Definition, Uses, Limitations, Examples. Formplus. Retrieved from https://www.formpl.us/blog/hypothesis-testing#:~:text=Importance%2FBenefits%20of%20Hypothesis%20Testing&amp;text=Hypothesis%20testing%20provides%20a%20reliable,sample%20to%20the%20larger%20population.
+
 
 
 # Images
 1. DATAtab. (n.d.). Population vs Sample. Hypothesis Test. Retrieved December 4, 2022, from https://datatab.net/tutorial/hypothesis-testing. 
 2. Rumsey, D. J. (2022). Shows the locations of a test statistic and their corresponding conclusions. How to Calculate a P-Value When Testing a Null Hypothesis. Wiley. Retrieved December 4, 2022, from https://www.dummies.com/article/academics-the-arts/math/statistics/how-to-determine-a-p-value-when-testing-a-null-hypothesis-169062/. 
-3. https://towardsdatascience.com/one-tailed-or-two-tailed-test-that-is-the-question-1283387f631c  (step 5 image)
+3. Stafford, A. (2019). One-Tailed and Two-Tailed T-Test. Do Seattle Zip Codes with Large Parks Have Higher Dog Density than Those Without? Medium. Retrieved December 6, 2022, from https://towardsdatascience.com/do-seattle-zip-codes-with-large-parks-have-higher-dog-density-than-those-without-dae3f5089ae0.
