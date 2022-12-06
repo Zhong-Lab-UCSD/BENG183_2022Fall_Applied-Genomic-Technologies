@@ -1,4 +1,8 @@
-# ChiP-Seq
+# ChiP-Seq: History and Methods
+BENG183 Final Project Writeup <br>
+December 7, 2022 <br>
+Jermaine Basry, Pei Chua-chai, and Eric Boone<br>
+
 <hr>
 
 ## History of ChIP-seq
