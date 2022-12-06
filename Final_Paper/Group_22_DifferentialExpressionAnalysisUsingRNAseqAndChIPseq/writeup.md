@@ -74,9 +74,33 @@ A typical RNA-Seq workflow follows the following steps:
 
 ## What is ChIPSeq? <a name="ChIP" />
 
-ChIP-seq is a form of sequencing that combines chromatin immunoprecipitation followed by next-generation sequencing. ChIP-seq allows us to locate DNA binding sites where specific transcription factors and other proteins can bind. Being able to locate specific binding sites of transcription factors and proteins can allow us to determine which location in the DNA is specifically being activated and effected and to study the function of transcription factors and proteins. We can further interpret regulation events that could be important in many biological processes that could be positive or negative. 
+ChIP-seq is a form of sequencing that combines chromatin immunoprecipitation followed by next-generation sequencing. ChIP-seq allows us to locate DNA binding sites where specific transcription factors and other proteins can bind. Being able to locate specific binding sites of transcription factors and proteins can allow us to determine which location in the DNA is specifically being activated and effected and to study the function of transcription factors and proteins. We can further interpret regulatory events that could be important in many biological processes that could be positive or negative. 
 
 ### ChIPseq Workflow
+
+*Figure: RNA-Seq workflow overview*
+<p align="center">
+  <img src="imgs/RNA_Seq_Workflow.png", style="background-color:white"/>
+</p>
+
+The ChIPseq Workflow consists of four steps:
+1. Crosslink 
+We want to perform a crosslink between the target protein and the DNA. In essence, we are attaching together the DNA to nearby proteins. Crosslink is the joining of two or more molecules by a covalent bonds, and the reagents used are molecules that contain reactive ends that are capable of binding to specific function groups on proteins or other molecules. 
+
+2. Chromatin Fragmentation
+We then shear the DNA into smaller fragments. Fragmentation allows the protein and DNA complexes that are high in molecular weight chromatin are soluble and accessible for further processing. 
+
+3. Immunoprecipitation 
+Immunoprecipitation is the process of precipitating a protein antigen out of a solution by using an antibody that is highly specific to a certain protein. This allows us to isolate and focus on a specific protein from a sample that might contain many different proteins. 
+
+4. Purification 
+We then purify the DNA fragments and undergo sequencing library preparation. Purifying consists of reverse crosslinking protein-DNA complexes, and is done so under heat and in the presence of Proteinase K (protects DNA from nucleases). Contaminant proteins are digested and DNA is held. 
+
+Library preparation can vary. A common choice is to use paired-end Illumina Sequencing that utilizes poly-A tails capped with adapters.
+
+
+
+
 
 ### What we can learn
 
