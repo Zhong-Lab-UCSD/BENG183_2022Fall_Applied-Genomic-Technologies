@@ -119,7 +119,14 @@ To recap, RNAseq data alone does not give us a sufficient functional analysis, b
 
 ## Conclusion
 
-Next-generation sequencing has brought on a new age of biology, but it is important to keep in mind the biological context with which we perform these experiments, lest we get carried away with the technology itself. In this chapter, we learned about Differential Analysis, and how it is performed on the data collected by RNAseq and ChIPseq, and how these technologies work. We then discussed the use of both sequencing methods in the same workflow, and how they work together to provide a more complete picture of the functional differences between samples of interest. It is important to note that these are not the only pair of sequencing technologies that compliment each other. Because of its broad output, RNAseq is extremely compatible with many other sequencing technologies, including
+Next-generation sequencing has brought on a new age of biology, but it is important to keep in mind the biological context with which we perform these experiments, lest we get carried away with the technology itself. In this chapter, we learned about Differential Analysis, and how it is performed on the data collected by RNAseq and ChIPseq, and how these technologies work. We then discussed the use of both sequencing methods in the same workflow, and how they work together to provide a more complete picture of the functional differences between samples of interest. It is important to note that these are not the only pair of sequencing technologies that compliment each other. Because of its broad output, RNAseq is extremely compatible with many other sequencing technologies, including:
+
+- ATACseq, which tells us the accessibility of chromatin on a genome scale
+- CLIPseq, which explores RNA-Binding Protein - RNA binding
+- scRNAseq, which explores the RNA profiles of individual cells
+- many more, and more being invented all the time!
+
+This chapter hopefully gave you a basis for understanding not only the specific technologies discussed, but the importance of evaluating the usefullness of your data, and how to leverage different methods to arrive at the best conclusion possible.
 
 ## References
 
