@@ -3,10 +3,10 @@
 ## **Purpose**
 Imagine we are interested in genes that cause lung cancer. We collect cells from our lung tissue, but there are different cells in this tissue. If we treat all kinds of cells as the same type, which is exactly what we do in bulk RNA-seq, since gene expressions are different in different cells, it is obvious that we will lose important information. How do we know which gene in which kinds of cells is the key abnormality that causes cancer?
 ![lung tissue](./figure1.png "cells in lung tissue")
-###### Figure1: Lung tissue
+###### Figure1: Lung tissue(BioNinja)
 To deal with these problems, techniques that can separately analyze different cells in the same tissue are needed. scRNA-seq is the one that tackles this problem. scRNA-seq can sequence different cells, and generate a dataset in which each sample is a cell in the tissue and the features are the gene expression of the cell. The classification of cells will be done by machine learning algorithms. Most importantly, this technique allows us to analyze more than 15000 cells in a short period of time, which significantly save researchers time. 
 ![difference](./figure2.png "difference")
-###### Figure2: Difference Between Bulk RNA-seq and scRNA-seq
+###### Figure2: Difference Between Bulk RNA-seq and scRNA-seq(Dmitry Velmeshev, 2019)
 Due to the efficiency and effectiveness of the technique, it is useful to learn more about scRNA-seq technology.
 
 ## **Upstream** 
@@ -14,11 +14,11 @@ Due to the efficiency and effectiveness of the technique, it is useful to learn 
 Here we can see the process of sequencing: 
 Encoded beads will flow through the microfluidics and meet with the cell. The microfluidics are well designed so that only one beads are allowed to pass. The combination of a cell, a bead, and reagents will form a droplet when they enter the microfluidic that is filled with oil. Then the connection of barcode and RNA will starts. After RNA gets barcoded, we will use PCR to amplify reads and sequence all reads using RNA-seq techniques.
 ![10X seq](./figure3.png "10x seq procedure")
-###### Figure 3: 10X seq
+###### Figure 3: 10X seq(Eric Chow, 2020)
 ### The Beads and Barcodes
 We can notice there are few region on our barcode. These barcodes are critical for researchers to know the origin of different RNA reads, and there are different function for different region. The 10x barcodes region will indicate RNA from the same cell, and the UMI code region can reduce the bias from amplification steps by indicating reads that are multiple copies of the same gene or actually different genes. After that, we will start our downstream analysis.
 ![barcodes](./figure4.png "barcodes")
-###### Figure4: Bead and Barcode
+###### Figure4: Bead and Barcode(10X genomics, 2020)
 
 ## **Downstream**
 The key downstream analysis in single-cell sequencing involves an *R toolkit* called **Seurat** which is named after *Georges Seurat*, a famous French artist. You can also check this [Tutorial](https://satijalab.org/seurat/articles/pbmc3k_tutorial.html) from Seurat for a detailed step by step walkthrough of the pipeline. 
@@ -53,11 +53,7 @@ Violin plot and scatter plot can be used to visualize the possible outliers.
 The circled area indicates the possible outliers. For example, based on the above figures (figure 7 and figure 8), we want to consider removing cells with the number of unique genes more than 2500 and cells with percent of mitochondrial gene counts more than 5. 
 
 ### **Seurat**
----
-title: "My Document"
-bibliography: references.bib
-link-citations: true
----
+
 After the quality check, we first preprocess the data, then perform differential expression analysis and dimension reduction. 
 
 #### Preprocessing
