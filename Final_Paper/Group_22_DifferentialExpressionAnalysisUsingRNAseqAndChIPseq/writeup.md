@@ -57,6 +57,16 @@ In the next sections, we will go over RNAseq and ChIPseq, and delve deeper into 
 
 ## What do we gain by using both technologies together? <a name="combo" />
 
+<p align="center">
+  <img src="imgs/chip_rna.png"/>
+</p>
+
+<div align="center">
+  <b>Figure x</b>: This figure depicts the type of output we would get from both ChIPseq (epigenomics) and RNAseq (transcriptomics). In the next few sections, we will discuss how these outputs play well with each other. [x]
+</div>
+<br />
+
+
 ### Example
 
 
@@ -65,6 +75,7 @@ In the next sections, we will go over RNAseq and ChIPseq, and delve deeper into 
 
 1. Perrin, H. (2018, April 30). Visualize differential gene expression with ViDGER. Medium. https://medium.com/@HeleneOMICtools/visualize-differential-gene-expression-with-vidger-ee922e1c2a8
 2. Harvard Chan Bioinformatics Core. (2017, May 12). Gene-level differential expression analysis with DESeq2. Introduction to DGE - ARCHIVED; GitHub Pages. https://hbctraining.github.io/DGE_workshop/lessons/04_DGE_DESeq2_analysis.html
+3. 
 
 
 
