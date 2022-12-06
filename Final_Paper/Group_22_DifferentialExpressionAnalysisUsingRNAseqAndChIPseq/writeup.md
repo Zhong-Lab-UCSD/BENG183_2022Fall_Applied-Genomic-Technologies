@@ -80,6 +80,17 @@ Consider the previous example again, where we want to find differences in gene e
 From this image, we can see that in the diseased state, Gene 1 has a higher number of reads aligning to it than Gene 2, so Gene 1 is more expressed in the disease state. In the healthy state, we can see that Gene 1 is very lowly expressed, and Gene 2 has higher expression. This data might lead us to a hypothesis that Gene 1 plays a role in causing this disease, whereas Gene 2 plays a role in maintaining a healthy cell. However, normalized read counts only tell one side of the story, and are not conclusive; it is necessary to pair this information with other methods of experimental validation to be sure. 
 
 ### DA Tools/Methods for RNA-Seq
+Popular tools that are used throughout the pipeline for RNA-Seq data analysis are listed here:
+- [FASTQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
+    - A software used to perform quality-control checks on FASTQ data. This is important in order to pinpoint any data issues in order to ensure a meaningful analysis. 
+- [STAR](https://github.com/alexdobin/STAR)
+    - STAR is a helpful alignment tool that can be used to align both short and long RNA-seq data. There are many options for alignment (for example, options to find chimeric reads, which are implicated in certain cancers). 
+- [featureCounts](https://subread.sourceforge.net/featureCounts.html)
+    - featureCounts is a tool that counts reads that map to specific genomic features (for example, a certain target gene). 
+- [DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html)
+    - DESeq2 is a tool that can calculate differential gene expression based on read count data.
+- [Metascape](https://metascape.org/gp/index.html#/main/step1)
+    - Metascape is an online tool and resource to view find gene annotations and further information about particular genes.  
 
 ## What is ChIPSeq? <a name="ChIP" />
 
