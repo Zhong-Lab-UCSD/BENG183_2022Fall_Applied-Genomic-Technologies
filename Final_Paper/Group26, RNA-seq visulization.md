@@ -5,7 +5,7 @@
 This handout will illustrate the introduction for RNA-sequencing and cover detailed information on three related visualizations.
 
 ## Usage for RNA-sequencing and Visualization
-With the development of the Next Generation sequencing technique, RNA sequencing is becoming an essential tool to quantify the RNA at a given moment for our sample of interest. It is also an effective tool for understanding gene expression levels. The visualization helps researchers unpuzzle complex data and allows us to display experimental findings more effectively. This handout will provide examples of the visualizations commonly used in RNA-seq, concentrating on three graphs: 
+With the development of the Next Generation sequencing technique, RNA sequencing is becoming an essential tool to quantify the RNA at a given moment for our sample of interest(wikipedia). It is also an effective tool for understanding gene expression levels. The visualization helps researchers unpuzzle complex data and allows us to display experimental findings more effectively. This handout will provide examples of the visualizations commonly used in RNA-seq, concentrating on three graphs: 
 1. The Genome Alignment Graph
 2. Principal Component Analysis Plot 
 3. Heat Map
@@ -15,7 +15,7 @@ With the development of the Next Generation sequencing technique, RNA sequencing
 - Integrative Genomics Viewer(IGV)
 - UCSC Genome Browser
 The graph from this handout would use visualization produced by IGV as the example for illustration.
-### Purpose and Usage: 
+### Purpose and Usage (from IGV official website): 
 The Genome Alignment graph is a typical visualization widely used to help researchers analyze data from sequencing techniques such as Chip-seq and RNA-seq. It allows researchers to visualize how the genome from their samples aligns with the reference genome. 
 - **Input Data**: Aligned reads from sequencing with format using BAM, SAM, or CRAM. IGV requires index files from BAM (with *bai* extension) and CRAM (with *crai* extension ) files.
 - **Coverage Track**: Displays the depth of the reads as bar graph.
