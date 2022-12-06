@@ -74,7 +74,7 @@ A typical RNA-Seq workflow follows the following steps:
 
 ## What is ChIPSeq? <a name="ChIP" />
 
-ChIP-seq is a form of sequencing that combines chromatin immunoprecipitation followed by next-generation sequencing. ChIP-seq allows us to locate DNA binding sites where specific transcription factors and other proteins can bind. Being able to locate specific binding sites of transcription factors and proteins can allow us to determine which location in the DNA is specifically being activated and effected and to study the function of transcription factors and proteins. We can further interpret regulatory events that could be important in many biological processes that could be positive or negative. 
+ChIP-seq is a form of sequencing that combines chromatin immunoprecipitation followed by next-generation sequencing. ChIP-seq allows us to **locate DNA binding sites** where specific transcription factors and other proteins can bind. Being able to locate specific binding sites of transcription factors and proteins can allow us to determine which location in the DNA is specifically being activated and effected and to study the function of transcription factors and proteins. We can further interpret regulatory events that could be important in many biological processes that could be positive or negative. 
 
 ### ChIPseq Workflow
 
@@ -84,16 +84,16 @@ ChIP-seq is a form of sequencing that combines chromatin immunoprecipitation fol
 </p>
 
 The ChIPseq Workflow consists of four steps:
-1. Crosslink 
+1. **Crosslink**
 We want to perform a crosslink between the target protein and the DNA. In essence, we are attaching together the DNA to nearby proteins. Crosslink is the joining of two or more molecules by a covalent bonds, and the reagents used are molecules that contain reactive ends that are capable of binding to specific function groups on proteins or other molecules. 
 
-2. Chromatin Fragmentation
+2. **Chromatin Fragmentation**
 We then shear the DNA into smaller fragments. Fragmentation allows the protein and DNA complexes that are high in molecular weight chromatin are soluble and accessible for further processing. 
 
-3. Immunoprecipitation 
+3. **Immunoprecipitation**
 Immunoprecipitation is the process of precipitating a protein antigen out of a solution by using an antibody that is highly specific to a certain protein. This allows us to isolate and focus on a specific protein from a sample that might contain many different proteins. 
 
-4. Purification 
+4. **Purification**
 We then purify the DNA fragments and undergo sequencing library preparation. Purifying consists of reverse crosslinking protein-DNA complexes, and is done so under heat and in the presence of Proteinase K (protects DNA from nucleases). Contaminant proteins are digested and DNA is held. 
 
 Library preparation can vary. A common choice is to use paired-end Illumina Sequencing that utilizes poly-A tails capped with adapters.
@@ -102,10 +102,10 @@ Library preparation can vary. A common choice is to use paired-end Illumina Sequ
 
 In order to further extrapolate information from ChIP-Seq, we need to perform an Analysis Pipeline. There are three steps: 
 
-1. Obtain target regions and the control sample region 
+1. **Obtain target regions and the control sample region** 
 The target regions are usually in the form of a FASTQ file. We also want to assess the quality of the reads. Effective analysis requires enough coverage by the sequencing reads (Sequencing Depth), which depends on the size of the genome and the amount and size of the binding sites of the protein. 
 
-2. Align to Reference Genome
+2. **Align to Reference Genome**
 We align our reads to the reference genome in order to determine where on the reference genome they originated. During this process, we obtain a count of how many reads were mapped to a position or region of the genome. 
 There are various different software tools that can be used to perform short-read alignment. Such tools include BWA (Burrows-Wheeler Aligner) and Bowtie. BWA is incredibly fast and efficient, while Bowtie also includes TopHat and CuffLinks for RNA-Seq processing.  
 
