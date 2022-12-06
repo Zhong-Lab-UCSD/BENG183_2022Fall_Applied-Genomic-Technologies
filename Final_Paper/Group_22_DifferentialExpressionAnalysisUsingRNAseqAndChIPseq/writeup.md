@@ -43,7 +43,30 @@ In the next sections, we will go over RNAseq and ChIPseq, and delve deeper into 
 
 ## What is RNAseq? <a name="RNA" />
 
+RNA-Seq can be thought of as a basic process to **measure gene expression**. Because genes are transcribed to produce RNA products, the amount of RNA transcripts present in a cell can tell us important information about which genes are active and the levels of their activity. In the case of differential expression analysis, we can use RNA-Seq outputs, in the form of normalized read count data, to compare the levels of gene expression between different samples and arrive at conclusions based on this data.  
+
+For example, let's consider a situation where we have cell samples from two different patients: one healthy, one diseased. If you have a target gene in mind, you can run the RNA-Seq workflow for each sample to find whether your gene of interest is differentially expressed in one sample versus another. These findings can be used in further studies and validated through knockout experiments. 
+
 ### RNAseq Workflow
+
+*Figure: RNA-Seq workflow overview*
+<p align="center">
+  <img src="imgs/RNA_Seq_Workflow.png", style="background-color:white"/>
+</p>
+
+A typical RNA-Seq workflow follows the following steps:  
+1. **Procurement of samples**  
+    Example: Getting cells from healthy and diseased tissue
+1. **Isolation of RNA**  
+    Because RNA is the product we are measuring, it is important to target and isolate the specific transcripts we want to measure. 
+1. **Fragmentation of RNA, generation of complementary DNA sequences, adaptor ligation and amplification**  
+    Due to the lack of stability in RNA molcules, an enzyme called Reverse Transcriptase must be used to convert the RNA fragments into complementary DNA sequences, or cDNA, for further experimental processing. Adaptors, which can be thought of as barcodes containing a specific signal, are then ligated to the cDNA molecules. Each "barcode" allows the sequence to be identified post-sequencing steps, so each read can be appropriately matched to the sample it originated from.        
+1. **Sequencing**  
+    Sequencing is the process of converting the biological data derived from the previously described experimental steps to digital output files, which contain pertinent information about each sequence. These files are typically in FASTQ format, and they can be used in a variety of downstream analyses. 
+1. **Read alignment to genome, transcriptome, and junction regions**  
+    Alignment, also commonly referred to as mapping, is the process of taking the reads generated from sequencing and finding the regions they correspond to in the genome/transcriptome. 
+1. **Downstream Analysis Steps**  
+
 
 ### What we can learn
 
