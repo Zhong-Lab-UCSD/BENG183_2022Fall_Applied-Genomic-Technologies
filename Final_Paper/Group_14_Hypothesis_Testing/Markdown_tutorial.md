@@ -106,10 +106,12 @@ For a two-sample t-test, the formula for the t-statistic is the difference betwe
 $$ t = { \bar{x} - \bar{y} \over { s_p  \sqrt{ {1 \over n} + {1 \over m} } } } $$
 
 The formula for s<sub>p</sub><sup>2</sup>, the pooled variance, is the average of the variances of each of the samples:
+
 $$ s_p^2 = { {s_1^2 + s_1^2} \over 2 } $$
 
 Using these formulas, we can calculate the t statistic in our example of class exam scores.
-$$ s_p = \sqrt{{ {7.804^2 + 6.47^2} \over 2 }} = 7.168 $$
+
+$$ s_p = { \sqrt{{ {7.804^2 + 6.47^2} \over 2 }} = 7.168 } $$
 
 $$ t = { 84.86 - 81.62 \over { 7.168  \sqrt{ {1 \over 5} + {1 \over 5} } } } = 0.715 $$
 
