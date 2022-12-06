@@ -93,33 +93,33 @@ ChIP-seq is a form of sequencing that combines chromatin immunoprecipitation fol
 </p>
 
 The ChIPseq Workflow consists of four steps:
-1. **Crosslink**
-    We want to perform a crosslink between the target protein and the DNA. In essence, we are attaching together the DNA to nearby proteins. Crosslink is the joining of two or more molecules by a covalent bonds, and the reagents used are molecules that contain reactive ends that are capable of binding to specific function groups on proteins or other molecules. 
+1. **Crosslink**  
+We want to perform a crosslink between the target protein and the DNA. In essence, we are attaching together the DNA to nearby proteins. Crosslink is the joining of two or more molecules by a covalent bonds, and the reagents used are molecules that contain reactive ends that are capable of binding to specific function groups on proteins or other molecules. 
 
-2. **Chromatin Fragmentation**
-    We then shear the DNA into smaller fragments. Fragmentation allows the protein and DNA complexes that are high in molecular weight chromatin are soluble and accessible for further processing. 
+2. **Chromatin Fragmentation**  
+We then shear the DNA into smaller fragments. Fragmentation allows the protein and DNA complexes that are high in molecular weight chromatin are soluble and accessible for further processing. 
 
-3. **Immunoprecipitation**
-    Immunoprecipitation is the process of precipitating a protein antigen out of a solution by using an antibody that is highly specific to a certain protein. This allows us to isolate and focus on a specific protein from a sample that might contain many different proteins. 
+3. **Immunoprecipitation**  
+Immunoprecipitation is the process of precipitating a protein antigen out of a solution by using an antibody that is highly specific to a certain protein. This allows us to isolate and focus on a specific protein from a sample that might contain many different proteins. 
 
-4. **Purification**
-    We then purify the DNA fragments and undergo sequencing library preparation. Purifying consists of reverse crosslinking protein-DNA complexes, and is done so under heat and in the presence of Proteinase K (protects DNA from nucleases). Contaminant proteins are digested and DNA is held. 
+4. **Purification**  
+We then purify the DNA fragments and undergo sequencing library preparation. Purifying consists of reverse crosslinking protein-DNA complexes, and is done so under heat and in the presence of Proteinase K (protects DNA from nucleases). Contaminant proteins are digested and DNA is held. 
 
-    Library preparation can vary. A common choice is to use paired-end Illumina Sequencing that utilizes poly-A tails capped with adapters.
+Library preparation can vary. A common choice is to use paired-end Illumina Sequencing that utilizes poly-A tails capped with adapters.
 
 ### What we can learn
 
 In order to further extrapolate information from ChIP-Seq, we need to perform an Analysis Pipeline. There are three steps: 
 
-> **Obtain target regions and the control sample region** 
-    The target regions are usually in the form of a FASTQ file. We also want to assess the quality of the reads. Effective analysis requires enough coverage by the sequencing reads (Sequencing Depth), which depends on the size of the genome and the amount and size of the binding sites of the protein. 
+**Obtain target regions and the control sample region**   
+The target regions are usually in the form of a FASTQ file. We also want to assess the quality of the reads. Effective analysis requires enough coverage by the sequencing reads (Sequencing Depth), which depends on the size of the genome and the amount and size of the binding sites of the protein. 
 
-> **Align to Reference Genome**
-    We align our reads to the reference genome in order to determine where on the reference genome they originated. During this process, we obtain a count of how many reads were mapped to a position or region of the genome. 
+**Align to Reference Genome**  
+We align our reads to the reference genome in order to determine where on the reference genome they originated. During this process, we obtain a count of how many reads were mapped to a position or region of the genome. 
 There are various different software tools that can be used to perform short-read alignment. Such tools include BWA (Burrows-Wheeler Aligner) and Bowtie. BWA is incredibly fast and efficient, while Bowtie also includes TopHat and CuffLinks for RNA-Seq processing.  
 
-3. **Visualize and Analyze Binding Sites**
-    In order to better interpret data, we visualize the data. A common tool to visualize ChIP Seq data is the UCSC Genome Browser and HOMER. Such technology  plots the frequency of mapped reads as peaks alongside the location of genes and other genomic elements. The frequency of reads mapped to a certain region of the genome directly correlates to how frequent that region associates with the protein or transcription factor of interest. We can infer that a high peak within the visualization means that in that region of the genome, there is high binding activity. 
+**Visualize and Analyze Binding Sites**  
+In order to better interpret data, we visualize the data. A common tool to visualize ChIP Seq data is the UCSC Genome Browser and HOMER. Such technology  plots the frequency of mapped reads as peaks alongside the location of genes and other genomic elements. The frequency of reads mapped to a certain region of the genome directly correlates to how frequent that region associates with the protein or transcription factor of interest. We can infer that a high peak within the visualization means that in that region of the genome, there is high binding activity. 
 
 *Figure: Example of Peak Visualization*
 <p align="center">
