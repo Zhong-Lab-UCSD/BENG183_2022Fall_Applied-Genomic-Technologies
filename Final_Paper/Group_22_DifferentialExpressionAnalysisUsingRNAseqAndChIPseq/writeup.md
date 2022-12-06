@@ -137,6 +137,10 @@ In order to better interpret data, we visualize the data. A common tool to visua
   <img src="imgs/Peaks.png", style="background-color:white"/>
 </p>
 
+<div align="center">
+  <i><b>Figure</b>: This figure displays various proteins and their alignment to the reference genome TNFAIP3. Note the various heights in peaks that differ between each of the proteins. [y]</i>
+</div>
+
 ### DA Tools/Methods
 
 ## What do we gain by using both technologies together? <a name="combo" />
