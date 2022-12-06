@@ -45,7 +45,7 @@ The workflow for preparing single-cell RNA-sequencing libraries, in particular u
    b) The loaded Chromium Next GEM Chip G is inputted into a Chromium Controller, where a single cell and GEM are passed by one at a time. With each cell that is passed through, a GEM simultaneously passes through, in a manner that ensures each GEM gets loaded with a single cell.
    * i) To ensure single-cell resolution, cells are delivered at a dilution in the Chromium Controller such that ~90-99% of the GEMs that are generated contain no cells, and the remaining majority contain only a single cell.
    
-   * ![1]("mdimages/Chromium Next GEM Chip G.png")
+   * ![1](mdimages/ChromiumNextGEMChipG.png)
 
      ###### Figure<sup>2</sup> 5: Depiction of how GEMs are generated inside the Chromium Controller— a critical step in attaining single-cell resolution. Single cells are passed in through one entry, 10x barcoded gel beads are passed through another entry, and the two combine to produce a gel bead-in-emulsion i.e. a GEM. Each GEM contains thousands of copies of the same barcode which are ultimately attached to all the mRNA molecules released from the single cell contained within the GEM, as well as reverse transcription reagents used to reverse transcribe the mRNA molecules into cDNA molecules.
         
@@ -57,7 +57,7 @@ The workflow for preparing single-cell RNA-sequencing libraries, in particular u
       
         are mixed with the cell lysate and reverse transcription reagents. Incubation of the above generates full-length cDNA strands that are barcoded from poly-adenylated mRNA.
         
-   * ![](mdimages/Inside Invidiual GEMs.png)
+   * ![](mdimages/InsideInvidiualGEMs.png)
 
      ###### Figure<sup>2</sup> 6: Depiction of how cDNA molecules are generated from the barcoded mRNA molecules contained within each GEM. As seen, the same 10x barcode is attached to each mRNA molecule that is released from a cell, along with a unique molecular identifier and a poly(dT) tail. Each of these mRNA molecules is then reverse transcribed using the reverse transcription reagents already present within each GEM to produce a full-length non-amplified barcoded cDNA library.
 
@@ -68,7 +68,7 @@ The workflow for preparing single-cell RNA-sequencing libraries, in particular u
    b) Silane magnetic beads (also referred to as Dynabeads) are subsequently used to purify full-length cDNA from the fractions that include leftover biochemical reagents and primers from the conclusion of Step 1. 
    
    c) The full-length barcoded cDNA strands are then amplified using polymerase chain reaction (PCR) to produce sufficient cDNA strands for the construction of a cDNA library.
-   * ![](mdimages/Pooled cDNA Amplification.png)
+   * ![](mdimages/PooledcDNAAmplification.png)
 
      ###### Figure<sup>2</sup> 7: Purified full-length barcoded cDNA molecules are pooled once GEMs are broken and subsequently amplified via polymerase chain reaction (PCR) to produce an amplified library containing solely full-length barcoded cDNA molecules.
 
@@ -79,7 +79,7 @@ The workflow for preparing single-cell RNA-sequencing libraries, in particular u
    b) P5, P7, a sample index, and TruSeq Read 2 (a read 2 primer sequence) are then added using End Repair, A-tailing, Adaptor Ligation, and PCR.
    * i) The P5 and P7 primers are notably used in the bridge amplification process run in Illumina sequencers. 
 
-   * ![](mdimages/Pooled Amplified cDNA Processed in Bulk.png)
+   * ![](mdimages/PooledAmplifiedcDNAProcessedinBulk.png)
      
      ###### Figure<sup>2</sup> 8: Pooled full-length barcoded cDNA molecules are processed in bulk where they are enzymatically fragmented and have the appropriate primers attached to ultimately produce a cDNA library compatible for subsequent sequencing using standard next generation sequencers— compatible sequencers are more specifically identified below.
 
@@ -88,7 +88,7 @@ The workflow for preparing single-cell RNA-sequencing libraries, in particular u
    a) Sequencing Libraries
    * i) Sequencing the single cell 3’ gene expression libraries generated through the use of 10x Genomics’ Chromium Next GEM Single Cell 3’ Reagent Kits v3.1 produce a standard Illumina BCL data output folder. 
    
-   * ![](mdimages/Chromium Single Cell 3 Gene Exppression Library.png)
+   * ![](mdimages/ChromiumSingleCell3GeneExppressionLibrary.png)
 
       ###### Figure<sup>2</sup> 9: The generated library begins and ends at the standard P5 and P7 Illumina paired-end constructs. Read 1 encodes the 16-base pair 10x barcode and 12-base pair unique molecular identifier. Read 2 is used for the sequencing of the corresponding cDNA fragment. Samples indices are encoded by the sample index sequence. Finally, TruSeq Read 1 and 2 are standard Illumina sequencing primer sites that are used in Illumina’s paired-end sequencing. 
 
