@@ -14,7 +14,7 @@ The goal of this chapter is for readers to come away with **four key understandi
 1. [What is Differential Analysis (DA) and why do we care about it?](#DA)
 2. [What is RNAseq, and how do we use it to do DA?](#RNA)
 3. [What is ChIPseq, and how do we use it to do DA?](#ChIP)
-4. [How does using both RNAseq and ChIPseq together enhance our DEA?](#combo)
+4. [How does using both RNAseq and ChIPseq together enhance our DA?](#combo)
 
 We will go over all these points in detail, and provide a summary at the end. Let's get started with talking about DEA!
 
