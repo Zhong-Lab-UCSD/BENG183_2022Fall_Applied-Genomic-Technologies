@@ -74,6 +74,8 @@ A typical RNA-Seq workflow follows the following steps:
 
 ## What is ChIPSeq? <a name="ChIP" />
 
+ChIP-seq is a form of sequencing that combines chromatin immunoprecipitation followed by next-generation sequencing. ChIP-seq allows us to locate DNA binding sites where specific transcription factors and other proteins can bind. Being able to locate specific binding sites of transcription factors and proteins can allow us to determine which location in the DNA is specifically being activated and effected and to study the function of transcription factors and proteins. We can further interpret regulation events that could be important in many biological processes that could be positive or negative. 
+
 ### ChIPseq Workflow
 
 ### What we can learn
