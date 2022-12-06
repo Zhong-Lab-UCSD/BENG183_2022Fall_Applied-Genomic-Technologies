@@ -102,6 +102,16 @@ This workflow would enable us to investigate gene regulatory networks, and how d
 
 ### Example
 
+<p align="center">
+  <img src="imgs/rna_data.png", height="400", width="400"/><img src="imgs/chip_data.png", height="400", width="400"/>
+</p>
+
+<div align="center">
+  <b>Figure z</b>: An oversimplified example dataset meant to help illustrate the pitfalls of RNAseq alone, and how ChIPseq can help us overcome this. We have an RNAseq gene expression output for three TFs on the left, across two samples A and B, as well as peak counts for the same three TFs and same two samples after running ChIPseq.
+</div>
+<br />
+
+Let's start by drawing a conclusion as if the ChIPseq data didn't exist. We would probably conclude that all three proteins (TF1,2, and 3) were signficantly upregulated in sample B compared to A, due to their differential expression. We would suggest investigating these proteins further, perhaps with knockdown/knockin studies. 
 
 ## References
 
