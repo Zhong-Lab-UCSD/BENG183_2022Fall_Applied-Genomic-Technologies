@@ -70,6 +70,15 @@ In previous sections, we went over how to apply the concept of DA to analyze the
 
 ### Limitations of RNAseq Alone
 
+<p align="center">
+  <img src="imgs/ptm.png"/>
+</p>
+
+<div align="center">
+  <b>Figure y</b>: This figure summarizes the main mechanisms for post-translational modification of proteins. As we will discuss in this section, RNAseq gene expression data does not account for protein regulation. [y]
+</div>
+<br />
+
 There is no doubt that RNA sequencing for gene expression data has been one of the most important scientific technologies developed in the last century. The onset of 'the sequencing era' has produced enormous amounts of new knowledge and understanding about a wide variety of systems. However, the technology does not come without its limitations. The most glaring 
 
 ### Example
