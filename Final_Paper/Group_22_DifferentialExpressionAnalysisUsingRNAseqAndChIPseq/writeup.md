@@ -114,10 +114,10 @@ In order to better interpret data, we visualize the data. A common tool to visua
 
 4. The frequency of reads mapped to a certain region of the genome directly correlates to how frequent that region associates with the protein or transcription factor of interest. We can infer that a high peak within the visualization means that in that region of the genome, there is high binding activity. 
 
+*Figure: Example of Peak Visualization*
 <p align="center">
-  <img src="peaks.png"/>
+  <img src="imgs/peaks.png", style="background-color:white"/>
 </p>
-
 
 ### DA Tools/Methods
 
