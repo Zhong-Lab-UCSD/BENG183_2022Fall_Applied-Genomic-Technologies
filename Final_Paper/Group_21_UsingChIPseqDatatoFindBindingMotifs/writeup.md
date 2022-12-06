@@ -1,4 +1,5 @@
 # ChiP-Seq
+<hr>
 
 ## History of ChIP-seq
 First developed by Gordon Robertson et al. in 2007 while working at the British Columbia Cancer Agency.  Their lab developed as a way to globally profile the binding of sites of STAT1 throughout the entire genome.  ChIP-seq superseded the standard protein-DNA association assay of the time: ChIP-on-chip—usually shortened to the silly sounding “ChIP-chip”—by replacing the final microarray hybridization step with next generation sequencing.  ChIP-seq has become the standard to study protein-DNA interactions in regulation studies.
@@ -32,7 +33,7 @@ An example of this method used in other research is done by [Benhamed, et al.](h
 # Genome Browser 
 ## Introduction to Genome Browser
 Genome Browser can be accessed using the following link and choosing any of the genomes listed under the species tree and pressing “GO”: UCSC Genome Browser Gateway
-## Ways to navigate Genome Browser
+### Ways to navigate Genome Browser
 
 <p align="center" width="100%">
     <img width="50%" src=writeup_photos/img0.png>
@@ -46,7 +47,7 @@ Entering the gene name
 Entering: “[gene name] p[# amino acid]”
 Entering: “chr[# chromosome]:[# first nt]-[# last nt]”
 Entering: “[# chromosome] [# first nt] [# last nt]”
-## Introns and exons in Genome Browser
+### Introns and exons in Genome Browser
 In the Genome Browser, introns are expressed as thin lines with arrows on them and exons are expressed as thicker lines. If you hover the mouse over a part of a gene track, then it will tell you the exon or intron number of that transcript. 
 
 <p align="center" width="100%">
@@ -55,11 +56,11 @@ In the Genome Browser, introns are expressed as thin lines with arrows on them a
 </p>
 
 
-## Splicing variants in Genome Browser
+### Splicing variants in Genome Browser
 You might find that when you search up a gene in the Genome Browser, you get multiple tracks corresponding to the same gene (ex. TP53 or CHRAC1 as above). This is because genes can have different mRNA transcript variants. If you click on the track, it will tell you the transcript variant of the gene if there is a variant. To get the canonical sequence only and get rid of transcript variants, you can right click any of the tracks, press “Configure GENECODE V41”, and then click on “splice variants.”
-## Obtaining a PDF of your window
+### Obtaining a PDF of your window
 You might want a high resolution image of your window or chromosome ideogram for a publication. To do this, we can go to the “View” button on the top and click on “PDF/PS.”
-## Highlighting and zooming in the Genome Browser window
+### Highlighting and zooming in the Genome Browser window
 To highlight a section of interest in your window, click on the top of the window (around where it says “Scale”) and drag over the entire section of interest. A prompt will then appear which will give you various options to modify that window. Some modifications include highlighting that section with a specific color or zooming into that section.
 
 <p align="center" width="100%">
@@ -70,7 +71,7 @@ To highlight a section of interest in your window, click on the top of the windo
 </p>
 
 
-## Finding and searching sequences in Genome Browser
+### Finding and searching sequences in Genome Browser
 In Genome Browser, we can obtain the DNA sequence, mRNA sequence, and protein amino acid sequence (in singular letters) by clicking on any gene of interest in the window and clicking any of the options in the red box of the image below. In our example, we copied the highlighted mRNA sequence and pasted it into the search bar. The search bar uses BLAT to find the best matches for the sequence given and it tolerates some mismatches. If you want to find 2-30 nucleotide matches of a sequence, then you can go to the Mapping and Sequencing dropdown and press “Short Match.”
 
 <p align="center" width="50%">
@@ -95,6 +96,8 @@ After aligning our reads, the hard part has been done for us.  The BAM files out
 </p>
 If your data does not look like this, it is an indication that some part of the ChIP-seq pipeline has gone wrong.
 
+<hr>
+
 # Interesting Applications of the Genome Browser
 ## The phylogenetic network of the SARS-CoV2 genome
 By entering the UCSC Genome Browser > Genomes > SARS-CoV-2 (Fig 3.1), two particular tracks visualizes the phylogenetic tree of SARS-CoV-2 viruses, namely the Nextstrain Clades and Mutations. (Fig 3.2)
@@ -109,10 +112,10 @@ By entering the UCSC Genome Browser > Genomes > SARS-CoV-2 (Fig 3.1), two partic
     <br>Fig 3.2 Nextstrain Tracks
 </p>
  
-## SARS-CoV-2 Genome
+### SARS-CoV-2 Genome
 This data is from a project that accumulates SARS-CoV-2 viruses affecting humans from all parts of the world and shows their relationships to each other in a phylogenetic tree based on shared variants. This can be used to trace the transmission pattern of viruses from one place to another.
  
-## Nextstrain Mutation Track
+### Nextstrain Mutation Track
 The data lines represent places where the isolate does not match the SARS-COV-2 reference. The individual variance that defines a clade can be seen graphically here where the isolates in a particular group have certain variants in common and certain subgroups have certain variants in common that identify them as being related to each other. Red lines represent non-synonymous alternate alleles whilst green lines represent synonymous ones.
  
 <p align="center" width="100%">
@@ -149,6 +152,8 @@ The transmission of disease can been visualized on the world map and can even be
     <img width="50%" src=writeup_photos/fig3.6.png>
     <br>Fig 3.6 Transmission of SARS-CoV-2 by region
 </p>
+
+<hr>
 
 # Using ChIP-seq to find probable binding motifs
 ## FASTQ to BED
