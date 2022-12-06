@@ -66,11 +66,20 @@ A typical RNA-Seq workflow follows the following steps:
 1. **Read alignment to genome, transcriptome, and junction regions**  
     Alignment, also commonly referred to as mapping, is the process of taking the reads generated from sequencing and finding the regions they correspond to in the genome/transcriptome. 
 1. **Downstream Analysis Steps**  
+    The aligned reads can tell us which genes are expressed, and the level of gene expression at each target. A variety of tools can be used to process this data for   differential expression analysis. Commonly, the read counts at each locus are normalized according to gene length and total sequencing depth before differential expression analysis. 
 
+### What we can learn from RNA-Seq
 
-### What we can learn
+Consider the previous example again, where we want to find differences in gene expression between the healthy and diseased cells. For the sake of simplicity, let's look at two hypothesized disease genes conveniently labeled "Gene 1" and "Gene 2". With our normalized read count data, we can compare the level of expression in Gene 1 and Gene 2 by comparing count values. Let's use the following figure as a simple illustration of this concept:
 
-### DA Tools/Methods for RNAseq
+*Figure: Comparison of normalized RNA-Seq count data for gene expression hypothesis*
+<p align="center">
+  <img src="imgs/normalization.png", style="background-color:white"/>
+</p>
+
+From this image, we can see that in the diseased state, Gene 1 has a higher number of reads aligning to it than Gene 2, so Gene 1 is more expressed in the disease state. In the healthy state, we can see that Gene 1 is very lowly expressed, and Gene 2 has higher expression. This data might lead us to a hypothesis that Gene 1 plays a role in causing this disease, whereas Gene 2 plays a role in maintaining a healthy cell. However, normalized read counts only tell one side of the story, and are not conclusive; it is necessary to pair this information with other methods of experimental validation to be sure. 
+
+### DA Tools/Methods for RNA-Seq
 
 ## What is ChIPSeq? <a name="ChIP" />
 
