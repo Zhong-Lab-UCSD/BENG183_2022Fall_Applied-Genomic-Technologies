@@ -109,12 +109,12 @@ The ChIPseq Workflow consists of four steps:
 
 ### What we can learn
 
-    In order to further extrapolate information from ChIP-Seq, we need to perform an Analysis Pipeline. There are three steps: 
+In order to further extrapolate information from ChIP-Seq, we need to perform an Analysis Pipeline. There are three steps: 
 
-1. **Obtain target regions and the control sample region** 
+> **Obtain target regions and the control sample region** 
     The target regions are usually in the form of a FASTQ file. We also want to assess the quality of the reads. Effective analysis requires enough coverage by the sequencing reads (Sequencing Depth), which depends on the size of the genome and the amount and size of the binding sites of the protein. 
 
-2. **Align to Reference Genome**
+> **Align to Reference Genome**
     We align our reads to the reference genome in order to determine where on the reference genome they originated. During this process, we obtain a count of how many reads were mapped to a position or region of the genome. 
 There are various different software tools that can be used to perform short-read alignment. Such tools include BWA (Burrows-Wheeler Aligner) and Bowtie. BWA is incredibly fast and efficient, while Bowtie also includes TopHat and CuffLinks for RNA-Seq processing.  
 
