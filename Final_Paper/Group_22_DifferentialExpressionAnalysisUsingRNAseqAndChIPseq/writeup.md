@@ -70,7 +70,7 @@ In the next sections, we will go over RNAseq and ChIPseq, and delve deeper into 
 
 In previous sections, we went over how to apply the concept of DA to analyze the different types of data that we obtain as a result of RNAseq and ChIPseq. In this section, we will discuss the motivations behind combining the two technologies, and why this gives us a more robust view of the biological function of the system we are investigating.
 
-### Limitations of RNAseq Alone (ChIPseq to the Rescue!)
+### Limitations of RNAseq Alone
 
 <p align="center">
   <img src="imgs/ptm.jpeg"/>
@@ -85,10 +85,29 @@ There is no doubt that RNA sequencing for gene expression data has been one of t
 
 Luckily for us, ChIPseq is perfectly suited to help us resolve this uncertainty, albeit only with TF (or other DNA-binding protein) analysis. As discussed before, ChIPseq is a tool for examining the binding of DNA-binding proteins such as TFs, so we can use it only when analyzing this subset of genes. Because of the importance of TFs as regulators of gene expression, however, more often than not we find ourselves interested in these proteins, and so the use of RNAseq + ChIPseq is still relevant. 
 
+We will now dive into exactly how ChIPseq can help us validate our RNAseq findings.
+
+### ChIPseq to the Rescue!
+
+Based on what we discussed previously, it seems that the most concerning limiation of RNAseq that we want to neutralize is its inability to account for post-translation modifications (PTMs). Essentially, this boils down to the fact that RNAseq is not a functional assay; high gene **expression** does not necessarily imply that the gene is going to be highly **functionally active**. ChIPseq, on the other hand, does exactly this, for investigating specific transcription factors (TFs). Keeping in mind the way these two technologies work, we can craft the following broad protocol for this combined workflow:
+
+1. Obtain RNA and DNA from samples of interest
+2. Perform RNAseq to get gene expression for the entire genome
+3. Perform differential expression analysis to get the top differential DNA-binding proteins 
+4. Perform ChIPseq for these proteins of interest
+5. Perform differential peak analysis to analyze the differential binding activity of these proteins
+6. Compare differential analysis outputs from RNAseq and ChIPseq to make conclusions and prompt further studies.
+
+This workflow would enable us to investigate gene regulatory networks, and how different TFs interact with different loci in different samples to prompt phenotypical changes. Let's look at an example using a toy dataset that will help solidify our understanding of the interaction between RNAseq and ChIPseq.
+
 ### Example
+
 
 ## References
 
 1. Perrin, H. (2018, April 30). Visualize differential gene expression with ViDGER. Medium. https://medium.com/@HeleneOMICtools/visualize-differential-gene-expression-with-vidger-ee922e1c2a8
-2. Harvard Chan Bioinformatics Core. (2017, May 12). Gene-level differential expression analysis with DESeq2. Introduction to DGE - ARCHIVED; GitHub Pages. https://hbctraining.github.io/DGE_workshop/lessons/04_DGE_DESeq2_analysis.html
-3.
+2. Harvard Chan Bioinformatics Core. (2017, May 12). Gene-level differential expression analysis with DESeq2. Introduction to DGE - ARCHIVED; GitHub Pages. https://hbctraining.github.io/DGE_workshop/lessons/04_DGE_DESeq2_analysis.html 
+ 
+x. Liuksiala, T. (2022, November 4). Integrative analysis of RNA-seq and ChIP-seq data. Genevia Technologies. https://geneviatechnologies.com/blog/integrative-analysis-of-rna-seq-and-chip-seq-data/
+
+y. Wang, Y.-C., Peterson, S. E., & Loring, J. F. (2014). Protein post-translational modifications and regulation of pluripotency in human stem cells. Cell Research, 24(2), 143–160. https://doi.org/10.1038/cr.2013.151
