@@ -116,7 +116,7 @@ In order to better interpret data, we visualize the data. A common tool to visua
 
 *Figure: Example of Peak Visualization*
 <p align="center">
-  <img src="imgs/peaks.png", style="background-color:white"/>
+  <img src="imgs/Peaks.png", style="background-color:white"/>
 </p>
 
 ### DA Tools/Methods
