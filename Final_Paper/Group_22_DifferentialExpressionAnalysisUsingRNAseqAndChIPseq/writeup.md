@@ -66,6 +66,11 @@ In the next sections, we will go over RNAseq and ChIPseq, and delve deeper into 
 </div>
 <br />
 
+In previous sections, we went over how to apply the concept of DA to analyze the different types of data that we obtain as a result of RNAseq and ChIPseq. In this section, we will discuss the motivations behind combining the two technologies, and why this gives us a more robust view of the biological function of the system we are investigating. 
+
+### Limitations of RNAseq Alone
+
+There is no doubt that RNA sequencing for gene expression data has been one of the most important scientific technologies developed in the last century. The onset of 'the sequencing era' has produced enormous amounts of new knowledge and understanding about a wide variety of systems. However, the technology does not come without its limitations. The most glaring 
 
 ### Example
 
