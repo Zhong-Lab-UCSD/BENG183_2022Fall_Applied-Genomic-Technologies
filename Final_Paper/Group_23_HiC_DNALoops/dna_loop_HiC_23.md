@@ -101,7 +101,7 @@ Once the contact matrix is displayed, downstream analysis can be performed. Thes
 ## 4. Computational Detection of Chromatin Loops
 We will use the contact matrix obtained from the Hi-C analysis, to find chromatin loops from data. The matrix can be represented in two different ways, an edge list and a standard matrix. The standard matrix was described above and the edge list is another representation. Both are shown in the figure below.
 
-<img class="image-align-left" src="./edge_list.jpg"/><img class="image-align-left" src="./contactmatrix.png"/>
+<img class="image-align-left" width = "250px" height = "250px" src="./edge_list.jpg"/><img class="image-align-left" width = "250px" height = "250px" src="./contactmatrix.png"/>
 
 
 
