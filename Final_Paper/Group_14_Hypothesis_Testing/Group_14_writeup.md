@@ -148,6 +148,8 @@ Now that we have the p-value, we can make a conclusion about the data. The concl
 <img src="level-of-significance-and-p-value.png" alt="T Distribution" width="600"/>
 <figcaption align = "left"><b>This figure shows the t-distribution expected under the null hypothesis. The shaded region shows the t statistic values that would result in rejecting the null hypothesis due to a significant p-value. Assuming a significance level of 0.05, the shaded region would contain 0.05 of the t-distribution in a one-tailed t-test, and each shaded region would contain 0.025 of the t-distribution in a two-tailed t-test.</b></figcaption>
 <br>
+&nbsp;  
+
 
 In most cases, a significance level of 0.05 is used. If the p-value is less than or equal to the significance level of 0.05, then there is a probability of 0.05 or less that we would obtain a t-statistic as extreme as what we did, if the null hypothesis were true.
 
@@ -162,7 +164,7 @@ Therefore, we can conclude that there is a significant difference in expression 
 
 
 # Summary
-Hypothesis testing is an important statistical tool used to measure the validity of the data in an experiment to learn more about the overall population. Thus, it is used amongst all fields of science and research. To perform a hypothesis test you must form the null and alternative hypotheses which you will use to test against the data. From the data, you will find the test statistic. From this statistic you will obtain a p-value which you will compare against the level of significance (alpha). If the p-value is less than or equal to , then your hypothesis test shows enough evidence to reject the null hypothesis, meaning your data is statistically significant. Ultimately, hypothesis testing is a robust method that allows us to make decisions about populations without guesswork.
+Hypothesis testing is an important statistical tool used to measure the validity of the data in an experiment to learn more about the overall population. Thus, it is used amongst all fields of science and research. To perform a hypothesis test you must form the null and alternative hypotheses which you will use to test against the data. From the data, you will find the test statistic. From this statistic you will obtain a p-value which you will compare against the level of significance (alpha). If the p-value is less than or equal to $\alpha$, then your hypothesis test shows enough evidence to reject the null hypothesis, meaning your data is statistically significant. Ultimately, hypothesis testing is a robust method that allows us to make decisions about populations without guesswork.
 
 
 # References
