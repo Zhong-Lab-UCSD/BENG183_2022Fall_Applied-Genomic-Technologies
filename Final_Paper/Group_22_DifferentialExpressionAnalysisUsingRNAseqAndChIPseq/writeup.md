@@ -2,7 +2,7 @@
 Manan Chopra, Archishma Kavalipati, Louisa Black
 
 <p align="center">
-  <img src="diff_expression.png" width="500" height="333" />
+  <img src="imgs/diff_expression.png" width="500" height="333" />
 </p>
 
 <div align="center">
@@ -21,7 +21,7 @@ We will go over all these points in detail, and provide a summary at the end. Le
 ## What is Differential Analysis (DA)? <a name="DA" />
 
 <p align="center">
-  <img src="dea.jpg", style="background-color:white"/>
+  <img src="imgs/dea.jpg", style="background-color:white"/>
 </p>
 
 <div align="center">
