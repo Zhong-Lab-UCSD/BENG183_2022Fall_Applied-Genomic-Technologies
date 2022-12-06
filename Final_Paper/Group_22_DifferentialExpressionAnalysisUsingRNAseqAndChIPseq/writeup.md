@@ -138,7 +138,7 @@ In order to better interpret data, we visualize the data. A common tool to visua
 </p>
 
 <div align="center">
-  <i><b>Figure</b>: This figure displays various proteins and their alignment to the reference genome TNFAIP3. Note the various heights in peaks that differ between each of the proteins. [y]</i>
+  <i><b>Figure</b>: This figure displays various proteins and their alignment to the reference genome TNFAIP3. Note the various heights in peaks that differ between each of the proteins.</i>
 </div>
 
 In this sample figure above, we can see various proteins that have been through the ChIP Seq protocol, and that each protein in relation to the reference genome has variable peak heights. We can see that for proteins that have the highest peaks in a certain region, they are most likely to be bound and activated within that region. For example, H3K27ac is probably not likely to be bounded and activated in the same region where Larp7 since Larp7 has high peaks in rightmost region of the genome, while H3K27ac does not. 
