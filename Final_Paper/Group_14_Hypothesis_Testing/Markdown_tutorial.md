@@ -120,9 +120,11 @@ Example 2:
 For the RNA-seq expression data, we use a one-sample two-tailed t-test. We use a one-sample test since we only have one sample in our experimental data, the VEGF-A RPKM values. We use a two-tailed test since we want to know if the data is greater than or less than the RPKM value given to us for healthy adults. We use a t-test since our sample size is less than 30.
 
 For a one-sample t-test, the formula for the t-statistic is the difference between the sample mean and the mean of the null hypothesis, divided by the standard deviation divided by the square root of the sample size:
+
 $$ t = { \bar{x} - \mu \over { s \over \sqrt{n} } } $$
 
 Using this formula, we can calculate the t-statistic:
+
 $$ t = { 216.32 - 100 \over { 66.97 \over \sqrt{25} } } = 8.69 $$
 
 The test statistic will then be used to calculate the p-value in the next step.
