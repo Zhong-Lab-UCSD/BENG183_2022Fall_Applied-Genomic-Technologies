@@ -53,7 +53,11 @@ Violin plot and scatter plot can be used to visualize the possible outliers.
 The circled area indicates the possible outliers. For example, based on the above figures (figure 7 and figure 8), we want to consider removing cells with the number of unique genes more than 2500 and cells with percent of mitochondrial gene counts more than 5. 
 
 ### **Seurat**
-
+---
+title: "My Document"
+bibliography: references.bib
+link-citations: true
+---
 After the quality check, we first preprocess the data, then perform differential expression analysis and dimension reduction. 
 
 #### Preprocessing
