@@ -80,7 +80,7 @@ ChIP-seq is a form of sequencing that combines chromatin immunoprecipitation fol
 
 *Figure: ChIP-Seq workflow overview*
 <p align="center">
-  <img src="imgs/chip-protocol-steps.png", style="background-color:white"/, width=50% height=50%>
+  <img src="imgs/chip-protocol-steps.png", style="background-color:white"/ width=50% height=50%>
 </p>
 
 The ChIPseq Workflow consists of four steps:
