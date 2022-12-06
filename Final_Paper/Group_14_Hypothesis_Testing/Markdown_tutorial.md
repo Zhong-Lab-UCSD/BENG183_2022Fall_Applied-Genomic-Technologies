@@ -138,7 +138,7 @@ Example 1: The t statistic calculated in the step above was 0.715 and the degree
 
 <img src="t-table.png" alt="T Table" width="600"/>
 
-Example 2: The t statistic calculated in Step 4 was 8.69. The degrees of freedom is 24, since a one-sample statistical test has a Df of N-1, where N is the sample size. The t table above is not large enough to list the t statistics for a Df of 8, however if it were we would look up the p-value corresponding to our t-statistic and Df as we did in the previous example, but for a two-tailed test. In this case, the p-value is 0.000024, or 2.4*10-5.
+Example 2: The t statistic calculated in Step 4 was 8.69. The degrees of freedom is 24, since a one-sample statistical test has a Df of N-1, where N is the sample size. The t table above is not large enough to list the t statistics for a Df of 8, however if it were we would look up the p-value corresponding to our t-statistic and Df as we did in the previous example, but for a two-tailed test. In this case, the p-value is 0.000024, or 2.4*10<sup>-5</sup>.
 
 
 ## Step 5: Make a Conclusion.
