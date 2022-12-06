@@ -39,17 +39,17 @@ After reading in the feature-barcode matrix from the 10X [*Cell Ranger*](https:/
 - The number of unique genes expressed in a cell ( which strongly correlates with the total number of genes expressed in a cell )
     - A cell with very high gene count may indicates a cell doublet or multiplet which means that two or more cells are sequenced as a single cell. 
     ![singlets vs doublets](./figure5.png)
-    ###### Figure5: Singlets Vs. Doublets
+    ###### Figure5: Singlets Vs. Doublets (Samuel L Wolock et al., *Cell systems* vol. 8,4, 2019, 30954476)
 - The *percent* of reads coming from mitochondrial genes
     - Every cell has copies of mitochondria genes, because mitochondria has its own genome. A **dead or dying cell** will enrich the expression of mitochondria genes, so a high mitochondrial gene percentage indicates a potentially low quality cell.
     ![box plot](./figure6.png)
-    ###### Figure6: Box plot showing the correlation between propoortion of mitochondria reads and quality of single cell data
+    ###### Figure6: Box plot showing the correlation between propoortion of mitochondria reads and quality of single cell data (Tomislav Ilicic et al., *Genome biology*, 2016, 26887813)
 
 Violin plot and scatter plot can be used to visualize the possible outliers. 
 ![violin plot](./figure7.png)
-###### Figure7: Example of violin plot to visualize outliers. Red Circle indicates possible outliers
+###### Figure7: Example of violin plot to visualize outliers. Red Circle indicates possible outliers (Andrew Butler et al., 2022)
 ![scatter plot](./figure8.png)
-###### Figure8: Example of scatter plot to visualize outliers. Red Circle indicates possible outliers
+###### Figure8: Example of scatter plot to visualize outliers. Red Circle indicates possible outliers (Andrew Butler et al., 2022)
 The circled area indicates the possible outliers. For example, based on the above figures (figure 7 and figure 8), we want to consider removing cells with the number of unique genes more than 2500 and cells with percent of mitochondrial gene counts more than 5. 
 
 ### **Seurat**
@@ -145,8 +145,8 @@ In conclusion, single-cell sequencing provides differentially expressed genes an
 3. IBioEducation, director. Single Cell Sequencing. YouTube, YouTube, 28 Aug. 2020, https://www.youtube.com/watch?v=k9VFNLLQP8c&amp;t=479s. Accessed 4 Dec. 2022. 
 4. “01 Single Cell Introduction.” YouTube, YouTube, 20 Apr. 2020, https://www.youtube.com/watch?v=hWWkpe4Ewgo. 
 6. “Seurat - Guided Clustering Tutorial.” • *Seurat*, https://satijalab.org/seurat/articles/pbmc3k_tutorial.html. 
-7. L.Wolock, Samuel, et al. “Scrublet: Computational Identification of Cell Doublets in Single-Cell Transcriptomic Data.” *Cell Systems*, Cell Press, 3 Apr. 2019, https://www.sciencedirect.com/science/article/pii/S2405471218304745.
-8. Ilicic, Tomislav, et al. “Classification of Low Quality Cells from Single-Cell RNA-Seq Data.” *Genome Biology*, U.S. National Library of Medicine, 17 Feb. 2016, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4758103/.  
+7. Wolock, Samuel L et al. “Scrublet: Computational Identification of Cell Doublets in Single-Cell Transcriptomic Data.” Cell systems vol. 8,4 (2019): 281-291.e9. doi:10.1016/j.cels.2018.11.005
+8. Ilicic, Tomislav et al. “Classification of low quality cells from single-cell RNA-seq data.” Genome biology vol. 17 29. 17 Feb. 2016, doi:10.1186/s13059-016-0888-1  
 9. “Cell Ranger.” *What Is Cell Ranger? -Software -Single Cell Gene Expression -Official 10x Genomics Support*, https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/what-is-cell-ranger. 
 10. "Function reference · Seurat" Seurat, https://satijalab.org/seurat/reference/index.html.
 11. Liang, Yan, et al. “Temporal Analyses of Postnatal Liver Development and Maturation by Single-Cell Transcriptomics.” Developmental Cell, Cell Press, 7 Feb. 2022, https://www.sciencedirect.com/science/article/abs/pii/S1534580722000041. 
