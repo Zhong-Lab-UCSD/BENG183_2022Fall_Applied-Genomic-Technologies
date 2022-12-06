@@ -63,52 +63,52 @@ The workflow for preparing single-cell RNA-sequencing libraries, in particular u
 
 2.	**Post GEM-RT Cleanup & cDNA Amplification** 
 
-   a) After generating the full-length cDNA library, GEMs are broken, and fractions are recovered.
+    a) After generating the full-length cDNA library, GEMs are broken, and fractions are recovered.
    
-   b) Silane magnetic beads (also referred to as Dynabeads) are subsequently used to purify full-length cDNA from the fractions that include leftover biochemical reagents and primers from the conclusion of Step 1. 
+    b) Silane magnetic beads (also referred to as Dynabeads) are subsequently used to purify full-length cDNA from the fractions that include leftover biochemical reagents and primers from the conclusion of Step 1. 
    
-   c) The full-length barcoded cDNA strands are then amplified using polymerase chain reaction (PCR) to produce sufficient cDNA strands for the construction of a cDNA library.
-   * ![](mdimages/PooledcDNAAmplification.png)
+    c) The full-length barcoded cDNA strands are then amplified using polymerase chain reaction (PCR) to produce sufficient cDNA strands for the construction of a cDNA library.
+    * ![](mdimages/PooledcDNAAmplification.png)
 
      ###### Figure<sup>2</sup> 7: Purified full-length barcoded cDNA molecules are pooled once GEMs are broken and subsequently amplified via polymerase chain reaction (PCR) to produce an amplified library containing solely full-length barcoded cDNA molecules.
 
 3.	**3’ Gene Expression Library Construction**
 
-   a) All cDNA from the amplified library containing full-length barcoded cDNA is enzymatically fragmented and subsequently undergoes size selection to optimize the size of fragmented cDNA used to generate the final (to be sequenced) cDNA library.
+    a) All cDNA from the amplified library containing full-length barcoded cDNA is enzymatically fragmented and subsequently undergoes size selection to optimize the size of fragmented cDNA used to generate the final (to be sequenced) cDNA library.
    
-   b) P5, P7, a sample index, and TruSeq Read 2 (a read 2 primer sequence) are then added using End Repair, A-tailing, Adaptor Ligation, and PCR.
-   * i) The P5 and P7 primers are notably used in the bridge amplification process run in Illumina sequencers. 
+    b) P5, P7, a sample index, and TruSeq Read 2 (a read 2 primer sequence) are then added using End Repair, A-tailing, Adaptor Ligation, and PCR.
+    * i) The P5 and P7 primers are notably used in the bridge amplification process run in Illumina sequencers. 
 
-   * ![](mdimages/PooledAmplifiedcDNAProcessedinBulk.png)
+    * ![](mdimages/PooledAmplifiedcDNAProcessedinBulk.png)
      
      ###### Figure<sup>2</sup> 8: Pooled full-length barcoded cDNA molecules are processed in bulk where they are enzymatically fragmented and have the appropriate primers attached to ultimately produce a cDNA library compatible for subsequent sequencing using standard next generation sequencers— compatible sequencers are more specifically identified below.
 
 4.	**Sequencing**
 
-   a) Sequencing Libraries
-   * i) Sequencing the single cell 3’ gene expression libraries generated through the use of 10x Genomics’ Chromium Next GEM Single Cell 3’ Reagent Kits v3.1 produce a standard Illumina BCL data output folder. 
+    a) Sequencing Libraries
+    * i) Sequencing the single cell 3’ gene expression libraries generated through the use of 10x Genomics’ Chromium Next GEM Single Cell 3’ Reagent Kits v3.1 produce a standard Illumina BCL data output folder. 
    
-   * ![](mdimages/ChromiumSingleCell3GeneExppressionLibrary.png)
+    * ![](mdimages/ChromiumSingleCell3GeneExppressionLibrary.png)
 
       ###### Figure<sup>2</sup> 9: The generated library begins and ends at the standard P5 and P7 Illumina paired-end constructs. Read 1 encodes the 16-base pair 10x barcode and 12-base pair unique molecular identifier. Read 2 is used for the sequencing of the corresponding cDNA fragment. Samples indices are encoded by the sample index sequence. Finally, TruSeq Read 1 and 2 are standard Illumina sequencing primer sites that are used in Illumina’s paired-end sequencing. 
 
-   b) Illumina Sequencer Compatibility
-   * i) The following Illumina sequencers have been verified to be compatible with the libraries produced using 10x Genomics’ Chromium Next GEM Single Cell 3’ Reagent Kits v3.1:
-          * 1) MiSeq
-          * 2) NextSeq 500/550 
-          * 3) HiSeq 2500 (Rapid Run)
-          * 4) HiSeq 3000/4000 
-          * 5) NovaSeq
+    b) Illumina Sequencer Compatibility
+    * i) The following Illumina sequencers have been verified to be compatible with the libraries produced using 10x Genomics’ Chromium Next GEM Single Cell 3’ Reagent Kits v3.1:
+           1) MiSeq;
+           2) NextSeq 500/550; 
+           3) HiSeq 2500 (Rapid Run);
+           4) HiSeq 3000/4000; 
+           5) NovaSeq
 
-   c) 3’ Gene Expression Library Sequencing Depth & Run Parameters
-   * i) The following outlines the parameters 10x Genomics recommends running sequencing at:
-          * 1) Sequencing Depth: Minimum 20,000 read pairs per cell
-          * 2) Sequencing Type: Paired-end, single indexing
-          * 3) Sequencing Read: Recommended number of cycles
-             * i) Read 1: 28 Cycles
-             * ii) i7 Index: 8 Cycles
-             * iii) i5 Index: 0 Cycles
-             * iv) Read 2: 91 Cycles
+    c) 3’ Gene Expression Library Sequencing Depth & Run Parameters
+    * i) The following outlines the parameters 10x Genomics recommends running sequencing at:
+           1) Sequencing Depth: Minimum 20,000 read pairs per cell;
+           2) Sequencing Type: Paired-end, single indexing;
+           3) Sequencing Read: Recommended number of cycles;
+               3.i) Read 1: 28 Cycles;
+               3.ii) i7 Index: 8 Cycles;
+               3.iii) i5 Index: 0 Cycles;
+               3.iv) Read 2: 91 Cycles
 
 ### How Single Cell Resolution is Achieved
 
