@@ -38,6 +38,7 @@ After reading in the feature-barcode matrix from the 10X [*Cell Ranger*](https:/
     - A cell with very few unique gene expressed often indicates a low quality cell or an empty droplet.
 - The number of unique genes expressed in a cell ( which strongly correlates with the total number of genes expressed in a cell )
     - A cell with very high gene count may indicates a cell doublet or multiplet which means that two or more cells are sequenced as a single cell. 
+    
     ![singlets vs doublets](./figure5.png)
     ###### Figure5: Singlets Vs. Doublets (Samuel L Wolock et al., *Cell systems* vol. 8,4, 2019, 30954476)
 - The *percent* of reads coming from mitochondrial genes
