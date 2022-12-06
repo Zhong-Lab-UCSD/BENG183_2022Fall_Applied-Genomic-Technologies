@@ -145,7 +145,7 @@ Example 2: The t statistic calculated in Step 4 was 8.69. The degrees of freedom
 ## Step 5: Make a Conclusion.
 Now that we have the p-value, we can make a conclusion about the data. The conclusion should be in the form of either accepting the null hypothesis or rejecting the null hypothesis. When deciding whether to accept or reject H<sub>0</sub>, we use a significance cutoff (denoted $\alpha$) to compare our p-value to.  is the probability that one would obtain a t-statistic as extreme as observed by chance.
 
-<img src="level-of-significance-and-p-value.png" alt="T Distribution" width="600"/>
+<img src="level-of-significance-and-p-value.png" alt="T Distribution" width="800"/>
 <figcaption align = "left"><b>This figure shows the t-distribution expected under the null hypothesis. The shaded region shows the t statistic values that would result in rejecting the null hypothesis due to a significant p-value. Assuming a significance level of 0.05, the shaded region would contain 0.05 of the t-distribution in a one-tailed t-test, and each shaded region would contain 0.025 of the t-distribution in a two-tailed t-test.</b></figcaption>
 <br>
 &nbsp;  
