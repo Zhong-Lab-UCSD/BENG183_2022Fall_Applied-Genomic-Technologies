@@ -75,13 +75,13 @@ Both STAR and TopHat2 require the same files to align reads to the reference gen
 2. FASTA (`.fa`) file
 3. Gene Transfer Format (`.gtf`) file
 
-We will discuss each of these files in more detail below.
+(*Tophat2*, n.d.). We will discuss each of these files in more detail below.
 
-**FASTQ file(s)** - FASTQ files contain sequencing reads from a DNA sequencer. For the purposes of RNA-seq, the FASTQ files contain the sequences of the RNA reads from the RNA-seq experiment. If you did paired end sequencing, you will have two FASTQ files. Otherwise, you will have one. Before using FASTQ files for alignment, they must undergo quality control. Poor quality positions and reads must be removed. This can be done using programs such as FASTQC and FASTP. We will not cover how quality control works in detail here, as the focus is on read alignment. Once poor quality reads and base pairs are removed from the FASTQ files, they are ready for use with aligners.
+**FASTQ file(s)** - FASTQ files contain sequencing reads from a DNA sequencer. For the purposes of RNA-seq, the FASTQ files contain the sequences of the RNA reads from the RNA-seq experiment. If you did paired end sequencing, you will have two FASTQ files. Otherwise, you will have one. Before using FASTQ files for alignment, they must undergo quality control. Poor quality positions and reads must be removed. This can be done using programs such as FASTQC and FASTP (Shifu, 2018). We will not cover how quality control works in detail here, as the focus is on read alignment. Once poor quality reads and base pairs are removed from the FASTQ files, they are ready for use with aligners.
 
 **FASTA file** - This file contains the DNA sequence of the genome of the cells we are performing RNA-seq on. This genome is known as a reference genome. The aligner takes each read in the FASTQ file(s) and attempts to align it with the reference genome.
 
-**GTF file** - In many organisms, after being transcribed, RNA is spliced. Intron sequences are removed from the RNA and exon sequences are linked together. Many of the RNA reads in the FASTQ files come from RNA that has already undergone splicing and only contains exon sequences. Some reads may contain portions of multiple exons that are spliced together in the RNA read, but have introns between them in the reference genome. Therefore, some reads may need to be split into segments and each segment must align to a different position in the reference genome. To accurately align the reads to the reference genome, the aligner must know what parts of the reference genome are exons and what parts are introns. The GTF file contains this information.
+**GTF file** - In many organisms, after being transcribed, RNA is spliced. Intron sequences are removed from the RNA and exon sequences are linked together. Many of the RNA reads in the FASTQ files come from RNA that has already undergone splicing and only contains exon sequences. Some reads may contain portions of multiple exons that are spliced together in the RNA read, but have introns between them in the reference genome. Therefore, some reads may need to be split into segments and each segment must align to a different position in the reference genome. To accurately align the reads to the reference genome, the aligner must know what parts of the reference genome are exons and what parts are introns. The GTF file contains this information (*Gene transfer format*, 2020).
 
 #### Creating an Index
 
@@ -112,25 +112,25 @@ The most important arguments in this command are as follows.
 
 `--genomeFastaFiles` and `--sjdbGTFfile` - These parameters point to the FASTA and GTF files, respectively.
 
-`--sjdbOverhang` - This number is equal to `read_length - 1` where `read_length` is the length of each read in the FASTQ file. It is used when generating a database of splice junctions.
+`--sjdbOverhang` - This number is equal to `read_length - 1` where `read_length` is the length of each read in the FASTQ file. It is used when generating a database of splice junctions (Martombo, 2022).
 
 **Generating an Index for TopHat2:**
 
-Unlike STAR, TopHat2 cannot build an index on its own. Instead, it is designed to work with indices built by a separate program called Bowtie2, which must be installed separately. A sample command to build an index using Bowtie2 is as follows:
+Unlike STAR, TopHat2 cannot build an index on its own (Kim, n.d.). Instead, it is designed to work with indices built by a separate program called Bowtie2, which must be installed separately (Kim, n.d.). A sample command to build an index using Bowtie2 is as follows:
 
 ```
 bowtie2-build -f reference_genome.fa Drosophila_melanogaster_index
 ```
 
-Some key arguments in this command are:
+(*Tophat2*, n.d.). Some key arguments in this command are:
 
-`-f` - This argument specifies the FASTA file containing the reference genome.
+`-f` - This argument specifies the FASTA file containing the reference genome (*Tophat2*, n.d.).
 
-`Drosophila_melanogaster_index` - This is an example prefix for the index files. Bowtie2 generates 6 index files, each with a unique suffix followed by the `.bt2` extension. This prefix is appended to the beginning of the file name, before the suffix.
+`Drosophila_melanogaster_index` - This is an example prefix for the index files. Bowtie2 generates 6 index files, each with a unique suffix followed by the `.bt2` extension (*Bowtie 2*, n.d.). This prefix is appended to the beginning of the file name, before the suffix (*Bowtie 2*, n.d.).
 
 **Further Comparison:**
 
-There are a few more key differences between the commands for building an index using STAR and Bowtie2. First, with STAR we specify both the FASTA file and the GTF file when building the index. However, with Bowtie2, we cannot specify the GTF file, so we only specify the FASTQ file. Second, STAR outputs its index files into the folder specified in the `--genomeDir` argument, whereas Bowtie2 outputs the index files into the current working directory by default. If you would like your index files to be within a particular folder, you can run the Bowtie2 command from within that folder.
+There are a few more key differences between the commands for building an index using STAR and Bowtie2. First, with STAR we specify both the FASTA file and the GTF file when building the index. However, with Bowtie2, we cannot specify the GTF file, so we only specify the FASTQ file (*Bowtie 2*, n.d.). Second, STAR outputs its index files into the folder specified in the `--genomeDir` argument, whereas Bowtie2 outputs the index files into the current working directory by default. If you would like your index files to be within a particular folder, you can run the Bowtie2 command from within that folder.
 
 **Output:**
 
@@ -176,7 +176,7 @@ Some key arguments in this command are:
 
 `--outSAMtype` - This argument specifies the type of output file to generate with the results of the alignment. The alignment results can be stored in a SAM file or a BAM file. Both file formats store the positions where each read aligns in the reference genome, along with other data. SAM files are in plain text format whereas BAM files are stored as binary files. Binary files generally take up less disk space and are faster to use by programs, but require special software, such as Samtools, to inspect. They can't be directly viewed with commands such as `less`. You can also specify how you would like the results in your SAM/BAM file to be sorted, for example, sorted by genome coordinate.
 
-`--outFileNamePrefix` This parameter lets you specify a prefix for the names of your output files. By default, this command places the results in your working directory, but you can use this argument to place your files in a directory of your choice by specifying the path to that directory before the prefix of the names of your output files. For example, `--outFileNamePrefix ./alignment_results/female_midgut1_STAR_genome` stores your results in a folder in your current working directory called `alignment_results`.
+`--outFileNamePrefix` This parameter lets you specify a prefix for the names of your output files. By default, this command places the results in your working directory, but you can use this argument to place your files in a directory of your choice by specifying the path to that directory before the prefix of the names of your output files (Dobin, 2019). For example, `--outFileNamePrefix ./alignment_results/female_midgut1_STAR_genome` stores your results in a folder in your current working directory called `alignment_results` (Dobin, 2019).
 
 **Aligning with TopHat2:**
 
@@ -189,19 +189,19 @@ tophat2 -o tophat_output_dir\
 --no-coverage-search [path to index]/Drosophila_melanogaster_index [fastq file 1] [fastq file 2] 
 ```
 
-Some key parameters in this command are:
+(*Tophat2*, n.d.). Some key parameters in this command are:
 
-`-o` - This parameter specifies the directory where the results of your alignment should be stored.
+`-o` - This parameter specifies the directory where the results of your alignment should be stored (*Tophat2*, n.d.).
 
-`-G` - Recall how when building the index for TopHat2 using Bowtie2, we did not specify the GTF file in the Bowtie2 command. We can specify it here using this argument.
+`-G` - Recall how when building the index for TopHat2 using Bowtie2, we did not specify the GTF file in the Bowtie2 command. We can specify it here using this argument (*Tophat2*, n.d.).
 
-`-p` - This argument sets the number of threads on the computer to use when performing the alignment.
+`-p` - This argument sets the number of threads on the computer to use when performing the alignment (*Tophat2*, n.d.).
 
-`--no-coverage-search` - This argument turns off the "coverage search" algorithm, an algorithm used by TopHat2 for detecting exon junctions. This algorithm uses a lot of RAM and is slow. It is also not useful when performing expression analysis of genes, so it can be turned off.
+`--no-coverage-search` - This argument turns off the "coverage search" algorithm (*Tophat2*, n.d.), an algorithm used by TopHat2 for detecting exon junctions (Jeremy, 2012). This algorithm uses a lot of RAM and is slow (Jeremy, 2012). It is also not useful when performing expression analysis of genes, so it can be turned off (Jeremy, 2012).
 
-`[path to index]/Drosophila_melanogaster_index` - This argument consists of the path to the index files, followed by the prefix of the index file names specified in the Bowtie2 command earlier. It tells TopHat2 where the genome index is.
+`[path to index]/Drosophila_melanogaster_index` - This argument consists of the path to the index files, followed by the prefix of the index file names specified in the Bowtie2 command earlier (*Tophat2*, n.d.)(Taehee, 2015). It tells TopHat2 where the genome index is.
 
-`[fastq file 1] [fastq file 2]` - These arguments are paths to the FASTQ files containing the reads to be aligned to the reference genome. If you have single end reads instead of paired end reads, you only need to specify the path to one FASTQ file.
+`[fastq file 1] [fastq file 2]` - These arguments are paths to the FASTQ files containing the reads to be aligned to the reference genome (*Tophat2*, n.d.). If you have single end reads instead of paired end reads, you only need to specify the path to one FASTQ file (*Tophat2*, n.d.).
 
 #### Aligner Output Overview:
 
@@ -254,3 +254,27 @@ Researchers cannot directly read from the BAM file. Quantification of the alignm
   <img src="featureCount.png" width="550" height="200">
   
 </p>
+
+### References
+
+Bedre, E. (2020, May 8). Retrieved from reneshbedre.com: https://www.reneshbedre.com/blog/deseq2.html
+
+*Bowtie 2.* (n.d.). Retrieved from SourceForge: <https://bowtie-bio.sourceforge.net/bowtie2/manual.shtml#the-bowtie2-build-indexer>
+
+Dobin, A. (2019, January 23). *STAR manual 2.7.0a.* Retrieved from Cornell University: <https://physiology.med.cornell.edu/faculty/skrabanek/lab/angsd/lecture_notes/STARmanual.pdf>
+
+*Gene transfer format.* (2020, September 25). Retrieved from Wikipedia: <https://en.wikipedia.org/wiki/Gene_transfer_format>
+
+Jeremy. (2012). *Coverage-Based Search In Tophat.* Retrieved from Biostars: <https://www.biostars.org/p/49224/>
+
+Kim, D. (n.d.). *TopHat Manual.* Retrieved from Center for Computational Biology Johns Hopkins University: <https://ccb.jhu.edu/software/tophat/manual.shtml>
+
+Martombo. (2022, July). *Sjdboverhang Option In Star.* Retrieved from Biostars: <https://www.biostars.org/p/93883/>
+
+*Read Mapping or Alignment* (n.d.). Retrieved from EMBL-EBI: <https://www.ebi.ac.uk/training/online/courses/functional-genomics-ii-common-technologies-and-data-analysis-methods/rna-sequencing/performing-a-rna-seq-experiment/data-analysis/read-mapping-or-alignment/>
+
+Shifu Chen, Yanqing Zhou, Yaru Chen, Jia Gu; fastp: an ultra-fast all-in-one FASTQ preprocessor, *Bioinformatics*, Volume 34, Issue 17, 1 September 2018, Pages i884–i890, <https://doi.org/10.1093/bioinformatics/bty560>
+
+Taehee. (2015, September 25). *Error: Could not find Bowtie 2 index files (–p.*.bt2).* Retrieved from SEQanswers: <https://www.seqanswers.com/forum/bioinformatics/bioinformatics-aa/50633-error-could-not-find-bowtie-2-index-files-–p-bt2>
+
+*Tophat2 : Download, build reference genome and align the reads to the reference genome.* (n.d.). Retrieved from Statistical tools for high-throughput data analysis: <http://www.sthda.com/english/wiki/tophat2-download-build-reference-genome-and-align-the-reads-to-the-reference-genome>
