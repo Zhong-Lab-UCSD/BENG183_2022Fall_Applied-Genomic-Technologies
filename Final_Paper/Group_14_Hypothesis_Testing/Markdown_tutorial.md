@@ -146,7 +146,7 @@ Now that we have the p-value, we can make a conclusion about the data. The concl
 
 <img src="level-of-significance-and-p-value.png" alt="T Distribution" width="600"/>
 
-In most cases, a significance level ($\alpha$) of 0.05 is used. If the p-value is less than or equal to the significance level of 0.05, then there is a probability of 0.05 or less that we would obtain a t-statistic as extreme as what we did, if the null hypothesis were true.
+In most cases, a significance level of 0.05 is used. If the p-value is less than or equal to the significance level of 0.05, then there is a probability of 0.05 or less that we would obtain a t-statistic as extreme as what we did, if the null hypothesis were true.
 
 Example 1: 
 In this example, the p-value is 0.25. This means that there is a 0.25 probability that we would obtain a t-statistic as extreme as we did, assuming the null hypothesis is true. 
