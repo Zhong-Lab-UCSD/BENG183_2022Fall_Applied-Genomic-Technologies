@@ -22,11 +22,14 @@ The Genome Alignment graph is a typical visualization widely used to help resear
 - **Alignment Track**: Displays the alignment details of the reads. This track provides information including insertions and deletions. 
 - **Splice Junction Track**: Show the break of read coverage due to splicing. 
 <img width="800" alt="IGV2" src="https://user-images.githubusercontent.com/83438583/205523473-177ed52a-d6fd-40f9-9437-6efa285b206f.png">
-
+    
+*(Figure1:IGV screenshot for genome sequence of human liver cell tissues)* 
 - **Viewing Alternative Splicing**: 
  <img width="800" alt="IGV1" src="https://user-images.githubusercontent.com/83438583/205523738-d9d3e3f3-efd6-4f2c-8a5a-8b3b7bd557ec.png">
+ 
+ *(Figure2: IGV screeshot for genome sequence of human liver cell and heart cell tissue)*
 
- The graph provides an example of using IGV to observe alternative splicing. Human g18 is used as the reference genome, and the input files are the alignment file from human liver cell tissue and heart cell tissue. From the Coverage track and the Alignment track, it can be observed the sequence fragments align significantly differently in the gene *SLC25A3*, a phosphate transfer gene. This is one example of using IGV to monitor alternative splicing.   
+ The graph provides an example of using IGV to observe alternative splicing. Human g18 is used as the reference genome, and the input files are the alignment files from human liver cell tissues and heart cell tissues. From the Coverage track and the Alignment track, it can be observed the sequence fragments align significantly differently in the gene *SLC25A3*, a phosphate transfer gene. This is one example of using IGV to monitor alternative splicing.   
 
 ## 2. PCA plot in differential expression analysis
 
