@@ -7,7 +7,7 @@ Manan Chopra, Archishma Kavalipati, Louisa Black
 </p>
 
 <div align="center">
-  <b>Figure 1</b>: Perfectly balanced... looks like 0 fold change! [1]
+  <i><b>Figure 1</b>: Perfectly balanced... looks like 0 fold change! [1]</i>
 </div>
 <br />
 
@@ -27,7 +27,7 @@ We will go over all these points in detail, and provide a summary at the end. Le
 </p>
 
 <div align="center">
-  <b>Figure 2</b>: Depiction of DA. In this image, the circles can represent any metric. We will go over DA of expression data from RNAseq, as well as DA of TF-binding data from ChIPseq. [2]
+  <i><b>Figure 2</b>: Depiction of DA. In this image, the circles can represent any metric. We will go over DA of expression data from RNAseq, as well as DA of TF-binding data from ChIPseq. [2]</i>
 </div>
 <br />
 
@@ -64,7 +64,7 @@ In the next sections, we will go over RNAseq and ChIPseq, and delve deeper into 
 </p>
 
 <div align="center">
-  <b>Figure x</b>: This figure depicts the type of output we would get from both ChIPseq (epigenomics) and RNAseq (transcriptomics). In the next few sections, we will discuss how these outputs play well with each other. [x]
+  <i><b>Figure x</b>: This figure depicts the type of output we would get from both ChIPseq (epigenomics) and RNAseq (transcriptomics). In the next few sections, we will discuss how these outputs play well with each other. [x]</i>
 </div>
 <br />
 
@@ -77,7 +77,7 @@ In previous sections, we went over how to apply the concept of DA to analyze the
 </p>
 
 <div align="center">
-  <b>Figure y</b>: This figure summarizes the main mechanisms for post-translational modification of proteins. As we will discuss in this section, RNAseq gene expression data does not account for protein regulation. [y]
+  <i><b>Figure y</b>: This figure summarizes the main mechanisms for post-translational modification of proteins. As we will discuss in this section, RNAseq gene expression data does not account for protein regulation. [y]</i>
 </div>
 <br />
 
@@ -107,11 +107,19 @@ This workflow would enable us to investigate gene regulatory networks, and how d
 </p>
 
 <div align="center">
-  <b>Figure z</b>: An oversimplified example dataset meant to help illustrate the pitfalls of RNAseq alone, and how ChIPseq can help us overcome this. We have an RNAseq gene expression output for three TFs on the left, across two samples A and B, as well as peak counts for the same three TFs and same two samples after running ChIPseq.
+  <i><b>Figure z</b>: An oversimplified example dataset meant to help illustrate the pitfalls of RNAseq alone, and how ChIPseq can help us overcome this. We have an RNAseq gene expression output for three TFs on the left, across two samples A and B, as well as peak counts for the same three TFs and same two samples after running ChIPseq.</i>
 </div>
 <br />
 
 Let's start by drawing a conclusion as if the ChIPseq data didn't exist. We would probably conclude that all three proteins (TF1,2, and 3) were signficantly upregulated in sample B compared to A, due to their differential expression. We would suggest investigating these proteins further, perhaps with knockdown/knockin studies. 
+
+Now, let's take the ChIPseq data into account. Just by looking over the data, we see that TF1 and 3 seem to generally maintain their binding levels across A and B, despite the fact that they are being overexpressed. However, TF2 shows a sharp uptick in binding activity that matches its expression uptick from the expression numbers. Now that we've taken this into account, we would likely conclude that TF2 is in fact the most relevant protein to the underlying biological differences between A and B, and would want to focus our research efforts on elucidating the role of TF2 in this system. 
+
+To recap, RNAseq data alone does not give us a sufficient functional analysis, but by including ChIPseq downstream in the workflow, we can functionally validate our RNAseq results.
+
+## Conclusion
+
+Next-generation sequencing has brought on a new age of biology, but it is important to keep in mind the biological context with which we perform these experiments, lest we get carried away with the technology itself. In this chapter, we learned about Differential Analysis, and how it is performed on the data collected by RNAseq and ChIPseq, and how these technologies work. We then discussed the use of both sequencing methods in the same workflow, and how they work together to provide a more complete picture of the functional differences between samples of interest. It is important to note that these are not the only pair of sequencing technologies that compliment each other. Because of its broad output, RNAseq is extremely compatible with many other sequencing technologies, including
 
 ## References
 
