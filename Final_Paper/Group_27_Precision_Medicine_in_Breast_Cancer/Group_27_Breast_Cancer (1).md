@@ -15,7 +15,7 @@ identified lymphs as causes of breast cancer (Thomas).
 ### **Main Treatments of Breast Cancer in the 19th Century**
 Common method of treating breast cancer in the 19th century are as follows:
 
-  ● **Lumpectomy:** Surgical removal of tumor where only the tumor tissue is removed
+    ● **Lumpectomy:** Surgical removal of tumor where only the tumor tissue is removed
 
   including the surrounding breast tissue. This type of surgery was also known as breast
 
