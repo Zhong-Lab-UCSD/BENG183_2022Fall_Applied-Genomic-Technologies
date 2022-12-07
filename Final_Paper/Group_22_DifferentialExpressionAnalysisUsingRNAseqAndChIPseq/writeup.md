@@ -141,7 +141,15 @@ In order to better interpret data, we visualize the data. A common tool to visua
   <i><b>Figure</b>: This figure displays various proteins and their alignment to the reference genome TNFAIP3. Note the various heights in peaks that differ between each of the proteins.</i>
 </div>
 
-In this sample figure above, we can see various proteins that have been through the ChIP Seq protocol, and that each protein in relation to the reference genome has variable peak heights. We can see that for proteins that have the highest peaks in a certain region, they are most likely to be bound and activated within that region. For example, H3K27ac is probably not likely to be bounded and activated in the same region where Larp7 since Larp7 has high peaks in rightmost region of the genome, while H3K27ac does not. 
+In this sample figure above, we can see various proteins that have been through the ChIP Seq protocol, and that each protein in relation to the reference genome has variable peak heights. We can see that for proteins that have the highest peaks in a certain region, they are most likely to be bound and activated within that region. For example, H3K27ac is probably not likely to be bounded and activated in the same region where Larp7 is since Larp7 has high peaks in rightmost region of the genome, while H3K27ac does not. 
+
+Ultimately, ChIP-Seq has become an extremely innovative tool that has various applications in genomic sciences. The technique gives scientists the freedom to choose which chromatin-associating protein they want to select for, and it various different types of conditions as well. Common choices are modified histones and transcription factors.   
+
+By studying histone modifications using ChIP-Seq, it allows one to gather information on the state of the chromatin in a certain environment. ChIP-Seq can also reveal more about regulatory sites by determining which are activated, repressed, and by which specific protein. This then further grows our understanding of the structure of genes.  
+
+
+By studying transcription factors, it can provide us with information on how and where transcription factors are bound and effective along the genome. For example, at a site within the genome that determines sex can be seen through ChIP-Seq data, and in turn allows us to determine that the region of the genome is related to sex determination.  
+
 
 ### DA Tools/Methods
 
