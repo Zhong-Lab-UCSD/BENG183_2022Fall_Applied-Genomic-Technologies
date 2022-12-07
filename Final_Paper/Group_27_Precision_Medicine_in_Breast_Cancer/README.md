@@ -49,7 +49,7 @@ Just like other types of cancers, different stages of breast cancer are determin
 **Stage IV**
 * This stage of breast cancer is also known as metastatic breast cancer. Metastasis means that the cancer has spread to different areas away from the breast tissue like to the lungs, brain, bones, or etc.
 
-[Insert different stages image]
+![alt text](https://github.com/itsjisookim/BENG183_2022Fall_Applied-Genomic-Technologies/blob/600f816dfc48796d59274b51ca6ef2dd2e45f2e6/Final_Paper/Group_27_Precision_Medicine_in_Breast_Cancer/Different%20Stages%20of%20Breast%20Cancer.png)
 
 There are also numerous different types of breast cancer, which includes the following:
 
