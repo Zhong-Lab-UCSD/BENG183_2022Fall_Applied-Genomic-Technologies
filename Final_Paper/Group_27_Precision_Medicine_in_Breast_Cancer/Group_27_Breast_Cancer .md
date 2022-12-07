@@ -1,14 +1,12 @@
 ﻿
 
-BENG 183 Final Paper
+#BENG 183 Final Paper -  Group 27
 
-Jisoo Kim
+Conttributors : Jisoo Kim, Sang Lee, Jonathan Zhu
 
-Sang Lee
-
-Jonathan Zhu
 
 **Precision Medicine on Breast Cancer**
+---
 
 **1. Overview of disease**
 
