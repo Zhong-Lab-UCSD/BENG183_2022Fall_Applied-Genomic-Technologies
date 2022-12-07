@@ -65,7 +65,7 @@ A typical RNA-Seq workflow follows the following steps:
 1. **Isolation of RNA**  
     Because RNA is the product we are measuring, it is important to target and isolate the specific transcripts we want to measure. 
 1. **Fragmentation of RNA, generation of complementary DNA sequences, adaptor ligation and amplification**  
-    Due to the lack of stability in RNA molecules, an enzyme called Reverse Transcriptase must be used to convert the RNA fragments into complementary DNA sequences, or cDNA, for further experimental processing. Adaptors, which can be thought of as barcodes containing a specific signal, are then ligated to the cDNA molecules. Each "barcode" allows the sequence to be identified post-sequencing steps, so each read can be appropriately matched to the sample it originated from.        
+Due to the lack of stability in RNA molecules, an enzyme called Reverse Transcriptase must be used to convert the RNA fragments into complementary DNA sequences, or cDNA, for further experimental processing. Adaptors, which can be thought of as barcodes containing a specific signal, are then ligated to the cDNA molecules. Each "barcode" allows the sequence to be identified post-sequencing steps, so each read can be appropriately matched to the sample it originated from.        
 1. **Sequencing**  
     Sequencing is the process of converting the biological data derived from the previously described experimental steps to digital output files, which contain pertinent information about each sequence. These files are typically in FASTQ format, and they can be used in a variety of downstream analyses. 
 1. **Read alignment to genome, transcriptome, and junction regions**  
