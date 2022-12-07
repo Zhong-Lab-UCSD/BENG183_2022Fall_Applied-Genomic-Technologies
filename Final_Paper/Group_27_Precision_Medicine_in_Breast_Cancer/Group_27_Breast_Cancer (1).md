@@ -1,7 +1,7 @@
 ﻿
 
 **2. Breast Cancer: Therapies and Treatments in the Past**
-----
+---
 
 Breast cancer was documented even before ancient Greece, with the first ever record being
 
@@ -13,9 +13,7 @@ identified lymphs as causes of breast cancer (Thomas).
 
 
 ### **Main Treatments of Breast Cancer in the 19th Century**
----
 Common method of treating breast cancer in the 19th century are as follows:
-
 
   ● **Lumpectomy:** Surgical removal of tumor where only the tumor tissue is removed
 
