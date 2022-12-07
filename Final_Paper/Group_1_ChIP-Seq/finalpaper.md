@@ -18,7 +18,7 @@ We already know the reason why we need to know which sites are specifically inte
 Cross-linking is the process of joining two or more molecules via a covalent bond. In our first step, we will cross-link our whole cells with formaldehyde. Formaldehyde is electrophilic, and an aldehyde - the smallest of its kind. It is able to be nucleophilically attacked by a variety of molecules. While using formaldehyde as a probe for macromolecular structure, scientists discovered that formaldehyde can be used to cross-link histones to DNA. This is the discovery that eventually led to ChIP. In our workflow, we cross-link with formaldehyde to “fix” the interactions between DNA and protein. If we do not do this, some of the later steps in our ChIP workflow can disrupt these interactions and make them impossible to study - therefore, the cross-linking step of ChIP is absolutely essential<sup>[9]</sup>.
 
 <p align="center">
-  <img width="400" height="300" src="https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=D2SC00188H&imageInfo.ImageIdentifier.Year=2022">
+  <img width="400" height="300" src=formadehyde.png >
 </p>https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=D2SC00188H&imageInfo.ImageIdentifier.Year=2022
 
 ### Step 2 - DNA Isolation via Lysis
@@ -28,14 +28,14 @@ Next, we will lyse our cells (dissolve the cell membrane) in order to isolate ou
 After lysis, our exposed DNA will be cut by either sonication or restriction enzymes. Sonication is a process by which sound energy is applied to a substance, agitating the particles to the point where they fragment. Of course, restriction enzymes are proteins that recognize specific nucleotide sequences and cut DNA at those specific locations. Of the two options, sonication is more time efficient - nuclease might have to be run overnight in order to sufficiently cut the genome. However - one thing that should be considered with sonication is the true randomness in sizes of the fragments it produces. With restriction enzymes, the lengths of fragments will be much more uniform, so there is a tradeoff<sup>[13]</sup>.
 
 <p align="center">
-  <img width="700" height="400" src="https://commercio.nyc3.digitaloceanspaces.com/goldbio-2018/pages/Text%20Only%20(2).png">
+  <img width="700" height="400" src= sonication.png>
 </p>https://commercio.nyc3.digitaloceanspaces.com/goldbio-2018/pages/Text%20Only%20(2).png
 
 ### Step 4 - Immunoprecipitation: Addition of the Protein-Specific Antibody and Bead
 Next, we will add a protein-specific antibody to our DNA, corresponding to our protein of interest. Selection of the correct antibody is vital - if done incorrectly, we will fail to select for our DNA-protein interaction complex of interest, and the directive of our ChIP-seq will fail. Thankfully, due to much research by the scientific community, most proteins we need to target by now will have a corresponding antibody on file in some database. In the event that there is no corresponding antibody available, proteins can be expressed in the sample that are fused to affinity tags (such as His or Myc). Antibodies can then be used that correspond to these affinity tags<sup>[13]</sup>.
 
 <p align="center">
-  <img width="600" height="600" src="https://www.genome.gov/sites/default/files/tg/en/illustration/antibody.jpg">
+  <img width="600" height="600" src= antibody.png>
 </p>https://www.genome.gov/sites/default/files/tg/en/illustration/antibody.jpg  
 
 Prior to addition of the antibody, a bead will be conjugated to it - either magnetic or agarose. Magnetic beads are easier to see in solution, while agarose beads have better binding capabilities. The addition of the bead is crucial, and will come into play during our wash step.
@@ -44,7 +44,7 @@ Prior to addition of the antibody, a bead will be conjugated to it - either magn
 After our complexes are formed, we will use a magnet to pull our complexes to the side of the solution (in the case of using a magnetic bead) and then wash repeatedly. In the case that we have used an agarose bead, protein A or G or a combination of both is used to make our complexes insoluble, and then washing is done as normal<sup>[13]</sup>. In both cases, it is absolutely essential that the wash step be thorough and complete. If this is not the case, we can end up with confounding results.
 
 <p align="center">
-  <img width="1000" height="650" src="https://www.leinco.com/wp-content/uploads/2020/04/immunoprecipitation-02-scaled.jpg">
+  <img width="1000" height="650" src= immunoprep.png>
 </p>https://www.leinco.com/wp-content/uploads/2020/04/immunoprecipitation-02-scaled.jpg
 
 ### Step 6 - Cross-link Reversal and DNA purification
@@ -62,7 +62,7 @@ Chip outputs both single-end reads and paired-end reads. While single end reads 
 Each read in the FASTQ file format consists of four lines: The label, the actual nucleotide sequence itself, a connecter sequence, and the quality scores as ASCII characters - with ‘!’ corresponding to the lowest possible quality bases, while ‘~’ corresponds to the highest quality bases.
 
 <p align="center">
-  <img width="500" height="300" src="https://www.drive5.com/usearch/manual/fastq_fig.jpg">
+  <img width="500" height="300" src="fastq.png">
 </p>https://www.drive5.com/usearch/manual/fastq_fig.jpg
 
 
@@ -71,7 +71,7 @@ Quality can also be assessed via Phred quality score, a measure that extends fro
 Below are the base-by-base quality scores of a read represented in FastQC, a program used for analyzing the quality of reads.
 
 <p align="center">
-  <img width="800" height="600" src="https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/per_base_quality.png">
+  <img width="800" height="600" src="phred.png">
 </p>https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/per_base_quality.png
 
 ### Mapping Outcomes
