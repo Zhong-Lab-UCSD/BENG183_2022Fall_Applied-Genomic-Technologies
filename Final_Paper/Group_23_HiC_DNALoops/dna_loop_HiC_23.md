@@ -133,7 +133,7 @@ In addition to the Juicer pipeline, it is possible to discover chromatin loops m
 In the edge list, the first two columns represent the genomic positions of the bins, and the third column represents the number of reads that supports an interaction between these two bins. In the edge list representation, if two bins are not listed, this implies that there are 0 reads supporting interaction between the two bins.
 
 ### 3.5 Detecting Loops <a name = "15"></a>
-In order to find loops from this particular file, we will need to compute the p-values for all bin pairs ($i$,$j$). To compute these p-values, the first step is to create a separate matrix for expected values, assuming there are no DNA loops. This can be computed based on the distribution of the data, and is called a background model. Using these expected values, we can determine the loop based on a set of criteria. This matrix will called $E$, and the observed matrix will be called $M$.
+In order to find loops from this particular file, we will need to compute the p-values for all bin pairs (*i*,*j*). To compute these p-values, the first step is to create a separate matrix for expected values, assuming there are no DNA loops. This can be computed based on the distribution of the data, and is called a background model. Using these expected values, we can determine the loop based on a set of criteria. This matrix will called $E$, and the observed matrix will be called $M$.
 This criteria is as follows:
 1. $10 < j - i < 1000$
 2. $\frac{M_{ij}}{E_{ij}} > 1.5$
