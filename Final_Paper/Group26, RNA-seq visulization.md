@@ -51,15 +51,17 @@ As PCA is a way to bring out strong patterns from large and complex datasets, it
 
 ![Blog_pca_8](https://user-images.githubusercontent.com/72646231/206060115-817dc790-4b75-4223-9f41-ffb394082234.png)
  
-**Figure 4.** This image shows a PCA plot of cluster similarity such that there are 3 clusters. The first PC (explains most variation): Group 3 vs. Group 1 vs. Group 2&4. 
+**Figure 4.** This image shows a PCA plot of cluster similarity such that there are 3 clusters. The first PC (explains most variation): Group 3 vs. Group 1 vs. Group 2&4. Though Group 2 and 4 seem to be undistinguishable using PC1 and PC2, they might be distinguishable when exploring other PC axis. 
+
+
   
 ### Application of the PCA Plot in Differential Expression Analysis
 
-As PCA is critical in determining the main driver for transcriptomic changes in RNA-seq data, it provides useful information for researchers to decide the appropriate model for differential expression analysis. Below is a PCA plot of the first two PCs on 175 RNA-seq samples obtained from 20 patients with prostrate cancer who underwent different types of androgen deprivation therapy (ADT) treatments. The PCA plot clearly shows distinct clusters between the different types of androgen deprivation therapy treatments as well as distinct clusters between pre-ADT and post-ADT. Such information is essential for choosing the model for differential expression analysis. If interested in genes that are differentially expressed between pre-ADT and post ADT and there is a clear variation between the different types of ADT treatments, researchers can potentially divide the dataset into three different types of ADT treatments and run differential expression analysis seperately, or can use ADT treatment type as a fixed effect (covariate). 
+As PCA is critical in determining the main driver for transcriptomic changes in RNA-seq data, it provides useful information for researchers to decide the appropriate model for differential expression analysis. Below is a PCA plot of the first two PCs on 175 RNA-seq samples obtained from 20 patients with prostrate cancer who underwent androgen deprivation therapy (ADT). The PCA plot clearly shows distinct clusters between pre-ADT and post-ADT as well as distinct clusters on methods by which the samples were obtained from patients. Such information is essential for choosing the model for differential expression analysis. If interested in genes that are differentially expressed between pre-ADT and post ADT and there is a clear variation between the methods by which the samples were obtained from patients, researchers can potentially divide the dataset by the different methods and run differential expression analysis seperately, or can use the method types as a fixed effect (covariate). 
 
 <img width="800" alt="Screen Shot 2022-12-06 at 4 01 16 PM" src="https://user-images.githubusercontent.com/72646231/206061393-6bbdae85-1c4f-4132-ac87-043c1a9cfddf.png">
 
-**Figure 5.** This image depicts a PCA plot of the first two PCs on 175 RNA-seq samples obtained from 20 patients with prostrate cancer who underwent different types of androgen deprivation therapy (ADT) treatments. RNA-seq samples include pre-ADT biopsies and post-ADT prostatectomy specimens.
+**Figure 5.** This image depicts a PCA plot of the first two PCs on 175 RNA-seq samples obtained from 20 patients with prostrate cancer who underwent androgen deprivation therapy (ADT). RNA-seq samples include pre-ADT biopsies and post-ADT prostatectomy specimens.
 
  ## 3 Heat Map
  Heat map is a commonly used tool for data visualization, which uses the intensity of color to show the magnitude of a phenomenon in different samples. In RNA-seq, heat map is used to compare to transcripts expression profile across different specimen. 
