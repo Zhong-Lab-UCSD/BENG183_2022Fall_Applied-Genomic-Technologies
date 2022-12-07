@@ -79,10 +79,12 @@ Common method of treating breast cancer in the 19th century are as follows:
 <p align="center">
     <img src="https://github.com/itsjisookim/BENG183_2022Fall_Applied-Genomic-Technologies/blob/5eadce20db7fd360db32c117ea930b572c3cb910/Final_Paper/Group_27_Precision_Medicine_in_Breast_Cancer/Lumpectomy.png")
          >
+   
    - Mastectomy: Complete removal of the breast tissue in which cancer cells have proliferated, including the nipple, areola, and skin. Additional removal of lymph nodes in the under arm was also conducted, known as radical mastectomy which was first done by William Halsted in 1882, as it was known from the 1700s that tumors originated from lymph nodes (Thomas).
 <p align="center">
     <img src="https://github.com/itsjisookim/BENG183_2022Fall_Applied-Genomic-Technologies/blob/5af2077f7361764c2ffb2b238b330262f528c5a4/Final_Paper/Group_27_Precision_Medicine_in_Breast_Cancer/Mastectomy.png")
          >
+   
    - Radiation Therapy: Destruction of cancer cells by specifically targeting areas on the breast tissue with X-ray. First conducted in 1937 along with mastectomy and steadily proved to show great effects. It was later found out that short specific treatments of radiation therapy resulted in equal effects to that of long term therapy, increasing patient mortality (Goldman).
 <p align="center">
     <img src="https://github.com/itsjisookim/BENG183_2022Fall_Applied-Genomic-Technologies/blob/5af2077f7361764c2ffb2b238b330262f528c5a4/Final_Paper/Group_27_Precision_Medicine_in_Breast_Cancer/Radiation.png")
