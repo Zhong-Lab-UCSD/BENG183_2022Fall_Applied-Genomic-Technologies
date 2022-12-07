@@ -18,11 +18,11 @@ The two main types, Supervised and Unsupervised Machine Learning are defined as 
 * **Supervised:** Algorithm that requires an input of data, and labels for classification. In the end, it is used to make predictions and classify data.
 * **Unsupervised:** Algorithm that requires only an input of data and no labels. It is used to understand the relationships between points in the dataset.
 <p align="center">
-<img src="img/unsupervised-learning.png" width="600" height="300" />
+<img src="img/unsupervised-learning.png" width="450" height="300" />
 </p>
 [1] In this image, the input data includes information with different animals without any labels for what they are; the unsupervised algorithm takes this input and groups the data into 3 different clusters based on how closely the data is related to one another. Devin Pickell, "Supervised vs Unsupervised Learning – What's the Difference?".
 
-K-Means clustering is an unsupervised algorithm, meaning that the goal is to look for patterns in a dataset without pre-existing labels.
+K-Means clustering is an unsupervised algorithm, meaning that the goal is to look for patterns in a dataset without pre-existing labels. 
 Applications are to either:
 1. confirm any assumptions about the types of groups that exist in the data
 2. identify unknown groups in the data
@@ -36,16 +36,29 @@ Applications are to either:
 ## The Algorithm<a name="2"></a>
 ![Algorithm](img/algorithm.png)
 
-1. Choose a value K as the number of cluster centers and set the cluster centers randomly. One way to choose K is by using the elbow method
-2. Perform K-means clustering with different values of K. For each k, we calculate average distances to the centroid across all data points.
-3. Plot these points and find the point where the average distance from the centroid falls suddenly (“Elbow”)
-4. Now that we chose k and the initial centroids are chosen, we then
-calculate the distances between all the points in the data and the centroids, then group the points with the cluster center they are closest to.
-5. Now we recalculate the centroid of these new clusters by finding the new center of gravity of the clusters; then group the data points to the new nearest centroid as we did before.
-6. We then repeat these steps until the centroid positions remain the same; if so, the algorithm has completed and you’ve found your clusters.
+1. Choose a value K as the number of cluster centers and set the cluster centers randomly. One way to choose K is by using the elbow method (below)
+2. Once k and the initial centroids are chosen, we then calculate the distances between all the points in the data and the centroids, then group the points with the cluster center they are closest to.
+3. Now we recalculate the centroid of these new clusters by finding the new center of gravity of the clusters; then group the data points to the new nearest centroid as we did before. 
+4. We then repeat these steps until the centroid positions remain the same; if so, the algorithm has completed and you’ve found your clusters.
+
+## Parameters & How to Choose Them <a name="3"></a>
+The primary parameter for the algorithm is k, the number of clusters. Choosing an appropriate k value is essential for accurate clustering. To choose k, we can perform what is known as the "elbow" method. 
+
+1. Perform K-means clustering with differing values of K. 
+2. For each of the K values, we calculate average distances to the centroid across all data points. The specific distance metric used is WCSS ( Within-Cluster Sum of Square ). To do this, calculate the  the sum of squared distance between each point and the centroid in a cluster.
+3. Plot the WCSS vs K-value and find the point where the average distance from the centroid falls suddenly (“Elbow”). This should be approximately what K-value to use. 
+
+<p align="center">
+<img src="img/elbow.png" width="450" height="300" />
+</p>
+
+Additionally, it's important to consider the following when implementing the algorithm:
+- What type of distance metric you plan to use
+- What the max iterations of the algorithm should be set to (if convergence continues to not be reached)
+- How many seeds to use (how many times to run the algorithm with a unique set of starting parameters)
 
 ## Stopping Criteria<a name="3"></a>
-As mentioned above, the algorithm typically terminates when centroid positions remain the same from one iteration to the next. In terms of the data,
+As mentioned above, the algorithm typically terminates when centroid positions remain the same from one iteration to the next. In terms of the data, 
 this is equivalent to the all datapoints remaining within the same cluster after an iteration, as their center of gravity would remain the same.
 
 However, the algorithm is not guaranteed to reach this termination point (or convergence point). K-means clustering is designed to approximate local
@@ -59,6 +72,8 @@ Summarily, we have 3 stopping criteria:
 1. Centroids do not move
 2. Clusters do not change
 3. Maximum iterations have been attempted
+
+* * *
 
 ## Algorithm in Practice<a name="4"></a>
 
@@ -75,9 +90,8 @@ Let's look at the first iteration of the algorithm
 2. Datapoints are partitioned into clusters based on which centroid they are nearest to. For a given datapoint $D$, the distance to a centroid $C$ is calculated by:
 $$dist = \sqrt{(D.x - C.x)^2 + (D.y - C.y)^2}$$
 3. Centroids move from their initial position to a new one, determined by the mean location of the datapoints within their cluster.
-For a given cluster of $n$ datapoints, the coordinate position of the new centroid is given by:
+For a given cluster of $n$ datapoints, the coordinate position of the new centroid is given by the following, where $D.x_n$ and $D.y_n$ are the $x$ and $y$ coordinates of the $n^{th}$ datapoint respectively.
 $$\left( {{\displaystyle\sum_{1}^{n}D.x_n} \over n}, {{\displaystyle\sum_{1}^{n}D.y_n} \over n} \right)$$
-where $D.x_n$ and $D.y_n$ are the $x$ and $y$ coordinates of the $n^{th}$ datapoint respectively.
 4. We have our new centroids and are ready to iterate again
 
 Here are the second, third, and fourth iterations, though not to the same depth shown above.
@@ -117,7 +131,7 @@ plt.show()
 We can plot our clusters through pyplot:
 
 <p align="center">
-<img src="img/scatter.png" width="450" height="225" />
+<img src="img/scatter.png" width="380" height="225" />
 </p>
 ### R → built-in function
 
@@ -148,6 +162,7 @@ The data visualization looks like the following:
 </p>
 [5] Pratik Kohad, "K-Means clustering and its Real World Use Case".
 
+
 An example of using K-Means clustering is when large companies use it to efficiently sell a product to an identified customer group. The starting data comes from their customer ratings and preferences. A k means algorithm is run to group the customer base by their preferences and this gives deeper insight on what types of products they prefer. This allows companies to target their exact preferences and increase the likelyhood that the customers will buy the product sold to them. By clustering customers together, companies can also predict the preferences of different customers depending on wether they are in the same cluster. If customer A and B are in the same cluster and customer B prefers a certain product, most likely company A will too because they are in the same cluster, and this way, companies and make reccommendations to customers based on other's preferences.
 
 
@@ -156,21 +171,23 @@ An example of using K-Means clustering is when large companies use it to efficie
 K-means is an unsupervised, iterative algorithm used to partition unlabeled data into distinct non-overlapping groups called clusters. It can confirm any assumptions about the types of groups that exist in the data or identify unknown groups in the data.
 
 Key Takeaways:
-1. Easy to use & computationally efficient
+1. Easy to use & computationally efficient 
 2. Assumes clusters have similar variance
 3. Assumes cluster are the same size (same radius) & similar number of points
-4. Assumes spherical shape of clusters
+4. Assumes spherical shape of clusters 
 5. Need to predefine number of clusters
 
 * * *
 ## References<a name="8"></a>
 
-[1] https://www.g2.com/articles/supervised-vs-unsupervised-learning
+[1] Devin Pickell. “Supervised vs Unsupervised Learning – What's the Difference? - G2.” G2, https://www.g2.com/articles/supervised-vs-unsupervised-learning. 
 
-[2] https://towardsdatascience.com/k-means-a-complete-introduction-1702af9cd8c
+[2] Jeffares, Alan. “K-Means: A Complete Introduction.” Medium, Towards Data Science, 19 Nov. 2019, https://towardsdatascience.com/k-means-a-complete-introduction-1702af9cd8c. 
 
-[3] https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html
+[3] “Sklearn.cluster.kmeans.” Scikit, Scikit Learn, https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html. 
 
-[4] https://rpkgs.datanovia.com/factoextra/reference/fviz_cluster.html
+[4] Kassambara, Alboukadel, and Fabien Mundt. “Visualize Clustering Results - fviz_cluster.” Factoextra, https://rpkgs.datanovia.com/factoextra/reference/fviz_cluster.html. 
 
-[5] https://www.linkedin.com/pulse/k-means-clustering-its-real-world-use-case-pratik-kohad-1c/
+[5] Kohad, Pratik. “K-Means Clustering and Its Real World Use Case.” LinkedIn, 20 Aug. 2021, https://www.linkedin.com/pulse/k-means-clustering-its-real-world-use-case-pratik-kohad-1c/. 
+
+[6] (LEDU), Education Ecosystem. “Understanding K-Means Clustering in Machine Learning.” Medium, Towards Data Science, 12 Sept. 2018, https://towardsdatascience.com/understanding-k-means-clustering-in-machine-learning-6a6e67336aa1. 
