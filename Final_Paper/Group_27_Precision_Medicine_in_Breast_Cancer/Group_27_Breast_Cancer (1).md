@@ -35,46 +35,23 @@ Precision Medicine collects data on health, disease, environmental factors, fami
 
 **Precision Oncology:** Using a cancer’s genomic makeup to determine treatment methods rather than focusing on symptoms of “average” cancer.
 
-- **Older Focus**
+- **Older Focus**:
 Based on tumor size, tumor grade (how they look compared to normal cells), and axillary lymph nodes (buildups of cells in lymph system). Tumor size is easy to quantify, but tumor grade is subjective especially if tumor is heterogenous. Axillary lymph nodes have a weak correlation with cancer metastasis, where 30% without will develop metastasis in a decade while 50% were cured with only a local treatment
 
-- ** Modern Approach**
-Categorize with Genomics
-Use various bioinformatic techniques to learn more
+- ** Modern Approach**: 
+1. Categorize with Genomics and use various bioinformatic techniques to learn more
+2. Early studies have determined multiple categories
+3. 3 major categories of breast cancer based on gene expression abnormalities:
+- Hormone receptor (HR) expressing (either estrogen receptor (ER+) or progesterone receptor (PR+) expressing) 70% in developed countries
+- Human epidermal receptor expressing (HER2+) 20%
+- Triple negative (ER-, PR-, HER2-), further divided into 6 categories 10%
+4. Various combinations of ER, PR and HER2 expressing all have different treatment approaches
 
-○ Early studies have determined multiple categories
+- HR+ (ER+/PR-, ER-/PR+, ER+/PR+) indicates that hormone receptors are abnormally expressed in the cancer cells, indicating that the cancer is using the hormones to grow. They target the cancer by blocking production of the specific hormone (ER or PR) or blocking hormone receptors 
 
-○ 3 major categories of breast cancer based on gene expression abnormalities:
+- HER2 is a protein that promotes cell growth. HER2+ cancers grow and spread more quickly than HER2- cancers
 
-■ Hormone receptor (HR) expressing (either estrogen receptor (ER+) or
-
-progesterone receptor (PR+) expressing) 70% in developed countries
-
-■ Human epidermal receptor expressing (HER2+) 20%
-
-■ Triple negative (ER-, PR-, HER2-), further divided into 6 categories 10%
-
-○ Various combinations of ER, PR and HER2 expressing all have different
-
-treatment approaches
-
-● HR+ (ER+/PR-, ER-/PR+, ER+/PR+) indicates that hormone receptors are abnormally
-
-expressed in the cancer cells, indicating that the cancer is using the hormones to grow.
-
-○ Target the cancer by blocking production of the specific hormone (ER or PR) or
-
-blocking hormone receptors (Dedhia)
-
-(Dedhia)
-
-● HER2 is a protein that promotes cell growth. HER2+ cancers grow and spread more
-
-quickly than HER2- cancers (Lynne).
-
-○ Immunotherapy: target the proteins binding sites with antibodies to prevent them
-
-protein binding
+- Immunotherapy: target the proteins binding sites with antibodies to prevent them protein binding
 
 
 
