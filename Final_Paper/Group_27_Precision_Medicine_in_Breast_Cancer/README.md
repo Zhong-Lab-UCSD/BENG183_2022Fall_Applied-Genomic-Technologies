@@ -16,7 +16,7 @@ Breast cancer refers to tumors that originate in breast tissue, which is the mos
 * Obesity
 * Smoking
 
-
+(Cleveland Clinic)
 
 **Symptoms of breast cancer include:**
 
@@ -26,11 +26,13 @@ Breast cancer refers to tumors that originate in breast tissue, which is the mos
 * Change in look or feel of skin on breast or nipple
 * Redness of skin
 * Blood-stained or clear fluid discharge from nipple
+
+(Cleveland Clinic)
+
 <p align="center">
     <img src="https://github.com/itsjisookim/BENG183_2022Fall_Applied-Genomic-Technologies/blob/d6a3bbfa4fa1ba484118497c2695633e9ff96b4c/Final_Paper/Group_27_Precision_Medicine_in_Breast_Cancer/Signs%20and%20Symptoms%20of%20Breast%20Cancer.png"
          height="500"
          width="400">
-
 
 
 Just like other types of cancers, different stages of breast cancer are determined based on the location, size, and the rate of spreading of the cancer cells:
@@ -67,7 +69,8 @@ There are also numerous different types of breast cancer, which includes the fol
 * **Angiosarcoma:** cancer that forms in lining of blood vessels and lymph vessels
 * **Phyllodes tumors of the breast:** rare tumors that start in connective tissue of the breast and most of these are benign
 
-[INSERT PICTURE]
+   
+(NCI)
 
 
 
