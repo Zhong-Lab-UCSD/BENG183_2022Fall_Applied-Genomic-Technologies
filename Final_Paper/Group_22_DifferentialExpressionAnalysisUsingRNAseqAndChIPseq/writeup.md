@@ -150,11 +150,11 @@ By studying histone modifications using ChIP-Seq, it allows one to gather inform
 Studying transcription factors can provide us with information on how and where transcription factors are bound and effective along the genome. For example, at a site within the genome that determines sex can be seen through ChIP-Seq data, and in turn allows us to determine that the region of the genome is related to sex determination.  
 ### DA Tools/Methods
 
-Here are some popular Data Analysis Tools that would be utilized in the ChIP-Seq Data Analysis Pipeline:  
-[STAR](https://github.com/alexdobin/STAR)
-[HOMER](http://homer.ucsd.edu/homer)  
+Here are some popular Data Analysis Tools that would be utilized in the ChIP-Seq Data Analysis Pipeline:    
+
+[HOMER](http://homer.ucsd.edu/homer)    
 - a Windows based Peak calling approach. It is a suite of tools fo Motif discovery and next generation sequencing analysis.  
-[UCSC Genome Browser](https://genome.ucsc.edu/)  
+[UCSC Genome Browser](https://genome.ucsc.edu/)    
 - Windows based genome visualizer database. One can search up and study various features of a genome in any location. 
 
 [Burrows Wheeler Alignment (BWA)](https://bio-bwa.sourceforge.net/)  
