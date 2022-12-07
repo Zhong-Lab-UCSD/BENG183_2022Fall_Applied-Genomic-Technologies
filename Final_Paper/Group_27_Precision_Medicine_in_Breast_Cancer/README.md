@@ -9,14 +9,11 @@ Contributors : Jisoo Kim, Sang Lee, Jonathan Zhu
 
 Breast cancer refers to tumors that originate in breast tissue, which is the most common type of cancer in women. Causes of breast cancer are the following but not limited to:
 
-* Mutations to certain genes such as BRCA1 and BRCA2 → Downstream effect on DNA repair, Transcription regulation, ubiquitination cycle, chromatin structure regulation, cell cycle regulation
-
+* Mutations to certain genes such as BRCA1 and BRCA2 
+    *  These mutations can have downstream effect on DNA repair, Transcription regulation, ubiquitination cycle, chromatin structure regulation, and cell cycle regulation
 * Exposure to therapeutics such as diethylstilbestrol (DES) or radiation therapy
-
 * Old age (>50)
-
 * Obesity
-
 * Smoking
 
 
@@ -56,25 +53,18 @@ Just like other types of cancers, different stages of breast cancer are determin
 
 There are also numerous different types of breast cancer, which includes the following:
 
-> * **Ductal carcinoma in situ (DCIS):** noninvasive abnormal cells inside the milk ducts
-> * **Lobular carcinoma in situ (LCIS)**: cancer cell originated in the milk-producing glands called lobules
-> * **Triple negative breast cancer (TNBC):** a kind of breast cancer that does not have any receptors that are commonly found in breast cancer:
->     *    estrogen receptors
->     *    progesterone receptors
->     *    HER2 receptors
-> * **Inflammatory breast cancer:** rare and aggressive breast cancer where cancer cells block lymph vessels
-> * **Paget’s disease of breast:** usually starts in the nipple where the skin also shows eczema-like symptoms in that region
-> * **Angiosarcoma:** cancer that forms in lining of blood vessels and lymph vessels
-> * **Phyllodes tumors of the breast:** rare tumors that start in connective tissue of the breast and most of these are benign
+* **Ductal carcinoma in situ (DCIS):** noninvasive abnormal cells inside the milk ducts
+* **Lobular carcinoma in situ (LCIS)**: cancer cell originated in the milk-producing glands called lobules
+* **Triple negative breast cancer (TNBC):** a kind of breast cancer that does not have any receptors that are commonly found in breast cancer:
+     *    estrogen receptors
+     *    progesterone receptors
+     *    HER2 receptors
+* **Inflammatory breast cancer:** rare and aggressive breast cancer where cancer cells block lymph vessels
+* **Paget’s disease of breast:** usually starts in the nipple where the skin also shows eczema-like symptoms in that region
+* **Angiosarcoma:** cancer that forms in lining of blood vessels and lymph vessels
+* **Phyllodes tumors of the breast:** rare tumors that start in connective tissue of the breast and most of these are benign
 
 [INSERT PICTURE]
-
-
-
-[12]
-
-[14]
-
 
 
 
