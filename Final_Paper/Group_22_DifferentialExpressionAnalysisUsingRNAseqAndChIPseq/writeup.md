@@ -43,9 +43,9 @@ In the next sections, we will go over RNAseq and ChIPseq and delve deeper into h
 
 ## What is RNAseq? <a name="RNA" />
 
-RNA-Seq can be thought of as a basic process to **measure gene expression**. Because genes are transcribed to produce RNA products, the number of RNA transcripts present in a cell can tell us important information about which genes are active and the levels of their activity. In the case of differential expression analysis we can use RNA-Seq outputs in the form of normalized read count data to compare the levels of gene expression between different samples and arrive at conclusions based on this data.  
+RNAseq can be thought of as a basic process to **measure gene expression**. Because genes are transcribed to produce RNA products, the number of RNA transcripts present in a cell can tell us important information about which genes are active and the levels of their activity. In the case of differential expression analysis we can use RNAseq outputs in the form of normalized read count data to compare the levels of gene expression between different samples and arrive at conclusions based on this data.  
 
-For example, let's consider a situation where we have cell samples from two different patients: one healthy, and one diseased. If you have a target gene in mind, you can run the RNA-Seq workflow for each sample to find whether your gene of interest is differentially expressed in one sample versus another. These findings can be used in further studies and validated through knockout experiments. 
+For example, let's consider a situation where we have cell samples from two different patients: one healthy, and one diseased. If you have a target gene in mind, you can run the RNAseq workflow for each sample to find whether your gene of interest is differentially expressed in one sample versus another. These findings can be used in further studies and validated through knockout experiments. 
 
 ### RNAseq Workflow
 
@@ -54,11 +54,11 @@ For example, let's consider a situation where we have cell samples from two diff
 </p>
 
 <div align="center">
-  <i><b>Figure 3</b> Graphical overview of RNAseq workflow </i>
+  <i><b>Figure 3</b>: Graphical overview of RNAseq workflow </i>
 </div>
 <br />
 
-A typical RNA-Seq workflow follows the following steps:  
+A typical RNAseq workflow follows the following steps:  
 1. **Procurement of samples**  
     Example: Getting cells from healthy and diseased tissue
 1. **Isolation of RNA**  
@@ -72,7 +72,7 @@ Due to the lack of stability in RNA molecules, an enzyme called Reverse Transcri
 1. **Downstream Analysis Steps**  
     The aligned reads can tell us which genes are expressed, and the level of gene expression at each target. A variety of tools can be used to process this data for differential expression analysis. Commonly, the read counts at each locus are normalized according to gene length and total sequencing depth before differential expression analysis. 
 
-### What we can learn from RNA-Seq
+### What we can learn from RNAseq
 
 Consider the previous example again, where we want to find differences in gene expression between healthy and diseased cells. For the sake of simplicity, let's look at two hypothesized disease genes conveniently labeled "Gene 1" and "Gene 2". With our normalized read count data, we can compare the level of expression in Gene 1 and Gene 2 by comparing count values. Let's use the following figure as a simple illustration of this concept:
 
@@ -80,18 +80,18 @@ Consider the previous example again, where we want to find differences in gene e
   <img src="imgs/normalization.png", style="background-color:white"/>
 </p>
 <div align="center">
-  <i><b>Figure 4</b> Comparison of normalized RNA-Seq count data for gene expression hypothesis</i>
+  <i><b>Figure 4</b>: Comparison of normalized RNAseq count data for gene expression hypothesis</i>
 </div>
 <br />
 
-From this image, we can see that in the diseased state, Gene 1 has a higher number of reads aligning with it than Gene 2, so Gene 1 is more expressed in the disease state. In the healthy state, we can see that Gene 1 is very lowly expressed, and Gene 2 has higher expression. This data might lead us to a hypothesis that Gene 1 plays a role in causing this disease, whereas Gene 2 plays a role in maintaining a healthy cell. However, normalized read counts only tell one side of the story, and are not conclusive; it is necessary to pair this information with other methods of experimental validation to be sure. 
+From this image, we can see that in the diseased state, Gene 1 has a higher number of reads aligning with it than Gene 2, so Gene 1 is more expressed in the disease state. In the healthy state, we can see that Gene 1 is very lowly expressed, and Gene 2 has higher expression. This data might lead us to a hypothesis that Gene 1 plays a role in causing this disease, whereas Gene 2 plays a role in maintaining a healthy cell. This is an example of differential expression analysis, as we are comparing the differences in gene expression across two samples. However, normalized read counts only tell one side of the story, and are not conclusive; it is necessary to pair this information with other methods of experimental validation to be sure. 
 
-### Tools/Methods for RNA-Seq
-Popular tools that are used throughout the pipeline for RNA-Seq data analysis are listed here:
+### Tools/Methods for RNAseq
+Popular tools that are used throughout the pipeline for RNAseq data analysis are listed here:
 - [FASTQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
     - A software used to perform quality-control checks on FASTQ data. This is important in order to pinpoint any data issues in order to ensure a meaningful analysis. 
 - [STAR](https://github.com/alexdobin/STAR)
-    - STAR is a helpful alignment tool that can be used to align both short and long RNA-seq data. There are many options for alignment (for example, options to find chimeric reads, which are implicated in certain cancers). 
+    - STAR is a helpful alignment tool that can be used to align both short and long RNAseq data. There are many options for alignment (for example, options to find chimeric reads, which are implicated in certain cancers). 
 - [featureCounts](https://subread.sourceforge.net/featureCounts.html)
     - featureCounts is a tool that counts reads that map to specific genomic features (for example, a certain target gene). 
 - [DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html)
@@ -101,11 +101,10 @@ Popular tools that are used throughout the pipeline for RNA-Seq data analysis ar
 
 ## What is ChIPSeq? <a name="ChIP" />
 
-ChIP-seq is a form of sequencing that combines chromatin immunoprecipitation followed by next-generation sequencing. ChIP-seq allows us to **locate DNA binding sites** where specific transcription factors and other proteins can bind. Being able to locate specific binding sites of transcription factors and proteins can allow us to determine which location in the DNA is specifically being activated and affected and to study the function of transcription factors and proteins. We can further interpret regulatory events that could be important in many biological processes that could be positive or negative. 
+ChIPseq is a form of sequencing that combines chromatin immunoprecipitation followed by next-generation sequencing. ChIPseq allows us to **locate DNA binding sites** where specific transcription factors and other proteins can bind. Being able to locate specific binding sites of transcription factors and proteins can allow us to determine which location in the DNA is specifically being activated and affected and to study the function of transcription factors and proteins. We can further interpret regulatory events that could be important in many biological processes that could be positive or negative. 
 
 ### ChIPseq Workflow
 
-*Figure: ChIP-Seq workflow overview*
 <p align="center">
   <img src="imgs/chip-protocol-steps.png", style="background-color:white"/ width=50% height=50%>
 </p>
@@ -132,14 +131,14 @@ Library preparation can vary. A common choice is to use paired-end Illumina Sequ
 
 ### What we can learn
 
-In order to further extrapolate information from ChIP-Seq, we need to perform an Analysis Pipeline. There are three steps: 
+In order to further extrapolate information from ChIPseq, we need to perform an Analysis Pipeline. There are three steps: 
 
 1. **Obtain target regions and the control sample region**   
 The target regions are usually in the form of a FASTQ file. We also want to assess the quality of the reads. Effective analysis requires enough coverage by the sequencing reads (Sequencing Depth), which depends on the size of the genome and the amount and size of the binding sites of the protein. 
 
 2. **Align to Reference Genome**  
 We align our reads to the reference genome to determine where they originated on the reference genome. During this process, we obtain a count of how many reads were mapped to a position or region of the genome. 
-There are various different software tools that can be used to perform short-read alignment. Such tools include BWA (Burrows-Wheeler Aligner) and Bowtie. BWA is incredibly fast and efficient, while Bowtie also includes TopHat and CuffLinks for RNA-Seq processing.  
+There are various different software tools that can be used to perform short-read alignment. Such tools include BWA (Burrows-Wheeler Aligner) and Bowtie. BWA is incredibly fast and efficient, while Bowtie also includes TopHat and CuffLinks for RNAseq processing.  
 
 3. **Visualize and Analyze Binding Sites**  
 In order to better interpret data, we visualize the data. A common tool to visualize ChIP Seq data is the UCSC Genome Browser and HOMER. Such technology plots the frequency of mapped reads as peaks alongside the location of genes and other genomic elements. The frequency of reads mapped to a certain region of the genome directly correlates to how frequently that region associates with the protein or transcription factor of interest. We can infer that a high peak within the visualization means that in that region of the genome, there is high binding activity. 
@@ -155,15 +154,17 @@ In order to better interpret data, we visualize the data. A common tool to visua
 
 In this sample figure above, we can see various proteins that have been through the ChIP Seq protocol, and that each protein in relation to the reference genome has variable peak heights. We can see that proteins that have the highest peaks in a certain region are most likely to be bound and activated within that region. For example, H3K27ac is probably not likely to be bounded and activated in the same region where Larp7 is since Larp7 has high peaks in the rightmost region of the genome, while H3K27ac does not. 
 
-Ultimately, ChIP-Seq has become an extremely innovative tool that has various applications in genomic sciences. The technique gives scientists the freedom to choose which chromatin-associating protein they want to select, and it has various different types of conditions as well. Common choices are modified histones and transcription factors.   
+Ultimately, ChIPseq has become an extremely innovative tool that has various applications in genomic sciences. The technique gives scientists the freedom to choose which chromatin-associating protein they want to select, and it has various different types of conditions as well. Common choices are modified histones and transcription factors.   
 
-Studying histone modifications using ChIP-Seq allows one to gather information on the state of the chromatin in a certain environment. ChIP-Seq can also reveal more about regulatory sites by determining which are activated, repressed, and by which specific protein. This then further grows our understanding of the structure of genes.  
+Studying histone modifications using ChIPseq allows one to gather information on the state of the chromatin in a certain environment. ChIPseq can also reveal more about regulatory sites by determining which are activated, repressed, and by which specific protein. This then further grows our understanding of the structure of genes.  
 
-Studying transcription factors can provide us with information on how and where transcription factors are bound and effective along the genome. For example, a site within the genome that determines sex can be seen through ChIP-Seq data, and in turn, allows us to determine that the region of the genome is related to sex determination.  
+Studying transcription factors can provide us with information on how and where transcription factors are bound and effective along the genome. For example, a site within the genome that determines sex can be seen through ChIPseq data, and in turn, allows us to determine that the region of the genome is related to sex determination.  
+
+All of these insights we gain from ChIPseq can be looked at with a differential lens, where we attempt to analyze differences between the TF binding activity of two samples. In a later section, we will see how we can use differential analysis of peak counts to help strenghten our understanding of experimental systems.
 
 ### Tools/Methods for ChIPseq
 
-Here are some popular Data Analysis Tools that would be utilized in the ChIP-Seq Data Analysis Pipeline:    
+Here are some popular Data Analysis Tools that would be utilized in the ChIPseq Data Analysis Pipeline:    
 
 [HOMER](http://homer.ucsd.edu/homer)    
 - a Windows-based peak calling approach. It is a suite of tools for Motif discovery and next-generation sequencing analysis.  
@@ -179,11 +180,11 @@ Here are some popular Data Analysis Tools that would be utilized in the ChIP-Seq
 [Bowtie](https://bowtie-bio.sourceforge.net/index.shtml)  
 - A fast and memory-efficient short-read aligner. It also utilizes the Burrows-Wheeler index to keep the memory footprint small.  
 
-[MACS (Model-Based Analysis for ChIP-Seq)](https://macs3-project.github.io/MACS/) 
+[MACS (Model-Based Analysis for ChIPseq)](https://macs3-project.github.io/MACS/) 
 - Comprehensive software for analyzing transcription factor binding sites. It is capable of managing the influence of genome complexity and improves the spatial resolution of binding sites.  
 
 [PeakSeq](https://github.com/gersteinlab/PeakSeq)
-- Program for identifying and ranking peak regions for ChIP-Seq analysis. It utilizes the false-discovery rate calculation to make decisions. 
+- Program for identifying and ranking peak regions for ChIPseq analysis. It utilizes the false-discovery rate calculation to make decisions. 
 
 ## What do we gain by using both technologies together? <a name="combo" />
 
@@ -192,7 +193,7 @@ Here are some popular Data Analysis Tools that would be utilized in the ChIP-Seq
 </p>
 
 <div align="center">
-  <i><b>Figure 7</b>: This figure depicts the type of output we would get from both ChIPseq (epigenomics) and RNAseq (transcriptomics). In the next few sections, we will discuss how these outputs play well with each other. [7]</i>
+  <i><b>Figure 7</b>: This figure depicts the type of output we would get from both ChIPseq (epigenomics) and RNAseq (transcriptomics). In the next few sections, we will discuss how these outputs play well with each other. [5]</i>
 </div>
 <br />
 
@@ -205,7 +206,7 @@ In previous sections, we went over how to apply the concept of DA to analyze the
 </p>
 
 <div align="center">
-  <i><b>Figure 8</b>: This figure summarizes the main mechanisms for post-translational modification of proteins. As we will discuss in this section, RNAseq gene expression data does not account for protein regulation. [8]</i>
+  <i><b>Figure 8</b>: This figure summarizes the main mechanisms for post-translational modification of proteins. As we will discuss in this section, RNAseq gene expression data does not account for protein regulation. [6]</i>
 </div>
 <br />
 
@@ -245,6 +246,20 @@ Now, let's take the ChIPseq data into account. Just by looking over the data, we
 
 To recap, RNAseq data alone does not give us a sufficient functional analysis, but by including ChIPseq downstream in the workflow, we can functionally validate our RNAseq results.
 
+## Tools for Differential Analysis in RNAseq and ChIPseq
+
+Before concluding this chapter, we will look at some popular softwares used for performing differential analysis in RNAseq and ChIPseq.  
+**RNAseq:**
+- DESeq2 - We mentioned this earlier, used to generate fold change values of a gene's expression between two samples
+- edgeR - Same analysis as DESeq2, with some differences in algorithmic approach
+
+**ChIPseq:**
+- HOMER - Can be useful for identifying the top motifs found in different samples, which could tell us about TF binding
+- PeakSeq - Similar to the toy example we looked at, PeakSeq allows us to compare obtain peak counts, and thus compare these counts across samples
+
+There are of course many more tools that can give us information to compare differentially, but these are some of the main ones for these two technologies.
+
+
 ## Conclusion
 
 Next-generation sequencing has brought on a new age of biology, but it is important to keep in mind the biological context with which we perform these experiments, lest we get carried away with the technology itself. In this chapter, we learned about Differential Analysis, and how it is performed on the data collected by RNAseq and ChIPseq, and how these technologies work. We then discussed the use of both sequencing methods in the same workflow, and how they work together to provide a more complete picture of the functional differences between samples of interest. It is important to note that these are not the only pair of sequencing technologies that complement each other. Because of its broad output, RNAseq is extremely compatible with many other sequencing technologies, including:
@@ -256,15 +271,18 @@ Next-generation sequencing has brought on a new age of biology, but it is import
 
 This chapter hopefully gave you a basis for understanding not only the specific technologies discussed, but the importance of evaluating the usefulness of your data, and how to leverage different methods to arrive at the best conclusion possible.
 
+## Notes
+
+Figures without citations were created by the authors of this chapter.
+
 ## References
 
 1. Perrin, H. (2018, April 30). Visualize differential gene expression with ViDGER. Medium. https://medium.com/@HeleneOMICtools/visualize-differential-gene-expression-with-vidger-ee922e1c2a8
 2. Harvard Chan Bioinformatics Core. (2017, May 12). Gene-level differential expression analysis with DESeq2. Introduction to DGE - ARCHIVED; GitHub Pages. https://hbctraining.github.io/DGE_workshop/lessons/04_DGE_DESeq2_analysis.html 
 3. Overview of chromatin immunoprecipitation (chip). Cell Signaling Technology. (n.d.). Retrieved December 6, 2022, from https://www.cellsignal.com/applications/chip-and-chip-seq/regulation-expression-in-cell-and-tissue 
 4. Ram, System, &amp; Pearson, J. (n.d.). How to analyze chip-seq data to determine whether peaks are found on exons, introns, or exon-intron junctions? Bioinformatics Answers. Retrieved December 6, 2022, from https://www.biostars.org/p/161058/ 
- 
-x. Liuksiala, T. (2022, November 4). Integrative analysis of RNA-seq and ChIP-seq data. Genevia Technologies. https://geneviatechnologies.com/blog/integrative-analysis-of-rna-seq-and-chip-seq-data/
+5. Liuksiala, T. (2022, November 4). Integrative analysis of RNA-seq and ChIP-seq data. Genevia Technologies. https://geneviatechnologies.com/blog/integrative-analysis-of-rna-seq-and-chip-seq-data/
+6. Wang, Y.-C., Peterson, S. E., & Loring, J. F. (2014). Protein post-translational modifications and regulation of pluripotency in human stem cells. Cell Research, 24(2), 143–160. https://doi.org/10.1038/cr.2013.151
 
-y. Wang, Y.-C., Peterson, S. E., & Loring, J. F. (2014). Protein post-translational modifications and regulation of pluripotency in human stem cells. Cell Research, 24(2), 143–160. https://doi.org/10.1038/cr.2013.151
 
 
