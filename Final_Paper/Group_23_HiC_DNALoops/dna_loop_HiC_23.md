@@ -2,14 +2,16 @@
 
 ### By Rueshil Fadia, Leo Tricoire, and Rohil Ahuja
 
-1. [Introduction to the 3D Genome] (#1) <br>
-    1.1 [Cis-Regulatory Elements] (#2) <br>
-    1.2 [Chromatin Loops] (#3) <br>
-    1.3 [3-D Organization] (#4) <br>
-    1.4 [Intro to Hi-C] (#5) <br>
-    1.5 [Steps of Hi-C] (#6) <br>
-2. [Computational Analysis and Tools for Hi-C Data] (#7) <br>
-3. [Contact Matrix and Heatmap Analysis] (#8) <br>
+1. [Introduction to the 3D Genome](#1) <br>
+    1.1 [Cis-Regulatory Elements](#2) <br>
+    1.2 [Chromatin Loops](#3) <br>
+    1.3 [3-D Organization](#4) <br>
+    1.4 [Intro to Hi-C](#5) <br>
+    1.5 [Steps of Hi-C](#6) <br>
+2. [Computational Analysis and Tools for Hi-C Data](#7) <br>
+3. [Contact Matrix and Heatmap Analysis](#8) <br>
+4. [Computational Detection of Chromatin Loops](#9)  <br>
+    4.1 [Edge Lists](#10) <br>
 
 ***
 
@@ -98,12 +100,20 @@ Once the contact matrix is displayed, downstream analysis can be performed. Thes
 ![Heatmap Analysis](./heatmap.png)
 *Figure 3.2 Heatmap Analysis*
 
-## 4. Computational Detection of Chromatin Loops
+## 4. Computational Detection of Chromatin Loops <a name = "9"></a>
 We will use the contact matrix obtained from the Hi-C analysis, to find chromatin loops from data. The matrix can be represented in two different ways, an edge list and a standard matrix. The standard matrix was described above and the edge list is another representation. Both are shown in the figure below.
 
-<img class="image-align-left" width = "250px" height = "250px" src="./edge_list.jpg"/><img class="image-align-left" width = "250px" height = "250px" src="./contactmatrix.png"/>
+<img class="image-align-left" width = "350px" height = "400px" src="./edge_list.jpg"/><img class="image-align-left" width = "350px" height = "400px" src="./contactmatrix.png"/>
 
+*Figure 4.1: Shown on the left is the edge list representation of the contact matrix. Shown on the right is the matrix represetnation of the contact matrix.* 
 
+### 4.1 Edge List <a name = "10"></a>
+In the edge list, the first two columns represent the genomic positions of the bins, and the third column represents the number of reads that supports an interaction between these two bins. In the edge list representation, if two bins are not listed, this implies that there are 0 reads supporting interaction between the two bins.
 
-
-
+### 4.2 Detecting Loops <a name = "11"></a>
+In order to find loops from this particular file, we will need to compute the p-values for all bin pairs (*i*,*j*). To compute these p-values, the first step is to create a separate matrix for expected values. This can be computed based on the distribution of the data. Using these expected values, we can determine the loop based on a set of criteria. 
+This criteria is as follows:
+1. $10 < j - i < 1000$
+2. $\frac{M_{ij}}{E_{ij}} > 1.5$
+3. $E_{ij} > 0$
+We know that loops involve regions that are located far apart from each other on the linear genome, so our first criteria is to identifying two bins that are far apart, shown by the first equation with the difference of j and i. After that, we can check if the observed is higher than the expected, as regions so far apart are not expected to have high levels of interaction, seen through the ratio of the observed to the expected equation.  If an entry satisfies these criteria, we compute a p-value from the poisson probability density function and find bins that have low p-values. These are classified as loops.
