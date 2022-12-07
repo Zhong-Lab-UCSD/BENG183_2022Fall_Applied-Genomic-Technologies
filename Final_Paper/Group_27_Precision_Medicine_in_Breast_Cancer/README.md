@@ -36,13 +36,17 @@ Breast cancer refers to tumors that originate in breast tissue, which is the mos
 Just like other types of cancers, different stages of breast cancer are determined based on the location, size, and the rate of spreading of the cancer cells:
 
 **Stage 0**
-* This stage disease is non-invasive and localized within the breast ducts
+* This stage disease is non-invasive and localized within the breast ducts 
+
 **Stage 1**
 * At this stage of the disease, the cancer cells started to spread to the nearby breast tissue. Yet, the survival rate is very high.
+
 **Stage II**
 * Stage II is still a smaller size tumor, relatively 2 to 5 centimeters across and may or may not affect the nearby lymph nodes.
+
 **Stage III**
 * This is the beginning of the spreading away from the cancer’s point of origin. If the cancer has started from the breast ducts, then it can have invaded nearby lymph nodes and tissue. Often Stage III cancer is also known as locally advanced breast cancer.
+
 **Stage IV**
 * This stage of breast cancer is also known as metastatic breast cancer. Metastasis means that the cancer has spread to different areas away from the breast tissue like to the lungs, brain, bones, or etc.
 
