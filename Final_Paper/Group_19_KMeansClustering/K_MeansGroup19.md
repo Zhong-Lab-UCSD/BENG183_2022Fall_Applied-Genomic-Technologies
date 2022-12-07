@@ -26,6 +26,12 @@ K-Means clustering is an unsupervised algorithm, meaning that the goal is to loo
 Applications are to either:
 1. confirm any assumptions about the types of groups that exist in the data
 2. identify unknown groups in the data
+
+K-Means does make assumptions about the data which should be present before using the algorithm:
+1. Clusters have similar variance
+2. Clusters are the same size (same radius) & similar number of points
+3. Clusters have a spherical shape
+ 
 <p align="center">
 <img src="img/kmeans.png" width="600" height="300" />
 </p>
@@ -168,9 +174,9 @@ An example of using K-Means clustering is when large companies use it to efficie
 
 * * *
 ## Conclusion<a name="7"></a>
-K-means is an unsupervised, iterative algorithm used to partition unlabeled data into distinct non-overlapping groups called clusters. It can confirm any assumptions about the types of groups that exist in the data or identify unknown groups in the data.
+K-means is an unsupervised, iterative algorithm used to partition unlabeled data into distinct non-overlapping groups called clusters. It can confirm any assumptions about the types of groups that exist in the data or identify unknown groups in the data. The algorithm is already implemented in packages in R and python and this simplifies the usage for users along with visualizing the clusters. An example of its usage is in companies that are trying to sell a product to their customers based on clustering their preferences or using data from other customers to predit what another customer may prefer. This algorthm is applicable in many companies, namely movie streaming platforms that reccommend movies based on user watch history and proves to show that K-means clustering is a significantly used method in diverse fields.
 
-Key Takeaways:
+Key Points:
 1. Easy to use & computationally efficient 
 2. Assumes clusters have similar variance
 3. Assumes cluster are the same size (same radius) & similar number of points
