@@ -54,6 +54,11 @@ For example, let's consider a situation where we have cell samples from two diff
   <img src="imgs/RNA_Seq_Workflow.png", style="background-color:white"/>
 </p>
 
+<div align="center">
+  <i><b>Figure </b> Graphical overview of RNAseq workflow []</i>
+</div>
+<br />
+
 A typical RNA-Seq workflow follows the following steps:  
 1. **Procurement of samples**  
     Example: Getting cells from healthy and diseased tissue
@@ -72,10 +77,13 @@ A typical RNA-Seq workflow follows the following steps:
 
 Consider the previous example again, where we want to find differences in gene expression between the healthy and diseased cells. For the sake of simplicity, let's look at two hypothesized disease genes conveniently labeled "Gene 1" and "Gene 2". With our normalized read count data, we can compare the level of expression in Gene 1 and Gene 2 by comparing count values. Let's use the following figure as a simple illustration of this concept:
 
-*Figure: Comparison of normalized RNA-Seq count data for gene expression hypothesis*
 <p align="center">
   <img src="imgs/normalization.png", style="background-color:white"/>
 </p>
+<div align="center">
+  <i><b>Figure </b> Comparison of normalized RNA-Seq count data for gene expression hypothesis</i>
+</div>
+<br />
 
 From this image, we can see that in the diseased state, Gene 1 has a higher number of reads aligning to it than Gene 2, so Gene 1 is more expressed in the disease state. In the healthy state, we can see that Gene 1 is very lowly expressed, and Gene 2 has higher expression. This data might lead us to a hypothesis that Gene 1 plays a role in causing this disease, whereas Gene 2 plays a role in maintaining a healthy cell. However, normalized read counts only tell one side of the story, and are not conclusive; it is necessary to pair this information with other methods of experimental validation to be sure. 
 
@@ -102,6 +110,11 @@ ChIP-seq is a form of sequencing that combines chromatin immunoprecipitation fol
 <p align="center">
   <img src="imgs/chip-protocol-steps.png", style="background-color:white"/ width=50% height=50%>
 </p>
+
+<div align="center">
+  <i><b>Figure </b>: Graphical overview of the ChIPseq workflow. ]</i>
+</div>
+<br />
 
 The ChIPseq Workflow consists of four steps:
 1. **Crosslink**  
@@ -132,7 +145,6 @@ There are various different software tools that can be used to perform short-rea
 3. **Visualize and Analyze Binding Sites**  
 In order to better interpret data, we visualize the data. A common tool to visualize ChIP Seq data is the UCSC Genome Browser and HOMER. Such technology  plots the frequency of mapped reads as peaks alongside the location of genes and other genomic elements. The frequency of reads mapped to a certain region of the genome directly correlates to how frequent that region associates with the protein or transcription factor of interest. We can infer that a high peak within the visualization means that in that region of the genome, there is high binding activity. 
 
-*Figure: Example of Peak Visualization*
 <p align="center">
   <img src="imgs/Peaks.png", style="background-color:white"/>
 </p>
@@ -140,6 +152,7 @@ In order to better interpret data, we visualize the data. A common tool to visua
 <div align="center">
   <i><b>Figure</b>: This figure displays various proteins and their alignment to the reference genome TNFAIP3. Note the various heights in peaks that differ between each of the proteins.</i>
 </div>
+<br />
 
 In this sample figure above, we can see various proteins that have been through the ChIP Seq protocol, and that each protein in relation to the reference genome has variable peak heights. We can see that for proteins that have the highest peaks in a certain region, they are most likely to be bound and activated within that region. For example, H3K27ac is probably not likely to be bounded and activated in the same region where Larp7 is since Larp7 has high peaks in rightmost region of the genome, while H3K27ac does not. 
 
