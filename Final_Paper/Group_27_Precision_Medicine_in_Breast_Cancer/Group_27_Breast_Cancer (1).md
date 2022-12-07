@@ -24,6 +24,58 @@ In addition to surgeries that were being modified overtime in the 19th century, 
   - **Raloxifene:** Found in 2006 as SERM drug to reduce breast cancer risk for postmenopausal women and has lower chance of serious side effects compared to Tamoxifen
 
 
+**3. Genomics in Breast Cancer Classification and Treatments Today**
+---
+
+What is **Precision Medicine**?
+
+[*Yotube Video on Precision Medicine*](https://www.youtube.com/watch?v=HQKFgfMO5Sw)
+
+Precision Medicine collects data on health, disease, environmental factors, family history and such and performs intersectional analysis to create best treatment for patients with specific criterias for a specific disease rather than singular common treatment for all patients with that disease.
+
+**Precision Oncology:** Using a cancer’s genomic makeup to determine treatment methods rather than focusing on symptoms of “average” cancer.
+
+- **Older Focus**
+Based on tumor size, tumor grade (how they look compared to normal cells), and axillary lymph nodes (buildups of cells in lymph system). Tumor size is easy to quantify, but tumor grade is subjective especially if tumor is heterogenous. Axillary lymph nodes have a weak correlation with cancer metastasis, where 30% without will develop metastasis in a decade while 50% were cured with only a local treatment
+
+- ** Modern Approach**
+Categorize with Genomics
+Use various bioinformatic techniques to learn more
+
+○ Early studies have determined multiple categories
+
+○ 3 major categories of breast cancer based on gene expression abnormalities:
+
+■ Hormone receptor (HR) expressing (either estrogen receptor (ER+) or
+
+progesterone receptor (PR+) expressing) 70% in developed countries
+
+■ Human epidermal receptor expressing (HER2+) 20%
+
+■ Triple negative (ER-, PR-, HER2-), further divided into 6 categories 10%
+
+○ Various combinations of ER, PR and HER2 expressing all have different
+
+treatment approaches
+
+● HR+ (ER+/PR-, ER-/PR+, ER+/PR+) indicates that hormone receptors are abnormally
+
+expressed in the cancer cells, indicating that the cancer is using the hormones to grow.
+
+○ Target the cancer by blocking production of the specific hormone (ER or PR) or
+
+blocking hormone receptors (Dedhia)
+
+(Dedhia)
+
+● HER2 is a protein that promotes cell growth. HER2+ cancers grow and spread more
+
+quickly than HER2- cancers (Lynne).
+
+○ Immunotherapy: target the proteins binding sites with antibodies to prevent them
+
+protein binding
+
 
 
 
