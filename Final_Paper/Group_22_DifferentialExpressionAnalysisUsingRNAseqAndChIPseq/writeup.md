@@ -87,7 +87,7 @@ Consider the previous example again, where we want to find differences in gene e
 
 From this image, we can see that in the diseased state, Gene 1 has a higher number of reads aligning with it than Gene 2, so Gene 1 is more expressed in the disease state. In the healthy state, we can see that Gene 1 is very lowly expressed, and Gene 2 has higher expression. This data might lead us to a hypothesis that Gene 1 plays a role in causing this disease, whereas Gene 2 plays a role in maintaining a healthy cell. However, normalized read counts only tell one side of the story, and are not conclusive; it is necessary to pair this information with other methods of experimental validation to be sure. 
 
-### DA Tools/Methods for RNA-Seq
+### Tools/Methods for RNA-Seq
 Popular tools that are used throughout the pipeline for RNA-Seq data analysis are listed here:
 - [FASTQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
     - A software used to perform quality-control checks on FASTQ data. This is important in order to pinpoint any data issues in order to ensure a meaningful analysis. 
@@ -161,7 +161,8 @@ Ultimately, ChIP-Seq has become an extremely innovative tool that has various ap
 Studying histone modifications using ChIP-Seq allows one to gather information on the state of the chromatin in a certain environment. ChIP-Seq can also reveal more about regulatory sites by determining which are activated, repressed, and by which specific protein. This then further grows our understanding of the structure of genes.  
 
 Studying transcription factors can provide us with information on how and where transcription factors are bound and effective along the genome. For example, a site within the genome that determines sex can be seen through ChIP-Seq data, and in turn, allows us to determine that the region of the genome is related to sex determination.  
-### DA Tools/Methods
+
+### Tools/Methods for ChIPseq
 
 Here are some popular Data Analysis Tools that would be utilized in the ChIP-Seq Data Analysis Pipeline:    
 
@@ -184,12 +185,6 @@ Here are some popular Data Analysis Tools that would be utilized in the ChIP-Seq
 
 [PeakSeq](https://github.com/gersteinlab/PeakSeq)
 - Program for identifying and ranking peak regions for ChIP-Seq analysis. It utilizes the false-discovery rate calculation to make decisions. 
-
-
-
-
-
-
 
 ## What do we gain by using both technologies together? <a name="combo" />
 
