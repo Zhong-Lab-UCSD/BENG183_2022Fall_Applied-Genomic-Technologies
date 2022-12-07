@@ -152,7 +152,7 @@ In order to better interpret data, we visualize the data. A common tool to visua
 </div>
 <br />
 
-In this sample figure above, we can see various proteins that have been through the ChIP Seq protocol, and that each protein in relation to the reference genome has variable peak heights. We can see that proteins that have the highest peaks in a certain region are most likely to be bound and activated within that region. For example, H3K27ac is probably not likely to be bounded and activated in the same region where Larp7 is since Larp7 has high peaks in the rightmost region of the genome, while H3K27ac does not. 
+In this sample figure above, we can see various proteins that have been through the ChIP Seq protocol, and that each protein in relation to the reference genome has variable peak heights. We can see that proteins that have the highest peaks in a certain region are most likely to be bound and activated within that region. For example, H3K27ac is probably not likely to be bound and activated in the same region where Larp7 is since Larp7 has high peaks in the rightmost region of the genome, while H3K27ac does not. 
 
 Ultimately, ChIPseq has become an extremely innovative tool that has various applications in genomic sciences. The technique gives scientists the freedom to choose which chromatin-associating protein they want to select, and it has various different types of conditions as well. Common choices are modified histones and transcription factors.   
 
