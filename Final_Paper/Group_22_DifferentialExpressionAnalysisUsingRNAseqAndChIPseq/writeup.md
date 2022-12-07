@@ -250,12 +250,12 @@ To recap, RNAseq data alone does not give us a sufficient functional analysis, b
 
 Before concluding this chapter, we will look at some popular softwares used for performing differential analysis in RNAseq and ChIPseq.  
 **RNAseq:**
-- DESeq2 - We mentioned this earlier, used to generate fold change values of a gene's expression between two samples
-- edgeR - Same analysis as DESeq2, with some differences in algorithmic approach
+- [DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html)- We mentioned this earlier, used to generate fold change values of a gene's expression between two samples
+- [edgeR](https://bioconductor.org/packages/release/bioc/html/edgeR.html) - Same analysis as DESeq2, with some differences in algorithmic approach
 
 **ChIPseq:**
-- HOMER - Can be useful for identifying the top motifs found in different samples, which could tell us about TF binding
-- PeakSeq - Similar to the toy example we looked at, PeakSeq allows us to compare obtain peak counts, and thus compare these counts across samples
+- [HOMER](http://homer.ucsd.edu/homer) - Can be useful for identifying the top motifs found in different samples, which could tell us about TF binding
+- [PeakSeq](https://github.com/gersteinlab/PeakSeq) - Similar to the toy example we looked at, PeakSeq allows us to compare obtain peak counts, and thus compare these counts across samples
 
 There are of course many more tools that can give us information to compare differentially, but these are some of the main ones for these two technologies.
 
