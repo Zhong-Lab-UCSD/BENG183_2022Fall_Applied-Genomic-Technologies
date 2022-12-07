@@ -88,33 +88,33 @@ from the breast tissue like to the lungs, brain, bones, or etc.
 
 There are also numerous different types of breast cancer, which includes the following:
 
-● **Ductal carcinoma in situ (DCIS):** noninvasive abnormal cells inside the milk ducts
+* **Ductal carcinoma in situ (DCIS):** noninvasive abnormal cells inside the milk ducts
 
-● **Lobular carcinoma in situ (LCIS)**: cancer cell originated in the milk-producing glands
+* **Lobular carcinoma in situ (LCIS)**: cancer cell originated in the milk-producing glands
 
 called lobules
 
-● **Triple negative breast cancer (TNBC):** a kind of breast cancer that does not have any
+* **Triple negative breast cancer (TNBC):** a kind of breast cancer that does not have any
 
 receptors that are commonly found in breast cancer
 
-○ estrogen receptors
+    * estrogen receptors
 
-○ progesterone receptors
+    * progesterone receptors
 
-○ HER2 receptors
+    * HER2 receptors
 
-● **Inflammatory breast cancer:** rare and aggressive breast cancer where cancer cells
+* **Inflammatory breast cancer:** rare and aggressive breast cancer where cancer cells
 
 block lymph vessels
 
-● **Paget’s disease of breast:** usually starts in the nipple where the skin also shows
+* **Paget’s disease of breast:** usually starts in the nipple where the skin also shows
 
 eczema-like symptoms in that region
 
-● **Angiosarcoma:** cancer that forms in lining of blood vessels and lymph vessels
+* **Angiosarcoma:** cancer that forms in lining of blood vessels and lymph vessels
 
-● **Phyllodes tumors of the breast:** rare tumors that start in connective tissue of the
+*  **Phyllodes tumors of the breast:** rare tumors that start in connective tissue of the
 
 breast and most of these are benign
 
