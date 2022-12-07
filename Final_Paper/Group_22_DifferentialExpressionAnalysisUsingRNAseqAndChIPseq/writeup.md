@@ -43,13 +43,12 @@ In the next sections, we will go over RNAseq and ChIPseq and delve deeper into h
 
 ## What is RNAseq? <a name="RNA" />
 
-RNA-Seq can be thought of as a basic process to **measure gene expression**. Because genes are transcribed to produce RNA products, the number of RNA transcripts present in a cell can tell us important information about which genes are active and the levels of their activity. In the case of differential expression analysis, we can use RNA-Seq outputs, in the form of normalized read count data, to compare the levels of gene expression between different samples and arrive at conclusions based on this data.  
+RNA-Seq can be thought of as a basic process to **measure gene expression**. Because genes are transcribed to produce RNA products, the number of RNA transcripts present in a cell can tell us important information about which genes are active and the levels of their activity. In the case of differential expression analysis we can use RNA-Seq outputs in the form of normalized read count data to compare the levels of gene expression between different samples and arrive at conclusions based on this data.  
 
 For example, let's consider a situation where we have cell samples from two different patients: one healthy, and one diseased. If you have a target gene in mind, you can run the RNA-Seq workflow for each sample to find whether your gene of interest is differentially expressed in one sample versus another. These findings can be used in further studies and validated through knockout experiments. 
 
 ### RNAseq Workflow
 
-*Figure: RNA-Seq workflow overview*
 <p align="center">
   <img src="imgs/RNA_Seq_Workflow.png", style="background-color:white"/>
 </p>
