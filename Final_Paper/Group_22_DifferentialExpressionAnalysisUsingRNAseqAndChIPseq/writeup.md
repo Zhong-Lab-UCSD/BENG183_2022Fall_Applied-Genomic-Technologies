@@ -111,7 +111,7 @@ ChIP-seq is a form of sequencing that combines chromatin immunoprecipitation fol
 </p>
 
 <div align="center">
-  <i><b>Figure 5</b>: Graphical overview of the ChIPseq workflow.</i>
+  <i><b>Figure 5</b>: Graphical overview of the ChIPseq workflow.[3]</i>
 </div>
 <br />
 
@@ -149,7 +149,7 @@ In order to better interpret data, we visualize the data. A common tool to visua
 </p>
 
 <div align="center">
-  <i><b>Figure 6</b>: This figure displays various proteins and their alignment to the reference genome TNFAIP3. Note the various heights in peaks that differ between each of the proteins.</i>
+  <i><b>Figure 6</b>: This figure displays various proteins and their alignment to the reference genome TNFAIP3. Note the various heights in peaks that differ between each of the proteins.[4]</i>
 </div>
 <br />
 
@@ -260,6 +260,8 @@ This chapter hopefully gave you a basis for understanding not only the specific 
 
 1. Perrin, H. (2018, April 30). Visualize differential gene expression with ViDGER. Medium. https://medium.com/@HeleneOMICtools/visualize-differential-gene-expression-with-vidger-ee922e1c2a8
 2. Harvard Chan Bioinformatics Core. (2017, May 12). Gene-level differential expression analysis with DESeq2. Introduction to DGE - ARCHIVED; GitHub Pages. https://hbctraining.github.io/DGE_workshop/lessons/04_DGE_DESeq2_analysis.html 
+3. Overview of chromatin immunoprecipitation (chip). Cell Signaling Technology. (n.d.). Retrieved December 6, 2022, from https://www.cellsignal.com/applications/chip-and-chip-seq/regulation-expression-in-cell-and-tissue 
+4. Ram, System, &amp; Pearson, J. (n.d.). How to analyze chip-seq data to determine whether peaks are found on exons, introns, or exon-intron junctions? Bioinformatics Answers. Retrieved December 6, 2022, from https://www.biostars.org/p/161058/ 
  
 x. Liuksiala, T. (2022, November 4). Integrative analysis of RNA-seq and ChIP-seq data. Genevia Technologies. https://geneviatechnologies.com/blog/integrative-analysis-of-rna-seq-and-chip-seq-data/
 
