@@ -31,7 +31,7 @@ The Genome Alignment graph is a typical visualization widely used to help resear
 
  The graph provides an example of using IGV to observe alternative splicing. Human g18 is used as the reference genome, and the input files are the alignment files from human liver cell tissues and heart cell tissues. From the Coverage track and the Alignment track, it can be observed the sequence fragments align significantly differently in the gene *SLC25A3*, a phosphate transfer gene. This is one example of using IGV to monitor alternative splicing.   
 
-## 2. PCA plot in differential expression analysis
+## 2. Principal Component Analysis 
 
 
 ## 3. Heat Map 
