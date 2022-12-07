@@ -21,18 +21,15 @@ Breast cancer refers to tumors that originate in breast tissue, which is the mos
 **Symptoms of breast cancer include:**
 
 * Change in size, shape or contour of breast
-
 * A mass/lump, as small as a pea
-
 * A lump/thickening in or near breast on in underarm
-
 * Change in look or feel of skin on breast or nipple
-
 * Redness of skin
-
 * Blood-stained or clear fluid discharge from nipple
-
-[insert image]
+<p align="center">
+    <img src="https://github.com/itsjisookim/BENG183_2022Fall_Applied-Genomic-Technologies/blob/d6a3bbfa4fa1ba484118497c2695633e9ff96b4c/Final_Paper/Group_27_Precision_Medicine_in_Breast_Cancer/Signs%20and%20Symptoms%20of%20Breast%20Cancer.png"
+         height="500"
+         width="400">
 
 
 
@@ -40,7 +37,7 @@ Just like other types of cancers, different stages of breast cancer are determin
 
 **Stage 0**
 * This stage disease is non-invasive and localized within the breast ducts
-**Stage I**
+**Stage 1**
 * At this stage of the disease, the cancer cells started to spread to the nearby breast tissue. Yet, the survival rate is very high.
 **Stage II**
 * Stage II is still a smaller size tumor, relatively 2 to 5 centimeters across and may or may not affect the nearby lymph nodes.
