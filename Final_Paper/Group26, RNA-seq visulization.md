@@ -33,7 +33,7 @@ The Genome Alignment graph is a typical visualization widely used to help resear
  The graph provides an example of using IGV to observe alternative splicing. Human g18 is used as the reference genome, and the input files are the alignment files from human liver cell tissues and heart cell tissues. From the Coverage track and the Alignment track, it can be observed the sequence fragments align significantly differently in the gene *SLC25A3*, a phosphate transfer gene. This is one example of using IGV to monitor alternative splicing.   
 
 ## 2. Principal Component Analysis (PCA)
-To simplify large genomic data such as the transcriptomes, Principal Component Analysis (PCA) is a useful classical dimension reduction approach that is often used to reduce the dimensionality of large data sets, by transforming a large set of variables into a smaller one while still capturing most of the information and variation in the large data sets. The reduction of large data sets is achieved by transforming the variables to a new set of variables, known as the principal components (PCs), which are orthogonal to each other. It is ordered such that the retention of variation present in the original variables decreases as moving down in the order. Therefore, most variation in the dataset would be along the first PC. After controlling for PC1, most remaining variation would be along the second PC. 
+To simplify large genomic data such as the transcriptomes, Principal Component Analysis (PCA) is a useful classical dimension reduction approach that is often used to reduce the dimensionality of large data sets, by transforming a large set of variables into a smaller one while still capturing most of the information and variation. The reduction of large data sets is achieved by transforming the variables the principal components (PCs), which are orthogonal to each other. It is ordered such that the retention of variation present in the original variables decreases as moving down in the order. Therefore, most variation in the dataset would be along the first PC. After controlling for PC1, most remaining variation would be along the second PC. 
 
  <img width="800" alt="Screen Shot 2022-12-06 at 12 20 26 AM" src="https://user-images.githubusercontent.com/72646231/206057696-2592bfb5-48d1-477e-bed6-786008c842dc.png">
  
@@ -42,7 +42,7 @@ To simplify large genomic data such as the transcriptomes, Principal Component A
  ### Purpose and Instruction
 The purpose of PCA is to reduce dimensionality of large data sets while preserving as much variation as possible, making it possible to see strong patterns. Though it is not a clustering algorithm itself, the PCA plot often provides visually clustering for data exploration, which would be critical for differential expression analysis. It entails if the dataset has any outliers, any batch effect strongly influencing the dataset, or which samples are similar to one another, or which ones are different. Furthermore, by looking at the PCA loadings, which are the coefficients of the linear combination of the original variables from which the PCs are formed, researchers can identify the genes that are responsible for such similarities and differences. Since the first two PCs explain the most variation, so plotting the first 2 PCs would be essential in initial exploration of the dataset to determine the main driver for transcriptomic changes. 
  
- - **Tools and Packages**: R's prcomp() function and ggplot2 package to generate PCA plot
+ - **Tools and Packages**: R's prcomp() function and ggplot2 package to generate PCA plot and there are more tools and packages
  - **Input Data**: normalized data that follows a gaussian/binomial distribution. Since RNA-seq data is negative binomial distribution, log normalized data would be needed.
 
 ### Interpretation of the PCA Plot
@@ -59,7 +59,7 @@ As PCA is critical in determining the main driver for transcriptomic changes in 
 
 <img width="800" alt="Screen Shot 2022-12-06 at 4 01 16 PM" src="https://user-images.githubusercontent.com/72646231/206061393-6bbdae85-1c4f-4132-ac87-043c1a9cfddf.png">
 
-**Figure 5.** This image depicts a PCA plot of the first two PCs on 175 RNA-seq samples obtained from 20 patients with prostrate cancer who underwent different types of androgen deprivation therapy (ADT) treatments and RNA-seq samples include pre-ADT biopsies and post-ADT prostatectomy specimens.
+**Figure 5.** This image depicts a PCA plot of the first two PCs on 175 RNA-seq samples obtained from 20 patients with prostrate cancer who underwent different types of androgen deprivation therapy (ADT) treatments. RNA-seq samples include pre-ADT biopsies and post-ADT prostatectomy specimens.
 
  ## 3 Heat Map
  Heat map is a commonly used tool for data visualization, which uses the intensity of color to show the magnitude of a phenomenon in different samples. In RNA-seq, heat map is used to compare to transcripts expression profile across different specimen. 
