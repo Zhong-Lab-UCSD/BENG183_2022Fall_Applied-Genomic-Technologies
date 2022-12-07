@@ -27,7 +27,7 @@ Breast cancer refers to tumors that originate in breast tissue, which is the mos
 * Redness of skin
 * Blood-stained or clear fluid discharge from nipple
 
-(Cleveland Clinic)
+(Medical News Today)
 
 <p align="center">
     <img src="https://github.com/itsjisookim/BENG183_2022Fall_Applied-Genomic-Technologies/blob/d6a3bbfa4fa1ba484118497c2695633e9ff96b4c/Final_Paper/Group_27_Precision_Medicine_in_Breast_Cancer/Signs%20and%20Symptoms%20of%20Breast%20Cancer.png"
