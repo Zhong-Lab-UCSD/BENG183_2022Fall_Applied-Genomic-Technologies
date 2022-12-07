@@ -1,4 +1,4 @@
-# Applied-Genomic-Technologies 
+# Applied-Genomic-Technologies
 
 ### Final Paper Submission 2022Fall
 
