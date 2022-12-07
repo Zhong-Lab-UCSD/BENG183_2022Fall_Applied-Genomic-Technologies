@@ -55,7 +55,7 @@ For example, let's consider a situation where we have cell samples from two diff
 </p>
 
 <div align="center">
-  <i><b>Figure </b> Graphical overview of RNAseq workflow []</i>
+  <i><b>Figure 3</b> Graphical overview of RNAseq workflow </i>
 </div>
 <br />
 
@@ -81,7 +81,7 @@ Consider the previous example again, where we want to find differences in gene e
   <img src="imgs/normalization.png", style="background-color:white"/>
 </p>
 <div align="center">
-  <i><b>Figure </b> Comparison of normalized RNA-Seq count data for gene expression hypothesis</i>
+  <i><b>Figure 4</b> Comparison of normalized RNA-Seq count data for gene expression hypothesis</i>
 </div>
 <br />
 
@@ -112,7 +112,7 @@ ChIP-seq is a form of sequencing that combines chromatin immunoprecipitation fol
 </p>
 
 <div align="center">
-  <i><b>Figure </b>: Graphical overview of the ChIPseq workflow. ]</i>
+  <i><b>Figure 5</b>: Graphical overview of the ChIPseq workflow.</i>
 </div>
 <br />
 
@@ -150,7 +150,7 @@ In order to better interpret data, we visualize the data. A common tool to visua
 </p>
 
 <div align="center">
-  <i><b>Figure</b>: This figure displays various proteins and their alignment to the reference genome TNFAIP3. Note the various heights in peaks that differ between each of the proteins.</i>
+  <i><b>Figure 6</b>: This figure displays various proteins and their alignment to the reference genome TNFAIP3. Note the various heights in peaks that differ between each of the proteins.</i>
 </div>
 <br />
 
@@ -198,7 +198,7 @@ Here are some popular Data Analysis Tools that would be utilized in the ChIP-Seq
 </p>
 
 <div align="center">
-  <i><b>Figure x</b>: This figure depicts the type of output we would get from both ChIPseq (epigenomics) and RNAseq (transcriptomics). In the next few sections, we will discuss how these outputs play well with each other. [x]</i>
+  <i><b>Figure 7</b>: This figure depicts the type of output we would get from both ChIPseq (epigenomics) and RNAseq (transcriptomics). In the next few sections, we will discuss how these outputs play well with each other. [7]</i>
 </div>
 <br />
 
@@ -211,7 +211,7 @@ In previous sections, we went over how to apply the concept of DA to analyze the
 </p>
 
 <div align="center">
-  <i><b>Figure y</b>: This figure summarizes the main mechanisms for post-translational modification of proteins. As we will discuss in this section, RNAseq gene expression data does not account for protein regulation. [y]</i>
+  <i><b>Figure 8</b>: This figure summarizes the main mechanisms for post-translational modification of proteins. As we will discuss in this section, RNAseq gene expression data does not account for protein regulation. [8]</i>
 </div>
 <br />
 
@@ -241,7 +241,7 @@ This workflow would enable us to investigate gene regulatory networks, and how d
 </p>
 
 <div align="center">
-  <i><b>Figure z</b>: An oversimplified example dataset meant to help illustrate the pitfalls of RNAseq alone, and how ChIPseq can help us overcome this. We have an RNAseq gene expression output for three TFs on the left, across two samples A and B, as well as peak counts for the same three TFs and same two samples after running ChIPseq.</i>
+  <i><b>Figure 9</b>: An oversimplified example dataset meant to help illustrate the pitfalls of RNAseq alone, and how ChIPseq can help us overcome this. We have an RNAseq gene expression output for three TFs on the left, across two samples A and B, as well as peak counts for the same three TFs and same two samples after running ChIPseq.</i>
 </div>
 <br />
 
