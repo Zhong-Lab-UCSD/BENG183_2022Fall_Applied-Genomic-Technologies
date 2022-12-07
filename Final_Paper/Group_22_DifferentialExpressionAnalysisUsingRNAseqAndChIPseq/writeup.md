@@ -120,7 +120,7 @@ The ChIPseq Workflow consists of four steps:
 We want to perform a crosslink between the target protein and the DNA. In essence, we are attaching together the DNA to nearby proteins. Crosslink is the joining of two or more molecules by a covalent bond, and the reagents used are molecules that contain reactive ends that are capable of binding to specific functional groups on proteins or other molecules. 
 
 2. **Chromatin Fragmentation**  
-We then shear the DNA into smaller fragments. Fragmentation allows the protein and DNA complexes that are high in molecular weight chromatin are soluble and accessible for further processing. 
+We then shear the DNA into smaller fragments. Fragmentation allows the protein and DNA complexes that are high in molecular-weight chromatin to be soluble and accessible for further processing. 
 
 3. **Immunoprecipitation**  
 Immunoprecipitation is the process of precipitating a protein antigen out of a solution by using an antibody that is highly specific to a certain protein. This allows us to isolate and focus on a specific protein from a sample that might contain many different proteins. 
