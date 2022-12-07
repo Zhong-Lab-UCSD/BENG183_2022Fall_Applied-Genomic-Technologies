@@ -120,7 +120,7 @@ Precision Medicine collects data on health, disease, environmental factors, fami
 - **Older Focus**:
 Based on tumor size, tumor grade (how they look compared to normal cells), and axillary lymph nodes (buildups of cells in lymph system). Tumor size is easy to quantify, but tumor grade is subjective especially if tumor is heterogenous. Axillary lymph nodes have a weak correlation with cancer metastasis, where 30% without will develop metastasis in a decade while 50% were cured with only a local treatment
 
-- ** Modern Approach**: 
+- **Modern Approach**: 
 1. Categorize with Genomics and use various bioinformatic techniques to learn more
 2. Early studies have determined multiple categories
 3. 3 major categories of breast cancer based on gene expression abnormalities:
