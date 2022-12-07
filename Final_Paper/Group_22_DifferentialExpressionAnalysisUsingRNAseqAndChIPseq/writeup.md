@@ -150,6 +150,31 @@ By studying histone modifications using ChIP-Seq, it allows one to gather inform
 Studying transcription factors can provide us with information on how and where transcription factors are bound and effective along the genome. For example, at a site within the genome that determines sex can be seen through ChIP-Seq data, and in turn allows us to determine that the region of the genome is related to sex determination.  
 ### DA Tools/Methods
 
+Here are some popular Data Analysis Tools that would be utilized in the ChIP-Seq Data Analysis Pipeline:  
+[STAR](https://github.com/alexdobin/STAR)
+[HOMER](http://homer.ucsd.edu/homer)  
+- a Windows based Peak calling approach. It is a suite of tools fo Motif discovery and next generation sequencing analysis.  
+[UCSC Genome Browser](https://genome.ucsc.edu/)  
+- Windows based genome visualizer database. One can search up and study various features of a genome in any location. 
+
+[Burrows Wheeler Alignment (BWA)](https://bio-bwa.sourceforge.net/)  
+- Software package that is capable of mapping low-divergent sequences against a large reference genome. It have various forms of the BWA algorithm that makes it suitable for aligning short and long reads. It is highly accurate and efficient. 
+
+[Bowtie](https://bowtie-bio.sourceforge.net/index.shtml)  
+- Aa fast and memory efficient short read aligner. It also utilizes Burrows-Wheeler index to keep the memory footprint small.  
+
+[MACS (Model-Based Analysis for ChIP-Seq)](https://macs3-project.github.io/MACS/) 
+- Comphrehensive software for analyzing transcription factor binding sites. It is capable of managin the influence of genome complexity and improves spatial resolution of binding sites.  
+
+[PeakSeq](https://github.com/gersteinlab/PeakSeq)
+- Program for identifying and ranking peak regions for ChIP-Seq analysis. It utilises the false-discovery rate calcualtion to make decisions. 
+
+
+
+
+
+
+
 ## What do we gain by using both technologies together? <a name="combo" />
 
 <p align="center">
