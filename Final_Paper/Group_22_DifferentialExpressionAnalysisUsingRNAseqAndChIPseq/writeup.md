@@ -27,7 +27,7 @@ We will go over all these points in detail, and provide a summary at the end. Le
 </p>
 
 <div align="center">
-  <i><b>Figure 2</b>: Depiction of DA. In this image, the circles can represent any metric. We will go over DA of expression data from RNAseq, as well as DA of TF-binding data from ChIPseq. [2]</i>
+  <i><b>Figure 2</b>: Depiction of DA. In this image, the circles can represent any metric. We will go over DA of expression data from RNAseq as well as DA of TF-binding data from ChIPseq. [2]</i>
 </div>
 <br />
 
@@ -35,7 +35,7 @@ Differential analysis (DA) is an analysis technique that excels at extracting 's
 
 ### What's the point?
 
-It is always a good idea to ask the question: 'Why do we care?'. In this case, we care because oftentimes experimental science boils down to _What is causing this sample to behave differently than this other sample?_. A good way to answer this question is to investigate everything that is different between the two samples. If two restaurants are selling bean and cheese burritos but one is clearly tastier, we might want to perform Differential Ingredient Analysis to investigate. Similarly, between the healthy and tumor tissue samples mentioned earlier, finding a gene that is expressed highly in tumor cells versus healthy cells could lead us to perform knockdown studies on this gene, and provide information on the disease pathway. We could do the same with TF binding data to investigate the binding of different TFs in healthy and tumor tissue.
+It is always a good idea to ask the question: 'Why do we care?'. In this case, we care because oftentimes experimental science boils down to _What is causing this sample to behave differently than this other sample?_ A good way to answer this question is to investigate everything that is different between the two samples. If two restaurants are selling bean and cheese burritos but one is clearly tastier, we might want to perform Differential Ingredient Analysis to investigate. Similarly, between the healthy and tumor tissue samples mentioned earlier, finding a gene that is expressed highly in tumor cells versus healthy cells could lead us to perform knockdown studies on this gene, and provide information on the disease pathway. We could do the same with TF binding data to investigate the binding of different TFs in healthy and tumor tissue.
 
 <br />
 
