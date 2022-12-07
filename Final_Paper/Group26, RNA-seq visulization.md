@@ -51,7 +51,7 @@ As PCA is a way to bring out strong patterns from large and complex datasets, it
 
 ![Blog_pca_8](https://user-images.githubusercontent.com/72646231/206060115-817dc790-4b75-4223-9f41-ffb394082234.png)
  
-**Figure 4.** This image shows a PCA plot of cluster similarity such that there are 3 clusters. The first PC (explains most variation): Group 3 vs. Group 1 vs. 2&4. 
+**Figure 4.** This image shows a PCA plot of cluster similarity such that there are 3 clusters. The first PC (explains most variation): Group 3 vs. Group 1 vs. Group 2&4. 
   
 ### Application of the PCA Plot in Differential Expression Analysis
 
