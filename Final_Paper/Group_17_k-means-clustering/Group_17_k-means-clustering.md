@@ -34,10 +34,11 @@ There are many different approaches used for selecting k.
 
 **Algorithm**
 
-We iterate over the algorithm until we reach our desired results or convergence occurs.
-Convergence is where the results of the algorithm no longer change. Aka. once centroid and cluster re-assignment no longer changes. 
-Convergence
-Determines when iteration ceases. Convergence occurs when there is no longer any change in cluster assignment and centroid location. 
+The algorithm has 4 main steps: 
+1. Assign k# of centroids (center of cluster) to random data points
+2. For each data point, identify the closest centroid and assign the data point to the cluster corresponding to the closest centorid 
+3. Re-position each centroid to the center of the clusters
+4. Repeat steps 2-3 until the clusters converge (there is no change in cluster identity before or after an iteration)
 
 
 <details>
