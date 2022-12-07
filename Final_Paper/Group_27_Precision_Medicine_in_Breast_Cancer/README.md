@@ -46,8 +46,10 @@ Just like other types of cancers, different stages of breast cancer are determin
 **Stage IV**
 * This stage of breast cancer is also known as metastatic breast cancer. Metastasis means that the cancer has spread to different areas away from the breast tissue like to the lungs, brain, bones, or etc.
 
-![alt text](https://github.com/itsjisookim/BENG183_2022Fall_Applied-Genomic-Technologies/blob/600f816dfc48796d59274b51ca6ef2dd2e45f2e6/Final_Paper/Group_27_Precision_Medicine_in_Breast_Cancer/Different%20Stages%20of%20Breast%20Cancer.png)
-
+<p align="center">
+    <img src="https://github.com/itsjisookim/BENG183_2022Fall_Applied-Genomic-Technologies/blob/600f816dfc48796d59274b51ca6ef2dd2e45f2e6/Final_Paper/Group_27_Precision_Medicine_in_Breast_Cancer/Different%20Stages%20of%20Breast%20Cancer.png")
+>
+   
 There are also numerous different types of breast cancer, which includes the following:
 
 * **Ductal carcinoma in situ (DCIS):** noninvasive abnormal cells inside the milk ducts
@@ -74,11 +76,17 @@ Breast cancer was documented even before ancient Greece, with the first ever rec
 ### Main Treatments of Breast Cancer in the 19th Century
 Common method of treating breast cancer in the 19th century are as follows:
    - Lumpectomy: Surgical removal of tumor where only the tumor tissue is removed including the surrounding breast tissue. This type of surgery was also known as breast conserving surgery as it left most of the breast tissue intact. However, many patients required radiation therapy afterwards to prevent reemergence of cancer (Goldman).
- ![alt text](https://github.com/itsjisookim/BENG183_2022Fall_Applied-Genomic-Technologies/blob/5eadce20db7fd360db32c117ea930b572c3cb910/Final_Paper/Group_27_Precision_Medicine_in_Breast_Cancer/Lumpectomy.png#center)
+<p align="center">
+    <img src="https://github.com/itsjisookim/BENG183_2022Fall_Applied-Genomic-Technologies/blob/5eadce20db7fd360db32c117ea930b572c3cb910/Final_Paper/Group_27_Precision_Medicine_in_Breast_Cancer/Lumpectomy.png")
+         >
    - Mastectomy: Complete removal of the breast tissue in which cancer cells have proliferated, including the nipple, areola, and skin. Additional removal of lymph nodes in the under arm was also conducted, known as radical mastectomy which was first done by William Halsted in 1882, as it was known from the 1700s that tumors originated from lymph nodes (Thomas).
-  ![alt text](https://github.com/itsjisookim/BENG183_2022Fall_Applied-Genomic-Technologies/blob/5af2077f7361764c2ffb2b238b330262f528c5a4/Final_Paper/Group_27_Precision_Medicine_in_Breast_Cancer/Mastectomy.png#center)
+<p align="center">
+    <img src="https://github.com/itsjisookim/BENG183_2022Fall_Applied-Genomic-Technologies/blob/5af2077f7361764c2ffb2b238b330262f528c5a4/Final_Paper/Group_27_Precision_Medicine_in_Breast_Cancer/Mastectomy.png")
+         >
    - Radiation Therapy: Destruction of cancer cells by specifically targeting areas on the breast tissue with X-ray. First conducted in 1937 along with mastectomy and steadily proved to show great effects. It was later found out that short specific treatments of radiation therapy resulted in equal effects to that of long term therapy, increasing patient mortality (Goldman).
-   ![alt text](https://github.com/itsjisookim/BENG183_2022Fall_Applied-Genomic-Technologies/blob/5af2077f7361764c2ffb2b238b330262f528c5a4/Final_Paper/Group_27_Precision_Medicine_in_Breast_Cancer/Radiation.png#center)
+<p align="center">
+    <img src="https://github.com/itsjisookim/BENG183_2022Fall_Applied-Genomic-Technologies/blob/5af2077f7361764c2ffb2b238b330262f528c5a4/Final_Paper/Group_27_Precision_Medicine_in_Breast_Cancer/Radiation.png")
+         >
 
 ### Drug Treatments of the late 20th century
 
