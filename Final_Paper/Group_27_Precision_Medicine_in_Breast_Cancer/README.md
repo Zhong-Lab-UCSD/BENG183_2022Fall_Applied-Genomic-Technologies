@@ -119,7 +119,18 @@ Precision Medicine collects data on health, disease, environmental factors, fami
 
 - **Older Focus**:
 Based on tumor size, tumor grade (how they look compared to normal cells), and axillary lymph nodes (buildups of cells in lymph system). Tumor size is easy to quantify, but tumor grade is subjective especially if tumor is heterogenous. Axillary lymph nodes have a weak correlation with cancer metastasis, where 30% without will develop metastasis in a decade while 50% were cured with only a local treatment
+![](cancer-grades.jpg)
+  ("Staging & Grade")
 
+<<<<<<< HEAD
+- **Modern Approach**:
+  - Categorize with Genomics and use various bioinformatic techniques to learn more: Early studies have determined multiple categories 
+-  Major categories of breast cancer based on gene expression abnormalities:
+   - Hormone receptor (HR) expressing (either estrogen receptor (ER+) or progesterone receptor (PR+) expressing) 70% in developed countries
+   - Human epidermal receptor expressing (HER2+) 20%
+   - Triple negative (ER-, PR-, HER2-), further divided into 6 categories 10%
+- Various combinations of ER, PR and HER2 expressing all have different treatment approaches
+=======
 - **Modern Approach**: 
 1. Categorize with Genomics and use various bioinformatic techniques to learn more
 2. Early studies have determined multiple categories
@@ -127,25 +138,24 @@ Based on tumor size, tumor grade (how they look compared to normal cells), and a
 - Hormone receptor (HR) expressing (either estrogen receptor (ER+) or progesterone receptor (PR+) expressing) 70% in developed countries
 - Human epidermal receptor expressing (HER2+) 20%
 - Triple negative (ER-, PR-, HER2-), further divided into 6 categories 10%
-4. Various combinations of ER, PR and HER2 expressing all have different treatment approaches
+- Various combinations of ER, PR and HER2 expressing all have different treatment approaches
+
 
 - HR+ (ER+/PR-, ER-/PR+, ER+/PR+) indicates that hormone receptors are abnormally expressed in the cancer cells, indicating that the cancer is using the hormones to grow. They target the cancer by blocking production of the specific hormone (ER or PR) or blocking hormone receptors 
+![](hormone.png) 
 
+(Dedhia)
 - HER2 is a protein that promotes cell growth. HER2+ cancers grow and spread more quickly than HER2- cancers
+![](her2_pos.png)
 
+(Lynne) 
 - Immunotherapy: target the proteins binding sites with antibodies to prevent them protein binding
 
+- Triple Negatives: have a cancer phenotype while being ER-, PR- and HER2-:
+  - Difficult to classify/treat due to low prevalence and unknown mechanisms
+  - Use more general cancer treatments to deal with the cancers
 
-
-
-
-(Lynne)
-
-● Triple Negatives: have a cancer phenotype while being ER-, PR- and HER2-:
-
-○ Difficult to classify/treat due to low prevalence and unknown mechanisms
-
-○ Use more general cancer treatments to deal with the cancers
+  
 
 **Citations**
 
