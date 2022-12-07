@@ -12,7 +12,7 @@ breast cancer was not until the renaissance in the 1700s, where John Hunter from
 identified lymphs as causes of breast cancer (Thomas).
 
 
-**Main Treatments of Breast Cancer in the 19th Century**
+###**Main Treatments of Breast Cancer in the 19th Century**
 ---
 Common method of treating breast cancer in the 19th century are as follows:
 
