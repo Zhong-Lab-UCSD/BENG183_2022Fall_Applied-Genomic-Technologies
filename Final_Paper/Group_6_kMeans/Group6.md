@@ -1,5 +1,7 @@
 # Kmeans Clustering
 
+Tyler Houchin, Hongji Zhu, & Anna Dinov
+
 ### Background
 Machine learning is a subfield of artificial intelligence that involves the use of algorithms and statistical models to enable a system to improve its performance on a given task over time. There are two main types of machine learning: supervised and unsupervised. Supervised learning involves training a model on labeled data, where the correct output is provided for each input. This allows the model to make predictions on new, unseen data based on the patterns it has learned from the training data.
 ![sup](sup.png)
