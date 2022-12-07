@@ -20,7 +20,7 @@ credit: https://blog.crownbio.com/pdx-personalized-medicine
 
 Long QT syndrome (LQTS) is heart signaling disorder elongating relaxing period(QT interval) of heart after each heartbeat. The electrocardiogram below shows a longer interval between Q wave and T wave of LQTS patient compare to normal person. Such disease may cause syncope, dizziness palpitations and even sudden cardiac death. Though showing similar symptom, LQTS may cause by multiple reasons and thus classified by corresponding gene types. 
 
-![LQTS](Long-QT-collage.jpg)
+![LQTS](Long-QT-collage.jpeg)
 credit:https://www.washingtonhra.com/wp-content/uploads/2015/05/Long-QT-collage.jpg
 
 @Author Washington Heart Rhythm Associates
