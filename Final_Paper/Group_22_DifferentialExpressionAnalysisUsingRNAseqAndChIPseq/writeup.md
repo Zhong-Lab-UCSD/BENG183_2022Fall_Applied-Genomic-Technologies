@@ -154,8 +154,11 @@ Here are some popular Data Analysis Tools that would be utilized in the ChIP-Seq
 
 [HOMER](http://homer.ucsd.edu/homer)    
 - a Windows based Peak calling approach. It is a suite of tools fo Motif discovery and next generation sequencing analysis.  
+
+
 [UCSC Genome Browser](https://genome.ucsc.edu/)    
-- Windows based genome visualizer database. One can search up and study various features of a genome in any location. 
+- Windows based genome visualizer database. One can search up and study various features of a genome in any location.  
+
 
 [Burrows Wheeler Alignment (BWA)](https://bio-bwa.sourceforge.net/)  
 - Software package that is capable of mapping low-divergent sequences against a large reference genome. It have various forms of the BWA algorithm that makes it suitable for aligning short and long reads. It is highly accurate and efficient. 
