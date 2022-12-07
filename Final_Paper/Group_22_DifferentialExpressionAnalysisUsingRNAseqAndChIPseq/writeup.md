@@ -147,10 +147,7 @@ Ultimately, ChIP-Seq has become an extremely innovative tool that has various ap
 
 By studying histone modifications using ChIP-Seq, it allows one to gather information on the state of the chromatin in a certain environment. ChIP-Seq can also reveal more about regulatory sites by determining which are activated, repressed, and by which specific protein. This then further grows our understanding of the structure of genes.  
 
-
-By studying transcription factors, it can provide us with information on how and where transcription factors are bound and effective along the genome. For example, at a site within the genome that determines sex can be seen through ChIP-Seq data, and in turn allows us to determine that the region of the genome is related to sex determination.  
-
-
+Studying transcription factors can provide us with information on how and where transcription factors are bound and effective along the genome. For example, at a site within the genome that determines sex can be seen through ChIP-Seq data, and in turn allows us to determine that the region of the genome is related to sex determination.  
 ### DA Tools/Methods
 
 ## What do we gain by using both technologies together? <a name="combo" />
