@@ -153,7 +153,7 @@ Studying transcription factors can provide us with information on how and where 
 Here are some popular Data Analysis Tools that would be utilized in the ChIP-Seq Data Analysis Pipeline:    
 
 [HOMER](http://homer.ucsd.edu/homer)    
-- a Windows based Peak calling approach. It is a suite of tools fo Motif discovery and next generation sequencing analysis.  
+- a Windows based peak calling approach. It is a suite of tools for Motif discovery and next generation sequencing analysis.  
 
 
 [UCSC Genome Browser](https://genome.ucsc.edu/)    
@@ -161,16 +161,16 @@ Here are some popular Data Analysis Tools that would be utilized in the ChIP-Seq
 
 
 [Burrows Wheeler Alignment (BWA)](https://bio-bwa.sourceforge.net/)  
-- Software package that is capable of mapping low-divergent sequences against a large reference genome. It have various forms of the BWA algorithm that makes it suitable for aligning short and long reads. It is highly accurate and efficient. 
+- Software package that is capable of mapping low-divergent sequences against a large reference genome. It has various forms of the BWA algorithm that makes it suitable for aligning short and long reads. It is highly accurate and efficient. 
 
 [Bowtie](https://bowtie-bio.sourceforge.net/index.shtml)  
-- Aa fast and memory efficient short read aligner. It also utilizes Burrows-Wheeler index to keep the memory footprint small.  
+- A fast and memory efficient short read aligner. It also utilizes Burrows-Wheeler index to keep the memory footprint small.  
 
 [MACS (Model-Based Analysis for ChIP-Seq)](https://macs3-project.github.io/MACS/) 
-- Comphrehensive software for analyzing transcription factor binding sites. It is capable of managin the influence of genome complexity and improves spatial resolution of binding sites.  
+- Comphrehensive software for analyzing transcription factor binding sites. It is capable of managing the influence of genome complexity and improves spatial resolution of binding sites.  
 
 [PeakSeq](https://github.com/gersteinlab/PeakSeq)
-- Program for identifying and ranking peak regions for ChIP-Seq analysis. It utilises the false-discovery rate calcualtion to make decisions. 
+- Program for identifying and ranking peak regions for ChIP-Seq analysis. It utilizes the false-discovery rate calculation to make decisions. 
 
 
 
