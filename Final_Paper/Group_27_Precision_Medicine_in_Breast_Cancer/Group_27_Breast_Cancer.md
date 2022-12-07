@@ -1,124 +1,73 @@
-﻿
-
 # BENG 183 Final Paper -  Group 27
 
 Contributors : Jisoo Kim, Sang Lee, Jonathan Zhu
 
 
-**Precision Medicine on Breast Cancer**
----
+## **Precision Medicine on Breast Cancer**
 
-**1. Overview of disease**
+### **1. Overview of disease**
 
-Breast cancer refers to tumors that originate in breast tissue, which is the most common type of
+Breast cancer refers to tumors that originate in breast tissue, which is the most common type of cancer in women. Causes of breast cancer are the following but not limited to:
 
-cancer in women. Causes of breast cancer are the following but not limited to:
+* Mutations to certain genes such as BRCA1 and BRCA2 → Downstream effect on DNA repair, Transcription regulation, ubiquitination cycle, chromatin structure regulation, cell cycle regulation
 
-● Mutations to certain genes such as BRCA1 and BRCA2 → Downstream effect on DNA
+* Exposure to therapeutics such as diethylstilbestrol (DES) or radiation therapy
 
-repair, Transcription regulation, ubiquitination cycle, chromatin structure regulation, cell
+* Old age (>50)
 
-cycle regulation
+* Obesity
 
-● Exposure to therapeutics such as diethylstilbestrol (DES) or radiation therapy
+* Smoking
 
-● Old age (>50)
 
-● Obesity
-
-● Smoking
 
 **Symptoms of breast cancer include:**
 
-● Change in size, shape or contour of breast
+* Change in size, shape or contour of breast
 
-● A mass/lump, as small as a pea
+* A mass/lump, as small as a pea
 
-● A lump/thickening in or near breast on in underarm
+* A lump/thickening in or near breast on in underarm
 
-● Change in look or feel of skin on breast or nipple
+* Change in look or feel of skin on breast or nipple
 
-● Redness of skin
+* Redness of skin
 
-● Blood-stained or clear fluid discharge from nipple
+* Blood-stained or clear fluid discharge from nipple
 
-[11]
-
-
+[insert image]
 
 
 
-Just like other types of cancers, different stages of breast cancer are determined based on the
+Just like other types of cancers, different stages of breast cancer are determined based on the location, size, and the rate of spreading of the cancer cells:
 
-location, size, and the rate of spreading of the cancer cells:
+**Stage 0**
+* This stage disease is non-invasive and localized within the breast ducts
+**Stage I**
+* At this stage of the disease, the cancer cells started to spread to the nearby breast tissue. Yet, the survival rate is very high.
+**Stage II**
+* Stage II is still a smaller size tumor, relatively 2 to 5 centimeters across and may or may not affect the nearby lymph nodes.
+**Stage III**
+* This is the beginning of the spreading away from the cancer’s point of origin. If the cancer has started from the breast ducts, then it can have invaded nearby lymph nodes and tissue. Often Stage III cancer is also known as locally advanced breast cancer.
+**Stage IV**
+* This stage of breast cancer is also known as metastatic breast cancer. Metastasis means that the cancer has spread to different areas away from the breast tissue like to the lungs, brain, bones, or etc.
 
-**○ Stage 0**
-
-■ This stage disease is non-invasive and localized within the breast ducts
-
-**○ Stage I.**
-
-■ At this stage of the disease, the cancer cells started to spread to the
-
-nearby breast tissue. Yet, the survival rate is very high.
-
-**○ Stage II.**
-
-■ Stage II is still a smaller size tumor, relatively 2 to 5 centimeters across
-
-and may or may not affect the nearby lymph nodes.
-
-**○ Stage III.**
-
-■ This is the beginning of the spreading away from the cancer’s point of
-
-origin. If the cancer has started from the breast ducts, then it can have
-
-invaded nearby lymph nodes and tissue. Often Stage III cancer is also
-
-known as locally advanced breast cancer.
-
-**○ Stage I V.**
-
-■ This stage of breast cancer is also known as metastatic breast cancer.
-
-Metastasis means that the cancer has spread to different areas away
-
-from the breast tissue like to the lungs, brain, bones, or etc.
+[Insert different stages image]
 
 There are also numerous different types of breast cancer, which includes the following:
 
-* **Ductal carcinoma in situ (DCIS):** noninvasive abnormal cells inside the milk ducts
+> * **Ductal carcinoma in situ (DCIS):** noninvasive abnormal cells inside the milk ducts
+> * **Lobular carcinoma in situ (LCIS)**: cancer cell originated in the milk-producing glands called lobules
+> * **Triple negative breast cancer (TNBC):** a kind of breast cancer that does not have any receptors that are commonly found in breast cancer:
+>     *    estrogen receptors
+>     *    progesterone receptors
+>     *    HER2 receptors
+> * **Inflammatory breast cancer:** rare and aggressive breast cancer where cancer cells block lymph vessels
+> * **Paget’s disease of breast:** usually starts in the nipple where the skin also shows eczema-like symptoms in that region
+> * **Angiosarcoma:** cancer that forms in lining of blood vessels and lymph vessels
+> * **Phyllodes tumors of the breast:** rare tumors that start in connective tissue of the breast and most of these are benign
 
-* **Lobular carcinoma in situ (LCIS)**: cancer cell originated in the milk-producing glands
-
-called lobules
-
-* **Triple negative breast cancer (TNBC):** a kind of breast cancer that does not have any
-
-receptors that are commonly found in breast cancer
-
-    * estrogen receptors
-
-    * progesterone receptors
-
-    * HER2 receptors
-
-* **Inflammatory breast cancer:** rare and aggressive breast cancer where cancer cells
-
-block lymph vessels
-
-* **Paget’s disease of breast:** usually starts in the nipple where the skin also shows
-
-eczema-like symptoms in that region
-
-* **Angiosarcoma:** cancer that forms in lining of blood vessels and lymph vessels
-
-*  **Phyllodes tumors of the breast:** rare tumors that start in connective tissue of the
-
-breast and most of these are benign
-
-
+[INSERT PICTURE]
 
 
 
@@ -131,93 +80,26 @@ breast and most of these are benign
 
 
 **2. Breast Cancer: Therapies and Treatments in the Past**
+---
 
-Breast cancer was documented even before ancient Greece, with the first ever record being
+Breast cancer was documented even before ancient Greece, with the first ever record being documented on a papyrus dating back to 2500 BCE (Goldman). Actual medical diagnosis of breast cancer was not until the renaissance in the 1700s, where John Hunter from Scotland identified lymphs as causes of breast cancer (Thomas).
 
-documented on a papyrus dating back to 2500 BCE (Goldman). Actual medical diagnosis of
-
-breast cancer was not until the renaissance in the 1700s, where John Hunter from Scotland
-
-identified lymphs as causes of breast cancer (Thomas).
-
-**Main Treatments of Breast Cancer in the 19th Century**
-
+### Main Treatments of Breast Cancer in the 19th Century
 Common method of treating breast cancer in the 19th century are as follows:
+  - Lumpectomy: Surgical removal of tumor where only the tumor tissue is removed including the surrounding breast tissue. This type of surgery was also known as breast conserving surgery as it left most of the breast tissue intact. However, many patients required radiation therapy afterwards to prevent reemergence of cancer (Goldman).
+- Mastectomy: Complete removal of the breast tissue in which cancer cells have proliferated, including the nipple, areola, and skin. Additional removal of lymph nodes in the under arm was also conducted, known as radical mastectomy which was first done by William Halsted in 1882, as it was known from the 1700s that tumors originated from lymph nodes (Thomas).
 
-● **Lumpectomy:** Surgical removal of tumor where only the tumor tissue is removed
-
-including the surrounding breast tissue. This type of surgery was also known as breast
-
-conserving surgery as it left most of the breast tissue intact. However, many patients
-
-required radiation therapy afterwards to prevent reemergence of cancer (Goldman).
-
-○
+  - Radiation Therapy: Destruction of cancer cells by specifically targeting areas on the breast tissue with X-ray. First conducted in 1937 along with mastectomy and steadily proved to show great effects. It was later found out that short specific treatments of radiation therapy resulted in equal effects to that of long term therapy, increasing patient mortality (Goldman).
 
 
+### Drug Treatments of the late 20th century
 
+In addition to surgeries that were being modified overtime in the 19th century, different drugs were also introduced in the late 20th century that targeted specific receptors and hormones. Most notable drugs include:
 
-
-● **Mastectomy:** Complete removal of the breast tissue in which cancer cells have
-
-proliferated, including the nipple, areola, and skin. Additional removal of lymph nodes in
-
-the under arm was also conducted, known as radical mastectomy which was first done
-
-by William Halsted in 1882, as it was known from the 1700s that tumors originated from
-
-lymph nodes (Thomas).
-
-○
-
-● **Radiation Therapy:** Destruction of cancer cells by specifically targeting areas on the
-
-breast tissue with X-ray. First conducted in 1937 along with mastectomy and steadily
-
-proved to show great effects. It was later found out that short specific treatments of
-
-radiation therapy resulted in equal effects to that of long term therapy, increasing patient
-
-mortality (Goldman).
-
-○
-
-○
-
-
-
-
-
-**Drug Treatments of the late 20th century**
-
-In addition to surgeries that were being modified overtime in the 19th century, different drugs
-
-were also introduced in the late 20th century that targeted specific receptors and hormones.
-
-Most notable drugs include:
-
-● **Tamoxifen:** Introduced in 1978 as an anti-estrogen drug to prevent development of
-
-breast cancer. Known as the first in a new class of drugs called selective estrogen
-
-receptor modulators (SERM). In 1998 Tamoxifen is found to decrease risk of developing
-
-breast cancer in women by 50% and is approved by FDA to be used as preventive
-
-therapy (Goldman)
-
-● **Anastrozole**: Approved in 1996 to blocks production of estrogen
-
-● **Herceptin:** Also approved by FDA in 1998 which targets cancer cells that are
-
-over-producing HER2
-
-● **Raloxifene:** Found in 2006 as SERM drug to reduce breast cancer risk for
-
-postmenopausal women and has lower chance of serious side effects compared to
-
-Tamoxifen
-
+  - Tamoxifen: Introduced in 1978 as an anti-estrogen drug to prevent development of breast cancer. Known as the first in a new class of drugs called selective estrogen receptor modulators (SERM). In 1998 Tamoxifen is found to decrease risk of developing breast cancer in women by 50% and is approved by FDA to be used as preventive therapy (Goldman)
+  - Anastrozole: Approved in 1996 to blocks production of estrogen
+  - Herceptin: Also approved by FDA in 1998 which targets cancer cells that are over-producing HER2
+  - Raloxifene: Found in 2006 as SERM drug to reduce breast cancer risk for postmenopausal women and has lower chance of serious side effects compared to Tamoxifen
 
 
 
