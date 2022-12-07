@@ -30,7 +30,7 @@ Silencers: Distal short regulatory elements that are also activated by transcrip
 ### 1.2 Chromatin Loops <a name = "3"></a>
 In order to cause the regulatory effects they are meant to, enhancers and promoters evolved in a way to create “loops” to increase the spatial proximity of these elements. These are called a chromatin loop.
 
-![Chromatin Loops](./chromatin_loops.jpg)
+![Chromatin Loops](./chromatin_loops.jpg) <br>
 *Figure 1.1: Different subtypes of chromatin loops.*
 
 
@@ -39,7 +39,7 @@ A well-known example of a formation of a chromosome loop is the locus control re
 ### 1.3 3-D Organization <a name = "4"></a>
 On a larger scale, DNA organizes itself by wrapping around proteins known as histones. DNA wrapped around eight histone proteins make up nucleosomes. Bundles of these nucleosomes make up chromatin, which are then aggregated to make chromsomes. DNA-Histone interactions also regulate gene expression. For example, Lysine residues on the histones may be acetylated as seen in the picture below:
 
-![Acetylation of Lysine](./acetylation_lysine.png)
+![Acetylation of Lysine](./acetylation_lysine.png) <br>
 *Figure 1.2 Acetylation of Lysine (Casey, M.A.) https://www.semanticscholar.org/paper/Lysine-acetylation-of-cytoskeletal-proteins%3A-of-an-M.-Latario/55bdfc64182ed1404c7f7f091858720fd8147b97*
 
 
@@ -52,7 +52,7 @@ One of the biggest challenges in the analysis of 3D genome and global chromatin 
 Hi-C technology is used in order to visualize the physical interaction in the genome. Hi-C is unique in that it maps all the genome-wide interactions at one time. Hi-C builds off of 3C technology which is the original technology to visualize chromatin contact. 3C is limited in that it can only detect interactions between specifically known fragments.
 
 ### 1.5 Steps of Hi-C <a name = "6"></a>
-![Hi-C Steps](./hi_c_steps.png)
+![Hi-C Steps](./hi_c_steps.png) <br>
 *Figure 1.3 HI-C step-by-step (activemotif)*
 
 The steps of Hi-C are as follows:
@@ -71,12 +71,12 @@ The steps of Hi-C are as follows:
 ## 2. Computational Analysis and Tools for Hi-C <a name = "7"></a>
 Once the Hi-C chimeric products (fragments containing two different parts of the genome ligated together) are sequenced, comes a series of computational steps in order to obtain a contact matrix which can be used to analyze genome interactions. These multiple steps are summarized on Figure 1. 
 
-![Hi-C Computational Steps](./hi_c_process.png)
+![Hi-C Computational Steps](./hi_c_process.png) <br>
 *Figure 2.1 Hi-C Data Process, from FASTQ file to contact matrix*
 
 Hi-C data processing workflow starts with FASTQ files of paired-end reads obtained from sequencing. These paired-end reads are mapped in the genome. They are aligned separately as they are supposed to map in different regions of the genome. However, the alignment of Hi-C reads may be challenging in case the read spans the ligation junction, and therefore having two portions of the read itself matching different genomic parts. These are called “chimeric reads” [1]. There are several strategies to handle them. The simplest way is to totally ignore them. This is a strategy that is used by several pipelines, such as HiC-inspector, HiC-Box, HiCdat, HIPPIE, and Juicer. It works well with short reads as they have a low probability to span the ligation junction. Another strategy would be to split the chimeric reads at the junction and then remap these partial tags to the reference genome. This technique is performed by the pipeline HiC-Pro. This strategy is illustrated on Figure 2A.
 
-![Pair Alignment and Filtering](./pair_alignment_filtering.png)
+![Pair Alignment and Filtering](./pair_alignment_filtering.png) <br>
 *Figure 2.2 Pair Alignment and Filtering*
 
 As each end of the paired-end reads are mapped separately, it is then needed to do pairing to assign the aligned reads (BAM files) to their fragment of origin, and to obtain Paired-End Tags (PETs). SAMtools can be used to sort the results.
@@ -116,4 +116,11 @@ This criteria is as follows:
 1. $10 < j - i < 1000$
 2. $\frac{M_{ij}}{E_{ij}} > 1.5$
 3. $E_{ij} > 0$
-We know that loops involve regions that are located far apart from each other on the linear genome, so our first criteria is to identifying two bins that are far apart, shown by the first equation with the difference of j and i. After that, we can check if the observed is higher than the expected, as regions so far apart are not expected to have high levels of interaction, seen through the ratio of the observed to the expected equation.  If an entry satisfies these criteria, we compute a p-value from the poisson probability density function and find bins that have low p-values. These are classified as loops.
+<br>
+We know that loops involve regions that are located far apart from each other on the linear genome, so our first criteria is to identifying two bins that are far apart, shown by the first criteria, with the difference of j and i. After that, we can check if the observed is higher than the expected, as regions so far apart are not expected to have high levels of interaction, seen by the second criteria, the ratio of the observed to the expected equation. If an entry satisfies these criteria, we compute a p-value from the probability density function of the distribution and find bins that have low p-values. These are classified as loops.
+
+### 4.3 Code for Detecting Loops <a name = "12"></a>
+As mentioned above, the first step is to create a matrix or an edge list of expected values for interactions between bins. After this, the next step is dependent on the representation of the contact matrix. If we have an edge list, we will first need to convert it to a matrix. This can be done by first : <br>
+```python
+M = csr_matrix(((Mdata.iloc[:,2], (Mdata.iloc[:,0]//10000, Mdata.iloc[:,1]//10000))))
+```
