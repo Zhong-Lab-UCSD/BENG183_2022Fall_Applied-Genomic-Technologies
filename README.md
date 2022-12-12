@@ -1,4 +1,4 @@
-# Applied-Genomic-Technologies
+# BENG 183 Applied Genomic Technologies
 
 ### All of the final papers have been received!
 
