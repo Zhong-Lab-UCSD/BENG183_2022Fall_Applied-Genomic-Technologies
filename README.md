@@ -1,5 +1,7 @@
 # Applied-Genomic-Technologies
 
+### All of the final papers have been received!
+
 ### Final Paper Submission 2022Fall
 
 ##### To submit the final project, please follow these steps:
